@@ -1,5 +1,5 @@
 <a href="https://github.com/lh1me/hexo-theme-aomori/releases">
-  <img src="https://github.com/lh1me/hexo-theme-aomori/workflows/Release/badge.svg" alt="Release Action" />
+  <img src="https://github.com/lh1me/hexo-theme-aomori/workflows/Action/badge.svg" alt="Action" />
 </a>
 <a href="https://github.com/lh1me/hexo-theme-aomori/releases">
   <img src="https://img.shields.io/github/release/lh1me/hexo-theme-aomori.svg" alt="Release" />
