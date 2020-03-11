@@ -1,0 +1,8 @@
+<% if (site.categories.length){ %>
+  <div class="widget-wrap widget-cate">
+    <div class="widget-title"><span>Categories</span></div>
+    <div class="widget-inner">
+      <%- list_categories({show_count: theme.show_count}) %>
+    </div>
+  </div>
+<% } %>

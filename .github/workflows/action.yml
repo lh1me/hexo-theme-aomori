@@ -1,0 +1,35 @@
+name: Action
+on:
+  push:
+    tags:
+    - 'v*'
+jobs:
+  build:
+    name: Action
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@master
+      - name: Build Zip
+        run: |
+          zip -r hexo-theme-aomori ./*
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.MY_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: ${{ github.ref }}
+          draft: false
+          prerelease: false
+      - name: Upload Release Asset
+        id: upload-release-asset 
+        uses: actions/upload-release-asset@v1.0.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.MY_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./hexo-theme-aomori.zip
+          asset_name: hexo-theme-aomori.zip
+          asset_content_type: application/zip

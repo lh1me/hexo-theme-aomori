@@ -1,0 +1,85 @@
+// 处理移动端响应
+@media screen and(max-width: 600px) {
+  .header {
+    .header-menu {
+      display: none;
+    }
+    .header-menu-mobile {
+      display: flex;
+    }
+  }
+  .index {
+    .article {
+      .article-inner {
+        flex-direction: column;
+        .article-feature {
+          margin-right: 0;
+          flex: 0 0 auto;
+          margin-bottom: 10px;
+        }
+        .article-body {
+          .article-title {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    .footer-inner {
+      flex-direction: column;
+      .footer-info {
+        padding: 20px 0 10px;
+      }
+      .footer-powered {
+        line-height: 1;
+        padding-bottom: 20px;
+      }
+    }
+  }
+  .post {
+    .article {
+      .share {
+        top: auto;
+        right: 2rem;
+        bottom: 3rem;
+        z-index: 999;
+      }
+    }
+  }
+}
+
+
+@media screen and(max-width: 800px) {
+  .main {
+    .inner {
+      padding-right: 0;
+    }
+  
+  }
+  .sidebar {
+    position: relative;
+    top: auto !important;
+    right: auto !important;
+    width: 100%;
+    margin: 0 auto 20px;
+    border-radius: 8px;
+    transition: all .2s;
+  }
+  .index {
+    margin-bottom: 20px;
+  }
+  .post {
+    margin-bottom: 20px;
+  }
+  .archives-wrap {
+    margin-bottom: 20px;
+  }
+}
+
+// 处理宽屏响应
+@media screen and (max-width: 1140px) {
+  .sidebar {
+    right: 20px;
+  }
+}

@@ -1,0 +1,8 @@
+<% if (site.posts.length){ %>
+  <div class="widget-wrap widget-archive">
+    <div class="widget-title"><span>Archive</span></div>
+    <div class="widget-inner">
+      <%- list_archives({show_count: theme.show_count, type: theme.archive_type, format: 'YYYY'}) %>
+    </div>
+  </div>
+<% } %>

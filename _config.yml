@@ -1,0 +1,50 @@
+version: 1.1.1
+language: cn
+
+# Header
+menu:
+  Home: /
+  Archives: /archives
+rss:
+
+# Content
+excerpt_link: Read More
+copyright: true
+
+# Sidebar
+widgets:
+- toc # 如果不需要 TOC 则关闭此项
+- category
+- tag
+- recent_posts
+- archive
+
+# Widget behavior
+archive_type: 'yearly'
+
+# Site Info
+logo: /images/avatar.jpg
+# index_media:
+#   -
+#     url: https://unsplash.com/photos/9mi5ZSQt80s
+#     image: https://images.unsplash.com/photo-1570585497069-c22bb398b382?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60
+#   -
+#     url: https://unsplash.com/photos/pmPLdPNV1mY
+#     image: https://images.unsplash.com/photo-1538207102833-6dc9a26b7d96?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60
+#   -
+#     url: https://unsplash.com/photos/ZeYQxqEUnWQ
+#     image: https://images.unsplash.com/photo-1529978755210-7f13333beb13?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60
+
+# Social
+social:
+  # facebook: '/'
+  twitter: 'https://twitter.com/lh1me'
+  # weibo: '/'
+  # dribbble: '/'
+  # instagram: '/'
+  github: 'https://github.com/lh1me'
+
+# More Config
+disqus_shortname: iamvanish
+baidu_sitepush: true
+google_analytics: UA-113307856-3

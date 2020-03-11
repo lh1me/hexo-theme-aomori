@@ -1,0 +1,31 @@
+<div class="index">
+
+  <% if (theme.index_media){ %>
+  <div class="index-media">
+    <% for(var i=0; i < theme.index_media.length; i++) { %>
+      <div class="index-media-item">
+          <a target="_blank" href="<%- theme.index_media[i].url %>">
+            <div
+              class="index-media-item-inner"
+              style="background-image: url(<%- theme.index_media[i].image %>);"
+            ></div>
+          </a>
+      </div>
+    <% } %>
+  </div>
+  <% } %>
+
+  <% page.posts.each(function(post){ %>
+    <%- partial('_partial/article-index', {post: post, index: true}) %>
+  <% }) %>
+
+  <% if (page.total > 1){ %>
+    <nav class="pagination">
+      <% var prev_text = __('prev');var next_text = __('next') %>
+      <%- paginator({
+        prev_text: prev_text,
+        next_text: next_text
+      }) %>
+    </nav>
+  <% } %>
+</div>

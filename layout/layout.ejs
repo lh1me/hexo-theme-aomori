@@ -1,0 +1,26 @@
+<%- partial('_partial/head') %>
+
+<body>
+
+  <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+
+  <div class="container">
+    <div class="main">
+      <section class="inner">
+        <section class="inner-main">
+          <%- body %>
+        </section>
+      </section>
+      <aside class="sidebar">
+        <div class="widget">
+          <%- partial('_partial/sidebar') %>
+        </div>
+        <div id="backtop"><i class="icon icon-arrow-up"></i></div>
+      </aside>
+    </div>
+  </div>
+
+  <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<div class="container">
+  <header class="header">
+    <div class="header-type">
+      <% if (theme.logo){ %>
+      <div class="avatar avatar-sm">
+        <img src="<%= theme.logo %>" alt="<%= config.author %>">
+      </div>
+      <% } %>
+      <a href="/"><%= config.title %></a>
+    </div>
+    <div class="header-menu">
+      <% for (var i in theme.menu){ %>
+        <a href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+      <% } %>
+    </div>
+    
+    <div class="header-menu-mobile">
+      <div class="header-menu-mobile-inner" id="mobile-menu-open">
+        <i class="icon icon-menu"></i>
+      </div>
+    </div>
+  </header>
+
+  <div class="header-menu-mobile-menu">
+    <div class="header-menu-mobile-menu-bg"></div>
+    <div class="header-menu-mobile-menu-wrap">
+      <div class="header-menu-mobile-menu-inner">
+        <div class="header-menu-mobile-menu-close" id="mobile-menu-close">
+          <i class="icon icon-cross"></i>
+        </div>
+        <div class="header-menu-mobile-menu-list">
+          <% for (var i in theme.menu){ %>
+            <a href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+          <% } %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

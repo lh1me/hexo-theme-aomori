@@ -1,0 +1,56 @@
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-info">
+      <span>&copy; 2013 - <%= date(new Date(), 'YYYY') %> <%= config.title %></span>
+      <%- partial('social') %>
+    </div>
+    <div class="footer-powered">
+      <a href="https://github.com/lh1me/hexo-theme-aomori" target="_blank">Aomori</a> Theme · Powered By Hexo
+    </div>
+  </div>
+</footer>
+
+<%- js('dist/build.js?' + theme.version) %>
+<%- js('dist/custom.js?' + theme.version) %>
+
+<% if (theme.baidu_sitepush) { %>
+<!-- 百度链接提交 -->
+<script>
+  (function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+  })();
+</script>    
+<% } %>
+
+<% if (theme.google_analytics) { %>
+<!-- Google Analytics-->
+<script async src="https://www.googletagmanager.com/gtag/js?id=<%= theme.google_analytics %>"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '<%= theme.google_analytics %>');
+</script>
+<% } %>
+
+<% if (theme.baidu_analytics) { %>
+<!-- Baidu Analytics-->
+<script type="text/javascript">
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?{{ theme.baidu_analytics }}";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+<% } %>

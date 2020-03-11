@@ -1,0 +1,62 @@
+<article
+  id="<%= post.layout %>-<%= post.slug %>"
+  class="article article-type-<%= post.layout %>"
+>
+
+  <div class="article-inner">
+
+    <% if (post.photos && post.photos.length){ %>
+      <div class="article-feature">
+          <a href="<%- url_for(post.path) %>">
+            <% if (post.cover){ %>
+              <img src="<%- url_for(post.cover) %>" alt="item.title" />
+            <% } else { %>
+              <img src="<%- url_for(post.photos[0]) %>" alt="item.title" />
+            <% } %>
+          </a>
+      </div>
+    <% } %>
+
+    <div class="article-body">
+      <header class="article-title">
+        <a href="<%- url_for(post.path) %>"><%= post.title %></a>
+      </header>
+      <div class="article-entry post-inner-html">
+        <% if (post.excerpt){ %>
+          <%- post.excerpt %>
+        <% } else { %>
+          <%- post.content %>
+        <% } %>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="article-footer">
+    <div class="article-more-info">
+      <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
+      <% if (post.categories && post.categories.length){ %>
+        <div class="article-category">
+          <%- list_categories(post.categories, {
+            show_count: false,
+            class: 'article-category',
+            style: 'none',
+            separator: ',',
+            depth: 1
+          }) %>
+        </div>
+      <% } %>
+      <% if (post.tags && post.tags.length){ %>
+        <div class="article-tag">
+          <%- list_tags(post.tags, {
+            show_count: false,
+            class: 'article-tag',
+            amount: 3
+          }) %>
+        </div>
+      <% } %>
+    </div>
+  </footer>
+
+
+</article>

@@ -1,0 +1,10 @@
+<% if (post.link_refer){ %>
+  <div class="article-refer hairline">
+    <h3>文章参考文献</h3>
+    <% post.link_refer.forEach(function(item, i){ %>
+    <p>
+      <a target="_blank" rel="nofollow" href="<%= item.url %>"><%= item.title %></a>
+    </p>
+    <% }) %>
+  </div>
+  <% } %>
