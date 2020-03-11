@@ -69,20 +69,6 @@ menu:
 language: cn
 ```
 
-### 首页海报
-
-`url` 跳转链接 / `image` 图片地址
-
-``` yml
-index_media:
-  -
-    url: url
-    image: image
-  -
-    url: url
-    image: image
-```
-
 ### 文章内容导航 TOC
 
 ``` yml

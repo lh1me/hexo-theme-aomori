@@ -277,23 +277,6 @@ a:hover {
 /* 首页 */
 .index {
   margin-bottom: 60px;
-
-  &-media {
-    display: flex;
-    margin: 0 -10px 20px;
-    &-item {
-      flex: 1 1 auto;
-      padding: 0 10px;
-      &-inner {
-        height: 180px;
-        border-radius: 8px;
-        background-color: #d8dade !important;
-        background-position: center !important;
-        background-size: cover !important;
-        background-repeat: no-repeat !important;
-      }
-    }
-  }
   .article {
     padding: 20px;
     margin-bottom: 20px;
