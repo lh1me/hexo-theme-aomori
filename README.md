@@ -24,7 +24,7 @@
 
 ## 安装主题
 
-将下载的 ZIP 包解压放置到 Hexo 主题目录下即可
+将 [下载](https://github.com/lh1me/hexo-theme-aomori/releases) 的 ZIP 包解压放置到 Hexo 主题目录下即可
 
 ## 开始使用
 
