@@ -1,4 +1,4 @@
-version: 1.0.0
+version: 1.0.1
 language: cn
 
 # Header
@@ -35,6 +35,6 @@ social:
   github: 'https://github.com/lh1me'
 
 # More Config
-disqus_shortname: iamvanish
-baidu_sitepush: true
-google_analytics: UA-113307856-3
+# disqus_shortname: 
+# baidu_sitepush: true
+# google_analytics: 
