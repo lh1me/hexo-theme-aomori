@@ -187,12 +187,14 @@ a:hover {
   right: calc((100% - 1160px) / 2);
   width: 280px;
   transition: all .2s;
-  
   .widget {
+    max-height: calc(100vh - 100px);
     padding: 20px;
     margin-bottom: 10px;
     background: #fff;
     border-radius: 8px;
+    overflow-y: scroll;
+
     .widget-wrap {
     //   padding-top: 20px;
       &:first-child {
