@@ -21,6 +21,9 @@ const commonjs = require('rollup-plugin-babel'); // Common JS
 const resolve = require ('rollup-plugin-node-resolve'); // 使 Rollup 支持 NPM 模块
 const uglify = require('rollup-plugin-uglify');
 
+const eslint = require('gulp-eslint');
+const stylelint = require('gulp-stylelint');
+
 /* -------------------------------------------------------- */
 /* ------------------------  CSS  ------------------------- */
 
@@ -83,6 +86,30 @@ gulp.task('build-js', function (callback) {
   runSequence(['clean-files'], ['js'], callback)
 });
 
+/* -------------------------------------------------------- */
+/* ---------------------  Lint  --------------------- */
+
+gulp.task('eslint', () => {
+  return gulp.src(['source/javascripts/**/*.js'])
+      .pipe(eslint())
+      .pipe(eslint.format())
+      .pipe(eslint.failAfterError());
+});
+
+gulp.task('stylelint', () => {
+  return gulp.src([
+    'source/stylesheets/**/*.scss'
+  ])
+  .pipe(stylelint({
+    failAfterError: true,
+    reporters: [
+      {
+        formatter: 'string',
+        console: true
+      }
+    ]
+  }))
+});
 
 /* -------------------------------------------------------- */
 
@@ -108,8 +135,8 @@ gulp.task('watch', function() {
     'source/javascripts/*.js'
   ];
 
-  gulp.watch(cssVendors, ['build-css', 'build-js']);
-  gulp.watch(jsVendors, ['build-css', 'build-js']);
+  gulp.watch(cssVendors, ['stylelint', 'build-css']);
+  gulp.watch(jsVendors, ['eslint', 'build-js']);
 
 });
 
@@ -117,7 +144,7 @@ gulp.task('watch', function() {
 
 // development workflow task
 gulp.task('dev', function (cb) {
-  runSequence(['build-css', 'build-js'], ['watch'], cb);
+  runSequence(['eslint', 'stylelint', 'build-css', 'build-js'], ['watch'], cb);
 });
 
 gulp.task('default', ['dev']);
