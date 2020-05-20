@@ -1,6 +1,6 @@
 {
   "name": "hexo-theme-idea",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "",
   "author": "lh1me",
   "private": true,
@@ -10,11 +10,12 @@
     "stylelint": "stylelint source/stylesheets/**/*.scss --fix"
   },
   "dependencies": {
-    "jquery": "^3.4.1"
+    "boxicons": "^2.0.5",
+    "jquery": "^3.5.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.5.4",
-    "@babel/preset-env": "^7.0.0",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
     "babel-eslint": "^10.1.0",
     "browser-sync": "^2.18.13",
     "del": "^3.0.0",
@@ -35,11 +36,11 @@
     "gulp-uglify": "^3.0.2",
     "partialify": "^3.1.6",
     "prettier": "2.0.5",
-    "rollup": "^1.16.7",
-    "rollup-plugin-babel": "^4.3.3",
+    "rollup": "^1.32.1",
+    "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-commonjs": "^10.0.1",
     "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-uglify": "^6.0.2",
+    "rollup-plugin-uglify": "^6.0.4",
     "run-sequence": "^2.2.0",
     "stream-series": "^0.1.1",
     "stylelint": "^13.5.0",

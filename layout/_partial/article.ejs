@@ -9,13 +9,13 @@
 
     <%- partial('post/gallery') %>
 
-    <% if (post.link || post.title){ %>
+    <% if ((post.link || post.title) && post.layout !== 'tweet'){ %>
       <header class="article-header">
         <%- partial('post/title', {class_name: 'article-title'}) %>
       </header>
     <% } %>
 
-    <div class="article-more-info hairline">
+    <div class="article-more-info article-more-info-<%= post.layout %> hairline" >
       <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
       <% if (post.categories && post.categories.length){ %>
         <div class="article-category">
@@ -45,12 +45,16 @@
 
   </div>
 
-  <%- partial('post/reprint') %>
+  <% if (post.layout !== 'tweet') { %>
 
-  <%- partial('post/refer') %>
-
-  <%- partial('post/copyright') %>
-
+    <%- partial('post/reprint') %>
+  
+    <%- partial('post/refer') %>
+  
+    <%- partial('post/copyright') %>
+  
+  <% } %>
+    
   <%- partial('post/nav') %>
 
   <section class="share">

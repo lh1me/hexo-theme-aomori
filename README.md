@@ -180,11 +180,22 @@ link_refer:
 
 ---
 
+
+## 文章可选风格
+
+### Tweet
+
+``` yml
+layout: tweet
+```
+
+---
+
 ## More
 
-主题仍会更新维护，有好的想法可以评论留言
+主题仍在更新维护，欢迎 PR。
 
-文档暂时不完善，有空后续完善
+完。
 
 # Copyright & License
 

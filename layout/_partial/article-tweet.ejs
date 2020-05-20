@@ -3,35 +3,20 @@
   class="article article-type-<%= post.layout %>"
 >
 
-  <div class="article-inner">
-    <% if (post.photos && post.photos.length){ %>
-      <div class="article-feature">
-          <a href="<%- url_for(post.path) %>">
-            <% if (post.cover){ %>
-              <img src="<%- url_for(post.cover) %>" alt="item.title" />
-            <% } else { %>
-              <img src="<%- url_for(post.photos[0]) %>" alt="item.title" />
-            <% } %>
-          </a>
-      </div>
+<div class="article-tweet article-type-<%= post.layout %>-inner">
+
+  <box-icon class="article-tweet-quote" type='solid' name='quote-left' color="#CCC"></box-icon>
+
+  <div class="article-tweet-content post-inner-html">
+    <% if (post.excerpt){ %>
+      <%- post.excerpt %>
+    <% } else { %>
+      <%- post.content %>
     <% } %>
-
-    <div class="article-body">
-      <header class="article-title">
-        <a href="<%- url_for(post.path) %>"><%= post.title %></a>
-      </header>
-      <div class="article-entry post-inner-html">
-        <% if (post.excerpt){ %>
-          <%- post.excerpt %>
-        <% } else { %>
-          <%- post.content %>
-        <% } %>
-      </div>
-    </div>
-
   </div>
 
   <footer class="article-footer">
+    <a class="article-footer-common" href="<%- url_for(post.path) %>">评论</a>
     <div class="article-more-info">
       <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
       <% if (post.categories && post.categories.length){ %>
@@ -56,6 +41,5 @@
       <% } %>
     </div>
   </footer>
-
 
 </article>

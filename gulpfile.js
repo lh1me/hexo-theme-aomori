@@ -135,8 +135,8 @@ gulp.task('watch', function() {
     'source/javascripts/*.js'
   ];
 
-  gulp.watch(cssVendors, ['stylelint', 'build-css']);
-  gulp.watch(jsVendors, ['eslint', 'build-js']);
+  gulp.watch(cssVendors, ['stylelint', 'build-css', 'build-js']);
+  gulp.watch(jsVendors, ['eslint', 'build-css', 'build-js']);
 
 });
 

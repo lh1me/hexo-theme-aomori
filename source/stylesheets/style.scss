@@ -391,12 +391,14 @@ a:hover {
             justify-content: flex-end;
             padding: 20px 0 0;
             // font-family: 'oswald', sans-serif;
+            
             .article-more-info {
                 display: flex;
 
                 .article-date {
                     align-items: center;
                     border-left: 3px solid $color-light;
+                    color: $color-white;
                     display: flex;
                     margin-left: 10px;
                     padding-left: 5px;
@@ -434,6 +436,41 @@ a:hover {
 
                 &:hover {
                     color: $color-type;
+                }
+            }
+        }
+
+        // Tweet
+        .article-tweet {
+            position: relative;
+
+            &-quote {
+                height: 50px;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 50px;
+            }
+
+            &-content {
+                padding: 10px 0 10px 80px;
+
+                p {
+                    font-weight: 300;
+                    margin: 0;
+                }
+            }
+
+            .article-footer {
+                justify-content: start;
+                padding-left: 70px;
+
+                &-common {
+                    align-items: center;
+                    border-left: 3px solid $color-light;
+                    display: flex;
+                    margin-left: 10px;
+                    padding-left: 5px;
                 }
             }
         }
@@ -488,9 +525,14 @@ a:hover {
             padding: 0 0 30px;
             position: relative;
 
+            &-tweet {
+                padding-bottom: 20px;
+            }
+
             .article-date {
                 align-items: center;
                 border-left: 3px solid $color-light;
+                color: $color-white;
                 display: flex;
                 margin-right: 10px;
                 padding-left: 5px;
