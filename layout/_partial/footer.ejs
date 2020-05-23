@@ -13,7 +13,7 @@
 <%- js('dist/build.js?' + theme.version) %>
 <%- js('dist/custom.js?' + theme.version) %>
 
-<% if (theme.baidu_sitepush) { %>
+<% if (config.baidu_sitepush || theme.baidu_sitepush) { %>
 <!-- 百度链接提交 -->
 <script>
   (function(){
@@ -31,7 +31,7 @@
 </script>    
 <% } %>
 
-<% if (theme.google_analytics) { %>
+<% if (config.google_analytics || theme.google_analytics) { %>
 <!-- Google Analytics-->
 <script async src="https://www.googletagmanager.com/gtag/js?id=<%= theme.google_analytics %>"></script>
 <script>
@@ -42,7 +42,7 @@
 </script>
 <% } %>
 
-<% if (theme.baidu_analytics) { %>
+<% if (config.baidu_analytics || theme.baidu_analytics) { %>
 <!-- Baidu Analytics-->
 <script type="text/javascript">
   var _hmt = _hmt || [];
