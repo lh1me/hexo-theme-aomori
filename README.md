@@ -96,14 +96,6 @@ social:
   github: '/'
 ```
 
-### Disqus 评论
-
-填入 Disqus ID
-
-``` yml
-disqus_shortname: ''
-```
-
 ### 百度链接提交
 
 ``` yml
@@ -187,6 +179,33 @@ link_refer:
 
 ``` yml
 layout: tweet
+```
+
+---
+
+## 文章评论
+
+### Disqus
+
+填入 Disqus ID
+
+``` yml
+disqus_shortname: ''
+```
+
+### Gitalk
+
+``` yml
+gitalk:
+  enable: true
+  clientID: GitHub Application Client ID
+  clientSecret: GitHub Application Client Secret
+  repo: GitHub repo
+  owner: GitHub repo owner
+  admin: 
+    - GitHub repo owner and collaborators
+    - GitHub repo owner and collaborators
+  distractionFreeMode: true // Facebook-like distraction free mode
 ```
 
 ---
