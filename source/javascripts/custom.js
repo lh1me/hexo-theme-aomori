@@ -1,6 +1,5 @@
 import { addNewClass, removeClass, throttle } from './class-module'
-
-document.addEventListener('DOMContentLoaded', function () {
+;(function () {
     let toggles = document.querySelectorAll('.cases .item')
     toggles.forEach((toggle) => {
         toggle.addEventListener(
@@ -128,4 +127,4 @@ document.addEventListener('DOMContentLoaded', function () {
         $('.header-menu-mobile-menu').fadeOut(300)
         removeClass($('body'), 'mobile-menu-fixed')
     })
-})
+})()
