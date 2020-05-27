@@ -28,7 +28,7 @@
 
 ## 开始使用
 
-基本使用配置，需要在 `Hexo config.yml` 进行以下设置
+基本使用配置，需要在全站 `_config.yml` 进行以下设置
 
 1. 启用主题
 
@@ -47,15 +47,15 @@ highlight:
 
 ## 主题可选功能
 
-配置文件目录 `themes/主题文件夹名/_config.yml`
+配置文件：主题 `_config.yml`
 
-### 头像
+#### 头像
 
 ``` yml
 logo: /images/avatar.jpg
 ```
 
-### 头部菜单
+#### 头部菜单
 
 ``` yml
 menu:
@@ -63,26 +63,26 @@ menu:
   Archives: /archives
 ```
 
-### 语言包
+#### 语言包
 
 ``` yml
 language: cn
 ```
 
-### 文章内容导航 TOC
+#### 文章内容导航 TOC
 
 ``` yml
 widgets:
   - toc
 ```
 
-### 知识共享使用许可
+#### 知识共享使用许可
 
 ``` yml
 copyright: true # or false
 ```
 
-### 社交媒体
+#### 社交媒体
 
 支持显示以下社交媒体
 
@@ -96,19 +96,19 @@ social:
   github: '/'
 ```
 
-### 百度链接提交
+#### 百度链接提交
 
 ``` yml
 baidu_sitepush: true  # or false
 ```
 
-### 百度统计
+#### 百度统计
 
 ``` yml
 baidu_analytics: ''
 ```
 
-### Google 统计
+#### Google 统计
 
 ``` yml
 google_analytics: 'UA-XXXXX-X'
@@ -118,9 +118,9 @@ google_analytics: 'UA-XXXXX-X'
 
 ## 文章可选功能
 
-配置在文章 Markdown 文件
+配置文件：文章头部
 
-### 封面图片
+#### 封面图片
 
 可配多张
 
@@ -128,7 +128,7 @@ google_analytics: 'UA-XXXXX-X'
 cover: xxx.jpg
 ```
 
-### 文字头部图片
+#### 文字头部图片
 
 可配多张
 
@@ -138,7 +138,7 @@ photos:
 - xxx.jpg
 ```
 
-### 转载链接
+#### 转载链接
 
 可配多条
 
@@ -154,7 +154,7 @@ link_reprint:
     title: title
 ```
 
-### 参考链接
+#### 参考链接
 
 可配多条
 
@@ -175,7 +175,9 @@ link_refer:
 
 ## 文章可选风格
 
-### Tweet
+配置文件：文章头部
+
+#### Tweet
 
 ``` yml
 layout: tweet
@@ -185,7 +187,9 @@ layout: tweet
 
 ## 文章评论
 
-### Disqus
+配置文件：全站 `_config.yml`
+
+#### Disqus
 
 填入 Disqus ID
 
@@ -193,7 +197,7 @@ layout: tweet
 disqus_shortname: ''
 ```
 
-### Gitalk
+#### Gitalk
 
 ``` yml
 gitalk:
@@ -218,4 +222,4 @@ gitalk:
 
 # Copyright & License
 
-Copyright (c) 2019 LIN HONG - Released under the [MIT license](LICENSE).
+Copyright (c) 2020 LIN HONG - Released under the [MIT license](LICENSE).
