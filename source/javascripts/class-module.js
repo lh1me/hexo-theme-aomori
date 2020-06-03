@@ -48,13 +48,16 @@ export function removeClass(elements, myClass) {
 }
 
 // 函数节流
-export function throttle(fn) {
-    let lastTime = null
-    return () => {
-        const nowTime = new Date().getTime()
-        if (nowTime - lastTime > 30 || !lastTime) {
-            fn()
-            lastTime = nowTime
+export function throttle(fn, scope) {
+    let timer
+    return function () {
+        const context = scope || this
+        const args = arguments
+        if (!timer) {
+            timer = setTimeout(function () {
+                fn.apply(context, args)
+                timer = null
+            }, 20)
         }
     }
 }
