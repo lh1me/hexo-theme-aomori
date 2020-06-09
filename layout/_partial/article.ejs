@@ -12,25 +12,34 @@
         <% } %>
 
         <div class="article-more-info article-more-info-<%= post.layout %> hairline">
+
             <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
+
             <% if (post.categories && post.categories.length){ %>
             <div class="article-category">
                 <%- list_categories(post.categories, {
-            show_count: false,
-            class: 'article-category',
-            style: 'none',
-            separator: ',',
-            depth: 1
-          }) %>
+                    show_count: false,
+                    class: 'article-category',
+                    style: 'none',
+                    separator: ',',
+                    depth: 1
+                }) %>
             </div>
             <% } %>
+
             <% if (post.tags && post.tags.length){ %>
             <div class="article-tag">
                 <%- list_tags(post.tags, {
-            show_count: false,
-            class: 'article-tag',
-            amount: 3
-          }) %>
+                    show_count: false,
+                    class: 'article-tag',
+                    amount: 3
+                }) %>
+            </div>
+            <% } %>
+
+            <% if (config.busuanzi || theme.busuanzi){ %>
+            <div class="article-busuanzi">
+                有 <span id="busuanzi_value_page_pv">N</span> 人看过
             </div>
             <% } %>
         </div>
@@ -89,4 +98,8 @@
 <section class="comments">
     <div id="gitalk-container"></div>
 </section>
+<% } %>
+
+<% if (config.busuanzi || theme.busuanzi){ %>
+<script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <% } %>

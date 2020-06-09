@@ -543,7 +543,6 @@ a:hover {
                 border-left: 3px solid $color-light;
                 display: flex;
                 margin-right: 10px;
-                padding: 0 15px;
                 padding-left: 5px;
             }
 
@@ -562,6 +561,15 @@ a:hover {
                         margin: 0;
                     }
                 }
+            }
+            
+            .article-busuanzi {
+                align-items: center;
+                border-left: 3px solid $color-light;
+                color: $color-white;
+                display: flex;
+                margin-right: 10px;
+                padding-left: 5px;
             }
 
             a {
