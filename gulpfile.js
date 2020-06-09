@@ -3,7 +3,6 @@
 // Tool
 const gulp = require('gulp');
 const concat = require('gulp-concat'); // 合并文件
-const runSequence = require('run-sequence'); // Task同步执行工具
 const plumber = require('gulp-plumber');
 const del = require('del'); // 文件删除
 const notify = require('gulp-notify'); // Gulp 提示工具
@@ -23,6 +22,15 @@ const uglify = require('rollup-plugin-uglify');
 
 const eslint = require('gulp-eslint');
 const stylelint = require('gulp-stylelint');
+
+/* -------------------------------------------------------- */
+
+// 清理旧文件
+// gulp.task('clean-files', function(cb) {
+//   return del([
+//     'source/dist/*'
+//   ], cb);
+// });
 
 /* -------------------------------------------------------- */
 /* ------------------------  CSS  ------------------------- */
@@ -51,9 +59,7 @@ gulp.task('css', function () {
       .pipe(gulp.dest('source/dist'))
 });
 
-gulp.task('build-css', function (callback) {
-  runSequence(['clean-files'], ['css'], callback)
-});
+gulp.task('build-css', gulp.series('css'));
 
 /* -------------------------------------------------------- */
 /* ---------------------  JavaScript  --------------------- */
@@ -82,9 +88,8 @@ gulp.task('js', async function () {
       
 });
 
-gulp.task('build-js', function (callback) {
-  runSequence(['clean-files'], ['js'], callback)
-});
+gulp.task('build-js', gulp.series('js'));
+
 
 /* -------------------------------------------------------- */
 /* ---------------------  Lint  --------------------- */
@@ -113,13 +118,6 @@ gulp.task('stylelint', () => {
 
 /* -------------------------------------------------------- */
 
-// 清理旧文件
-gulp.task('clean-files', function(cb) {
-  return del([
-    'source/dist/*'
-  ], cb);
-});
-
 //监测任务
 gulp.task('watch', function() {
 
@@ -135,19 +133,17 @@ gulp.task('watch', function() {
     'source/javascripts/*.js'
   ];
 
-  gulp.watch(cssVendors, ['stylelint', 'build-css', 'build-js']);
-  gulp.watch(jsVendors, ['eslint', 'build-css', 'build-js']);
+  gulp.watch(cssVendors, gulp.series('stylelint', 'build-css', 'build-js'));
+  gulp.watch(jsVendors, gulp.series('eslint', 'build-css', 'build-js'));
 
 });
 
 /* -------------------------------------------------------- */
 
 // development workflow task
-gulp.task('dev', function (cb) {
-  runSequence(['eslint', 'stylelint', 'build-css', 'build-js'], ['watch'], cb);
-});
+gulp.task('dev', gulp.series('eslint', 'stylelint', 'build-css', 'build-js', 'watch'));
 
-gulp.task('default', ['dev']);
+gulp.task('default', gulp.series('dev'));
 
 
 /* -------------------------------------------------------- */
