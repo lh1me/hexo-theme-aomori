@@ -114,6 +114,14 @@ baidu_analytics: ''
 google_analytics: 'UA-XXXXX-X'
 ```
 
+#### 不蒜子 统计
+
+由 [不蒜子](https://busuanzi.ibruce.info/) 提供的计数服务
+
+``` yml
+busuanzi: true
+```
+
 ---
 
 ## 文章可选功能
