@@ -269,6 +269,34 @@ a:hover {
             }
         }
 
+        .widget-tags {
+            .tag-list {
+                .tag-list-item {
+                    border: 1px dashed $color-white;
+                    border-radius: 3px;
+                    box-sizing: border-box;
+                    display: inline-block;
+                    line-height: 24px;
+                    margin-bottom: 10px;
+                    margin-right: 10px;
+                    padding: 0 8px;
+                    transition: all 0.2s;
+
+                    a {
+                        color: $color-white;
+                    }
+                }
+
+                .tag-list-item:hover {
+                    border-color: $color-main;
+
+                    a {
+                        color: $color-main;
+                    }
+                }
+            }
+        }
+
         .widget-recent-posts {
             li {
                 padding: 0 0 5px 12px;
@@ -401,7 +429,7 @@ a:hover {
                     color: $color-white;
                     display: flex;
                     margin-left: 10px;
-                    padding-left: 5px;
+                    padding-left: 8px;
                 }
 
                 .article-category {
@@ -409,7 +437,7 @@ a:hover {
                     border-left: 3px solid $color-light;
                     display: flex;
                     margin-left: 10px;
-                    padding-left: 5px;
+                    padding-left: 8px;
                 }
 
                 .article-tag {
@@ -417,16 +445,17 @@ a:hover {
                     border-left: 3px solid $color-light;
                     display: flex;
                     margin-left: 10px;
-                    padding-left: 5px;
+                    padding-left: 8px;
 
                 }
 
                 .article-tag-list {
+                    display: flex;
                     margin: 0;
 
                     li {
                         list-style: none;
-                        margin: 0;
+                        margin: 0 3px 0 0;
                     }
                 }
             }
@@ -535,7 +564,7 @@ a:hover {
                 color: $color-white;
                 display: flex;
                 margin-right: 10px;
-                padding-left: 5px;
+                padding-left: 8px;
             }
 
             .article-category {
@@ -543,7 +572,7 @@ a:hover {
                 border-left: 3px solid $color-light;
                 display: flex;
                 margin-right: 10px;
-                padding-left: 5px;
+                padding-left: 8px;
             }
 
             .article-tag {
@@ -551,14 +580,15 @@ a:hover {
                 border-left: 3px solid $color-light;
                 display: flex;
                 margin-right: 10px;
-                padding-left: 5px;
+                padding-left: 8px;
 
                 .article-tag-list {
+                    display: flex;
                     margin: 0;
 
                     li {
                         list-style: none;
-                        margin: 0;
+                        margin: 0 3px 0 0;
                     }
                 }
             }
@@ -569,7 +599,7 @@ a:hover {
                 color: $color-white;
                 display: flex;
                 margin-right: 10px;
-                padding-left: 5px;
+                padding-left: 8px;
             }
 
             a {
