@@ -9,14 +9,14 @@
     </div>
 </footer>
 
-<% if (config.gitalk || theme.gitalk){ %>
+<% if (config.aomori_gitalk){ %>
 <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 <% } %>
 
 <%- js('dist/build.js?' + theme.version) %>
 <%- js('dist/custom.js?' + theme.version) %>
 
-<% if (config.baidu_sitepush || theme.baidu_sitepush) { %>
+<% if (config.aomori_baidu_sitepush) { %>
 <!-- 百度链接提交 -->
 <script>
     (function () {
@@ -34,24 +34,24 @@
 </script>
 <% } %>
 
-<% if (config.google_analytics || theme.google_analytics) { %>
+<% if (config.aomori_google_analytics) { %>
 <!-- Google Analytics-->
-<script async src="https://www.googletagmanager.com/gtag/js?id=<%= theme.google_analytics %>"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=<%= config.aomori_google_analytics %>"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-    gtag('config', '<%= theme.google_analytics %>');
+    gtag('config', '<%= config.aomori_google_analytics %>');
 </script>
 <% } %>
 
-<% if (config.baidu_analytics || theme.baidu_analytics) { %>
+<% if (config.aomori_baidu_analytics) { %>
 <!-- Baidu Analytics-->
 <script type="text/javascript">
     var _hmt = _hmt || [];
     (function () {
         var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?{{ theme.baidu_analytics }}";
+        hm.src = "https://hm.baidu.com/hm.js?{{ config.aomori_baidu_analytics }}";
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
     })();

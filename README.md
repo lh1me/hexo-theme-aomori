@@ -28,7 +28,7 @@
 
 ## 开始使用
 
-基本使用配置，需要在全站 `_config.yml` 进行以下设置
+基本使用配置，需要在全局 `_config.yml` 进行以下设置
 
 1. 启用主题
 
@@ -47,71 +47,67 @@ highlight:
 
 ## 主题可选功能
 
-配置文件：主题 `_config.yml`
+主题可选配置，需要在全局 `_config.yml` 进行以下设置
 
 #### 头像
 
 ``` yml
-logo: /images/avatar.jpg
+aomori_logo: /images/avatar.jpg
 ```
 
 #### 头部菜单
 
 ``` yml
-menu:
+aomori_menu:
   Home: /
   Archives: /archives
-```
-
-#### 语言包
-
-``` yml
-language: cn
 ```
 
 #### 文章内容导航 TOC
 
 ``` yml
-widgets:
+aomori_widgets:
   - toc
 ```
 
 #### 知识共享使用许可
 
 ``` yml
-copyright: true # or false
+aomori_copyright: true # or false
 ```
 
 #### 社交媒体
 
-支持显示以下社交媒体
+`icon` 填入 [Boxicons](https://boxicons.com/) Icon Name
+
+`url` 链接地址
 
 ``` yml
-social:
-  facebook: '/'
-  twitter: '/'
-  weibo: '/'
-  dribbble: '/'
-  instagram: '/'
-  github: '/'
+aomori_social:
+  -
+    icon:
+    url:
+  -
+    icon:
+    url:
 ```
 
 #### 百度链接提交
 
 ``` yml
-baidu_sitepush: true  # or false
+aomori_baidu_sitepush: true  # or false
 ```
 
 #### 百度统计
 
 ``` yml
-baidu_analytics: ''
+aomori_baidu_analytics: ''
 ```
 
 #### Google 统计
 
 ``` yml
-google_analytics: 'UA-XXXXX-X'
+aomori_google_analytics: 'UA-XXXXX-X'
 ```
 
 #### 不蒜子 统计
@@ -119,7 +115,7 @@ google_analytics: 'UA-XXXXX-X'
 由 [不蒜子](https://busuanzi.ibruce.info/) 提供的计数服务
 
 ``` yml
-busuanzi: true
+aomori_busuanzi: true
 ```
 
 ---
@@ -202,13 +198,13 @@ layout: tweet
 填入 Disqus ID
 
 ``` yml
-disqus_shortname: ''
+aomori_disqus_shortname: ''
 ```
 
 #### Gitalk
 
 ``` yml
-gitalk:
+aomori_gitalk:
   enable: true
   clientID: GitHub Application Client ID
   clientSecret: GitHub Application Client Secret
@@ -226,7 +222,6 @@ gitalk:
 
 主题仍在更新维护，欢迎 PR。
 
-完。
 
 # Copyright & License
 

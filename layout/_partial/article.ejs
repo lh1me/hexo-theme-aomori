@@ -37,7 +37,7 @@
             </div>
             <% } %>
 
-            <% if (config.busuanzi || theme.busuanzi){ %>
+            <% if (config.aomori_busuanzi){ %>
             <div class="article-busuanzi">
                 有 <span id="busuanzi_value_page_pv">N</span> 人看过
             </div>
@@ -80,13 +80,13 @@
 
 </article>
 
-<% if (config.disqus_shortname || theme.disqus_shortname){ %>
+<% if (config.aomori_disqus_shortname){ %>
 <section class="comments">
     <div id="disqus_thread"></div>
     <script>
         (function () { // DON'T EDIT BELOW THIS LINE
             var d = document, s = d.createElement('script');
-            s.src = 'https://<%- theme.disqus_shortname %>.disqus.com/embed.js';
+            s.src = 'https://<%- config.aomori_disqus_shortname %>.disqus.com/embed.js';
             s.setAttribute('data-timestamp', +new Date());
             (d.head || d.body).appendChild(s);
         })();
@@ -94,12 +94,12 @@
 </section>
 <% } %>
 
-<% if (config.gitalk || theme.gitalk){ %>
+<% if (config.aomori_gitalk){ %>
 <section class="comments">
     <div id="gitalk-container"></div>
 </section>
 <% } %>
 
-<% if (config.busuanzi || theme.busuanzi){ %>
+<% if (config.aomori_busuanzi){ %>
 <script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <% } %>
