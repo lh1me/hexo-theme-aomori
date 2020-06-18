@@ -88,20 +88,43 @@ a:hover {
     }
 
     .header-menu {
-        line-height: 40px;
-        padding-top: 40px;
+        align-items: center;
+        display: flex;
+        flex: 1;
+        justify-content: flex-end;
+        
+        &-inner {
+            line-height: 40px;
+            margin-right: 5px;
 
-        a {
-            border-radius: 5px;
-            color: $color-type;
-            font-size: 14px;
-            padding: 10px;
+            a {
+                border-radius: 5px;
+                color: $color-type;
+                font-size: 14px;
+                padding: 10px;
+            }
+    
+            a:hover {
+                background: $color-type;
+                color: #fefefe;
+            }
         }
 
-        a:hover {
-            background: #3c4859;
-            color: #fefefe;
+        &-social {
+            display: flex;
+
+            a {
+                align-items: center;
+                display: flex;
+                fill: $color-type;
+                padding: 0 5px;
+            }
+
+            a:hover {
+                fill: $color-light;
+            }
         }
+
     }
 
     .header-menu-mobile {
@@ -111,7 +134,7 @@ a:hover {
 
         &-inner {
             .icon {
-                color: #3c4859;
+                color: $color-type;
                 height: 25px;
                 width: 25px;
             }
@@ -175,7 +198,7 @@ a:hover {
         width: 25px;
 
         .icon {
-            color: #3c4859;
+            color: $color-type;
             height: 25px;
             width: 25px;
         }
@@ -756,19 +779,6 @@ a:hover {
                 line-height: 20px;
                 margin-right: 5px;
             }
-
-            .social {
-                display: inline-block;
-                height: 18px;
-                margin: 0 0 0 8px;
-                width: 18px;
-
-                .n-icon {
-                    height: 18px;
-                    transition: all 0.3s;
-                    width: 18px;
-                }
-            }
         }
 
         .footer-powered {
@@ -813,5 +823,4 @@ a:hover {
 
 /* import */
 
-@import './icons';
 @import './media-fixed';

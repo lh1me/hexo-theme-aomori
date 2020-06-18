@@ -25,15 +25,6 @@ archive_type: 'yearly'
 # Site Info
 logo: /images/avatar.jpg
 
-# Social
-social:
-  # facebook: '/'
-  # twitter: '/'
-  # weibo: '/'
-  # dribbble: '/'
-  # instagram: '/'
-  github: 'https://github.com/lh1me'
-
 # More Config
 # disqus_shortname: 
 # baidu_analytics:
