@@ -66,16 +66,16 @@
         <div class="share-title"><%= __('share') %></div>
         <a class="share-item" target="_blank"
             href="https://twitter.com/share?text=<%- post.title %> - <%- config.title %>&url=<%- post.permalink %>">
-            <div class="n-icon n-icon-twitter"></div>
+            <box-icon type='logo' name='twitter'></box-icon>
         </a>
         <a class="share-item" target="_blank"
             href="https://www.facebook.com/sharer.php?title=<%- post.title %> - <%- config.title %>&u=<%- post.permalink %>">
-            <div class="n-icon n-icon-facebook"></div>
+            <box-icon name='facebook-square' type='logo' ></box-icon>
         </a>
-        <a class="share-item" target="_blank"
+        <!-- <a class="share-item" target="_blank"
             href="https://service.weibo.com/share/share.php?title=<%- post.title %> - <%- config.title %>&url=<%- post.permalink %>&pic=">
             <div class="n-icon n-icon-weibo"></div>
-        </a>
+        </a> -->
     </section>
 
 </article>

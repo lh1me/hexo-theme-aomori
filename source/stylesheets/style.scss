@@ -714,13 +714,15 @@ a:hover {
                 border-radius: 50%;
                 box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.04);
                 display: flex;
+                fill: $color-type;
                 height: 2rem;
                 justify-content: center;
                 margin-bottom: 10px;
+                transition: all 0.3s;
                 width: 2rem;
 
-                .n-icon {
-                    transition: all 0.3s;
+                &:hover {
+                    fill: $color-light;
                 }
             }
         }
