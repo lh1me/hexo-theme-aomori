@@ -63,11 +63,15 @@ aomori_menu:
   Archives: /archives
 ```
 
-#### 文章内容导航 TOC
+#### 侧边栏菜单
 
 ``` yml
 aomori_widgets:
-  - toc
+  - toc # 文章导航
+  - category  #文章分类
+  - tag # 文章标签
+  - recent_posts  # 最新文章
+  - archive #文章归档
 ```
 
 #### 知识共享使用许可
