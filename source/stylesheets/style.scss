@@ -780,12 +780,14 @@ a:hover {
             span {
                 line-height: 20px;
                 margin-right: 5px;
+                user-select: none;
             }
         }
 
         .footer-powered {
             color: $color-white;
             line-height: 4rem;
+            user-select: none;
         }
 
         a {
