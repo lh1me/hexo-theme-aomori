@@ -126,7 +126,7 @@ aomori_busuanzi: true
 
 ## 文章可选功能
 
-配置文件：文章头部
+配置文件：文章 Front-matter
 
 #### 封面图片
 
