@@ -130,7 +130,7 @@ aomori_busuanzi: true
 
 #### 封面图片
 
-可配多张
+使用 `相对路径`，参照 [资源文件夹](https://hexo.io/zh-cn/docs/asset-folders)
 
 ``` yml
 cover: xxx.jpg
@@ -138,7 +138,7 @@ cover: xxx.jpg
 
 #### 文字头部图片
 
-可配多张
+可配多张，使用 `相对路径 `，参照 [资源文件夹](https://hexo.io/zh-cn/docs/asset-folders)
 
 ``` yml
 photos:
