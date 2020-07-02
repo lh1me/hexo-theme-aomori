@@ -1,0 +1,38 @@
+<div class="friends-links clearfix">
+    <% for (var link in site.data.friends) { %>
+    <a href="<%= site.data.friends[link].url %>" rel="nofollow" target="_blank"> <%= site.data.friends[link].name %> </a>
+    <% } %>
+</div>
+
+<% if (post.content){ %>
+<article
+  id="<%= post.layout %>-<%= post._id %>"
+  class="article article-type-<%= post.layout %>"
+>
+    <div class="article-inner">
+        <div class="article-entry post-inner-html">
+            <%- post.content %>
+        </div>
+    </div>
+</article>
+<% } %>
+    
+<% if (post.comment && config.aomori_disqus_shortname){ %>
+<section class="comments">
+  <div id="disqus_thread"></div>
+  <script>
+      (function () { // DON'T EDIT BELOW THIS LINE
+          var d = document, s = d.createElement('script');
+          s.src = 'https://<%- config.aomori_disqus_shortname %>.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+      })();
+  </script>
+</section>
+<% } %>
+
+<% if (post.comment && config.aomori_gitalk){ %>
+<section class="comments">
+  <div id="gitalk-container"></div>
+</section>
+<% } %>

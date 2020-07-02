@@ -39,6 +39,15 @@ a:hover {
     color: $color-light;
 }
 
+.clearfix::after {
+    clear: both;
+    content: '';
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+}
+
 /* 1px 下划线 */
 
 .hairline::after {
@@ -84,6 +93,13 @@ a:hover {
         a {
             color: $color-type;
             font-family: 'oswald', sans-serif;
+            margin-top: -4px;
+        }
+
+        .page-title {
+            font-size: 18px;
+            font-weight: 300;
+            margin-left: 10px;
         }
     }
 
@@ -530,7 +546,8 @@ a:hover {
 }
 
 /* 文章内页 */
-.post {
+.post,
+.tweet {
     margin-bottom: 60px;
 
     .article {
@@ -826,5 +843,5 @@ a:hover {
 }
 
 /* import */
-
+@import './page';
 @import './media-fixed';

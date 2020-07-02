@@ -1,1 +1,4 @@
-<%- partial('_partial/article', {post: page, index: false}) %>
+
+<div class="<%= page.layout %>">
+  <%- partial(`_partial/page/${page.layout}`, {post: page, index: false}) %>
+</div>

@@ -222,6 +222,44 @@ aomori_gitalk:
 
 ---
 
+## 页面
+
+#### 友情链接
+
+首先创建页面
+
+```
+hexo new page friends
+```
+
+前往 `source/friends/index.md` 文件，设置 Front-matter
+
+```
+title: 友情链接 # 文章标题
+layout: friends
+comment: true # 是否需要评论 true: 是 false: 否
+```
+
+创建数据，参照 [数据文件夹](https://hexo.io/zh-cn/docs/data-files)
+
+创建 `source/_data/friends.json`，格式如下
+
+```
+[
+  {
+    "name": "test1",
+    "url": "https://linhong.me"
+  },
+  {
+    "name": "test2",
+    "url": "https://linhong.me"
+  }
+  ...
+]
+```
+
+---
+
 ## More
 
 主题仍在更新维护，欢迎 PR。

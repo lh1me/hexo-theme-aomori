@@ -7,6 +7,9 @@
             </div>
             <% } %>
             <a href="/"><%= config.title %></a>
+            <% if (is_page()){ %>
+                <span class="page-title"><%= page.title %></span>
+            <% } %>
         </div>
         <div class="header-menu">
             <div class="header-menu-inner">

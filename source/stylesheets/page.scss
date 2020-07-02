@@ -1,0 +1,31 @@
+
+.friends {
+    margin-bottom: 60px;
+
+    .article {
+        background: #fff;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        padding: 20px;
+        position: relative;
+
+        // .article-entry {}
+    }
+
+    &-links {
+        a {
+            background: #fff;
+            border-radius: 8px;
+            display: block;
+            float: left;
+            margin-bottom: 20px;
+            margin-right: 20px;
+            padding: 15px 20px;
+            position: relative;
+        }
+
+        a:hover {
+            box-shadow: 0 8px 12px #ebedf0;
+        }
+    }
+}
