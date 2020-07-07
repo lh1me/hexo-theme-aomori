@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
     <% } %>
 
-    <link rel="stylesheet" href="/dist/build.css?<%- theme.version %>">
+    <%- css(`/dist/build.css?v=${theme.version}`) %>
 
     <script>
         window.aomori = {
