@@ -13,30 +13,30 @@
 
 # Aomori
 
-A Simple Hexo Theme.
+一款外表简约但内心华丽的 Hexo 主题。
 
-[中文文档](/README_CN.md)
+（想到什么功能就做什么，更新完全看心情。欢迎 PR
 
 ## Demo
 
 [https://linhong.me](https://linhong.me)
 
 
-## Install
+## 安装主题
 
-Download [下载](https://github.com/lh1me/hexo-theme-aomori/releases), unzip and place it under the Hexo theme directory
+将 [下载](https://github.com/lh1me/hexo-theme-aomori/releases) 的 ZIP 包解压放置到 Hexo 主题目录下即可
 
-## Using
+## 开始使用
 
-Basic configuration in the Global `_config.yml`
+基本使用配置，需要在全局 `_config.yml` 进行以下设置
 
-1. Enable Theme
+1. 启用主题
 
 ```
 theme: hexo-theme-aomori
 ```
 
-2. Turn off Hexo default Highlight
+2. 关闭 Hexo 默认 Highlight 代码高亮
 
 ```
 highlight:
@@ -45,17 +45,17 @@ highlight:
 
 ---
 
-## Theme Features
+## 主题可选功能
 
-Configuration in the Global `_config.yml`
+主题可选配置，需要在全局 `_config.yml` 进行以下设置
 
-#### Avatar
+#### 头像
 
 ``` yml
 aomori_logo: /images/avatar.jpg
 ```
 
-#### Navigation Menu
+#### 头部菜单
 
 ``` yml
 aomori_menu:
@@ -63,28 +63,28 @@ aomori_menu:
   Archives: /archives
 ```
 
-#### Sidebar Menu
+#### 侧边栏菜单
 
 ``` yml
 aomori_widgets:
-  - toc # Article navigation
-  - category  # Article classification
-  - tag # Article tags
-  - recent_posts  # latest articles
-  - archive # Article Archive
+  - toc # 文章导航
+  - category  #文章分类
+  - tag # 文章标签
+  - recent_posts  # 最新文章
+  - archive #文章归档
 ```
 
-#### Creative Commons License
+#### 知识共享使用许可
 
 ``` yml
 aomori_copyright: true # or false
 ```
 
-#### Social Media
+#### 社交媒体
 
-`icon` [Boxicons](https://boxicons.com/) Icon Name
+`icon` 填入 [Boxicons](https://boxicons.com/) Icon Name
 
-`url` Link address
+`url` 链接地址
 
 ``` yml
 aomori_social:
@@ -96,27 +96,27 @@ aomori_social:
     url:
 ```
 
-#### Baidu Submission
+#### 百度链接提交
 
 ``` yml
 aomori_baidu_sitepush: true  # or false
 ```
 
-#### Baidu Analytics
+#### 百度统计
 
 ``` yml
 aomori_baidu_analytics: ''
 ```
 
-#### Google Analytics
+#### Google 统计
 
 ``` yml
 aomori_google_analytics: 'UA-XXXXX-X'
 ```
 
-#### Busuanzi Count
+#### 不蒜子 统计
 
-Counting service provided by [Busuanzi](https://busuanzi.ibruce.info/)
+由 [不蒜子](https://busuanzi.ibruce.info/) 提供的计数服务
 
 ``` yml
 aomori_busuanzi: true
@@ -124,21 +124,21 @@ aomori_busuanzi: true
 
 ---
 
-## Article Features
+## 文章可选功能
 
-Configuration in the `Front-matter`
+配置文件：文章 Front-matter
 
-#### Cover Image
+#### 封面图片
 
-Use `Relative Path`, refer to resource folder [Resource Folder](https://hexo.io/zh-cn/docs/asset-folders)
+使用 `相对路径`，参照 [资源文件夹](https://hexo.io/zh-cn/docs/asset-folders)
 
 ``` yml
 cover: xxx.jpg
 ```
 
-#### Article Header Image
+#### 文字头部图片
 
-Use `Relative Path`, refer to resource folder [Resource Folder](https://hexo.io/zh-cn/docs/asset-folders)
+可配多张，使用 `相对路径 `，参照 [资源文件夹](https://hexo.io/zh-cn/docs/asset-folders)
 
 ``` yml
 photos:
@@ -146,7 +146,11 @@ photos:
 - xxx.jpg
 ```
 
-#### Reprint Link
+#### 转载链接
+
+可配多条
+
+`url` 跳转链接 / `title` 显示标题
 
 ``` yml
 link_reprint:
@@ -158,7 +162,11 @@ link_reprint:
     title: title
 ```
 
-#### Reference Link
+#### 参考链接
+
+可配多条
+
+`url` 跳转链接 / `title` 显示标题
 
 ``` yml
 link_refer:
@@ -173,9 +181,9 @@ link_refer:
 ---
 
 
-## Article Style
+## 文章可选风格
 
-Configuration in the `Front-matter`
+配置文件：文章头部
 
 #### Tweet
 
@@ -185,13 +193,13 @@ layout: tweet
 
 ---
 
-## Comment
+## 文章评论
 
-Configuration in the Global `_config.yml`
+配置文件：全站 `_config.yml`
 
 #### Disqus
 
-Input Disqus ID
+填入 Disqus ID
 
 ``` yml
 aomori_disqus_shortname: ''
@@ -214,27 +222,27 @@ aomori_gitalk:
 
 ---
 
-## Page
+## 页面
 
-#### Friends Links
+#### 友情链接
 
-First create the page,
+首先创建页面
 
 ```
 hexo new page friends
 ```
 
-Go to `source/friends/index.md`，Set up `Front-matter`
+前往 `source/friends/index.md` 文件，设置 Front-matter
 
 ```
-title:
+title: 友情链接 # 文章标题
 layout: friends
-comment: true # or false
+comment: true # 是否需要评论 true: 是 false: 否
 ```
 
-Create data, refer to [Data Files](https://hexo.io/zh-cn/docs/data-files)
+创建数据，参照 [数据文件夹](https://hexo.io/zh-cn/docs/data-files)
 
-Create `source/_data/friends.json`，The format is as follows
+创建 `source/_data/friends.json`，格式如下
 
 ```
 [
@@ -254,7 +262,7 @@ Create `source/_data/friends.json`，The format is as follows
 
 ## TODO
 
-- [ ] Scroll Bar
+- [ ] 滚动条
 
 # Copyright & License
 
