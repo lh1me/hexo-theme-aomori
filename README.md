@@ -24,7 +24,7 @@ A Simple Hexo Theme.
 
 ## Install
 
-Download [下载](https://github.com/lh1me/hexo-theme-aomori/releases), unzip and place it under the Hexo theme directory
+[Download](https://github.com/lh1me/hexo-theme-aomori/releases), unzip and place it under the Hexo theme directory
 
 ## Using
 
