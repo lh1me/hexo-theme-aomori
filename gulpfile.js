@@ -71,7 +71,9 @@ gulp.task('js', async function () {
       resolve({
         mainFields: ['module', 'main', 'jsnext', 'browser']
       }),
-      commonjs(),
+      commonjs({
+        include: 'node_modules/**'
+      }),
       babel({
         exclude: 'node_modules/**' // 只编译我们的源代码
       }),
@@ -80,7 +82,7 @@ gulp.task('js', async function () {
   })
   await bundle.write({
     file: './source/dist/custom.js',
-    format: 'iife'
+    format: 'umd'
   })
   gulp.src('source/modules/*.js')
       .pipe(concat('build.js'))

@@ -13,7 +13,8 @@ module.exports = {
     "hljs": true,
     "tocbot": true,
     "NProgress": true,
-    "Gitalk": true
+    "Gitalk": true,
+    "md5": true
   },
   extends: [
     "eslint:recommended",
