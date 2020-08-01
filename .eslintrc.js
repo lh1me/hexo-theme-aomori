@@ -14,7 +14,8 @@ module.exports = {
     "tocbot": true,
     "NProgress": true,
     "Gitalk": true,
-    "md5": true
+    "md5": true,
+    "PerfectScrollbar": true
   },
   extends: [
     "eslint:recommended",

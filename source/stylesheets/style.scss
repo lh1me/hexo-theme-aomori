@@ -228,12 +228,19 @@ a:hover {
 
 /* 主体框架 */
 .main {
-    min-height: 500px;
     position: relative;
-
+    margin-bottom: 60px;
+    
     .inner {
         padding-right: 300px;
-        // .inner-main {}
+        
+        .inner-main {
+            position: relative;
+            width: 100%;
+            height: calc(100vh - 260px);
+            border-radius: 8px;
+            overflow: hidden;
+        }
     }
 }
 
@@ -247,10 +254,12 @@ a:hover {
     width: 280px;
 
     .widget {
+        position: relative;
         background: #fff;
         border-radius: 8px;
-        margin-bottom: 10px;
-        max-height: calc(100vh - 100px);
+        margin-bottom: 20px;
+        width: 100%;
+        max-height: calc(100vh - 325px);
         overflow-y: scroll;
         padding: 20px;
 
@@ -361,7 +370,6 @@ a:hover {
     background: #fff;
     border-radius: 8px;
     cursor: pointer;
-    display: none;
     font-size: 0.7rem;
     font-weight: 300;
     padding: 15px 0;
@@ -374,13 +382,15 @@ a:hover {
 
 /* 首页 */
 .index {
-    margin-bottom: 60px;
-
     .article {
         background: #fff;
         border-radius: 8px;
         margin-bottom: 20px;
         padding: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
 
         .article-inner {
             display: flex;
