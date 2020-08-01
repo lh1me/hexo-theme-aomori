@@ -260,10 +260,6 @@ comment: true # 是否需要评论 true: 是 false: 否
 
 ---
 
-## TODO
-
-- [ ] 滚动条
-
 # Copyright & License
 
 Copyright (c) 2020 LIN HONG - Released under the [MIT license](LICENSE).

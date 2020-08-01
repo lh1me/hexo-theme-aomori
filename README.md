@@ -252,10 +252,6 @@ Create `source/_data/friends.json`，The format is as follows
 
 ---
 
-## TODO
-
-- [ ] Scroll Bar
-
 # Copyright & License
 
 Copyright (c) 2020 LIN HONG - Released under the [MIT license](LICENSE).
