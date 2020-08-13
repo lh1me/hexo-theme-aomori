@@ -237,9 +237,6 @@ a:hover {
         .inner-main {
             position: relative;
             width: 100%;
-            height: calc(100vh - 260px);
-            border-radius: 8px;
-            overflow: hidden;
         }
     }
 }
@@ -259,7 +256,7 @@ a:hover {
         border-radius: 8px;
         margin-bottom: 20px;
         width: 100%;
-        max-height: calc(100vh - 325px);
+        max-height: calc(100vh - 120px);
         overflow-y: scroll;
         padding: 20px;
 

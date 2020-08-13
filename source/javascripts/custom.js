@@ -63,7 +63,7 @@ import { addNewClass, removeClass, throttle } from './class-module'
 
     // Back to Top
     $('#backtop').click(function () {
-        $('.inner-main, .index').animate({ scrollTop: 0 }, 800)
+        $('html, body').animate({ scrollTop: 0 }, 800)
     })
 
     // Share
@@ -108,10 +108,30 @@ import { addNewClass, removeClass, throttle } from './class-module'
         removeClass($('body'), 'mobile-menu-fixed')
     })
 
+    // 监听屏幕滚动修改边栏
+    window.addEventListener(
+        'scroll',
+        throttle(() => {
+            const _top =
+                document.documentElement.scrollTop || document.body.scrollTop
+            if (_top > 100) {
+                // 边栏绝对定位
+                addNewClass('.sidebar', 'sidebar-fixed')
+                // 返回顶部按钮显示
+                $('#backtop').fadeIn(300)
+            } else {
+                // 取消边栏定位
+                removeClass('.sidebar', 'sidebar-fixed')
+                // 返回顶部按钮消失
+                $('#backtop').fadeOut(300)
+            }
+        })
+    )
+
     // Perfect Scrollbar
     const widget = document.querySelector('#widget')
-    const inner = document.querySelector('.inner-main')
-    const psBody = new PerfectScrollbar(inner)
+    // const inner = document.querySelector('.inner-main')
+    // const psBody = new PerfectScrollbar(inner)
     const ps = new PerfectScrollbar(widget)
-    console.log(psBody, ps)
+    console.log(ps)
 })()
