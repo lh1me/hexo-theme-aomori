@@ -55,6 +55,12 @@ Configuration in the Global `_config.yml`
 aomori_logo: /images/avatar.jpg
 ```
 
+#### Site Title Animated
+
+``` yml
+aomori_logo_typed_animated: true
+```
+
 #### Navigation Menu
 
 ``` yml

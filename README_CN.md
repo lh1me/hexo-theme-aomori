@@ -55,6 +55,12 @@ highlight:
 aomori_logo: /images/avatar.jpg
 ```
 
+#### 站点标题打字动画
+
+``` yml
+aomori_logo_typed_animated: true
+```
+
 #### 头部菜单
 
 ``` yml
