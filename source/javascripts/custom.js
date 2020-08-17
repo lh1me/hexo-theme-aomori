@@ -138,6 +138,9 @@ import { addNewClass, removeClass, throttle } from './class-module'
     if (window.aomori_logo_typed_animated) {
         const typed = new Typed('#typed', {
             stringsElement: '#typed-strings',
+            fadeOut: true,
+            fadeOutDelay: 800,
+            typeSpeed: 100,
         })
     }
 })()
