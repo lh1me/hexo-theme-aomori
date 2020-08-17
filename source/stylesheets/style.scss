@@ -256,7 +256,7 @@ a:hover {
         border-radius: 8px;
         margin-bottom: 20px;
         width: 100%;
-        max-height: calc(100vh - 120px);
+        max-height: calc(100vh - 190px);
         overflow-y: scroll;
         padding: 20px;
 
@@ -525,6 +525,7 @@ a:hover {
                 position: absolute;
                 top: 0;
                 width: 50px;
+                transition: all .3s;
             }
 
             &-content {
@@ -547,6 +548,12 @@ a:hover {
                     margin-left: 10px;
                     padding-left: 5px;
                 }
+            }
+        }
+
+        .article-tweet:hover {
+            .article-tweet-quote {
+                transform: scale(1.1);
             }
         }
     }
