@@ -90,16 +90,21 @@ a:hover {
             margin-right: 10px;
         }
 
-        a {
+        &-title {
             color: $color-type;
             font-family: 'oswald', sans-serif;
             margin-top: -4px;
         }
 
-        .page-title {
+        &-page-title {
             font-size: 18px;
             font-weight: 300;
             margin-left: 10px;
+        }
+
+        .typed-cursor {
+            padding-bottom: 5px;
+            margin-left: 5px;
         }
     }
 

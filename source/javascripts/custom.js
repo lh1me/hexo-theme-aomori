@@ -133,5 +133,11 @@ import { addNewClass, removeClass, throttle } from './class-module'
     // const inner = document.querySelector('.inner-main')
     // const psBody = new PerfectScrollbar(inner)
     const ps = new PerfectScrollbar(widget)
-    console.log(ps)
+
+    // Typed
+    if (window.aomori_logo_typed_animated) {
+        const typed = new Typed('#typed', {
+            stringsElement: '#typed-strings',
+        })
+    }
 })()

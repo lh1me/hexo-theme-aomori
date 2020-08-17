@@ -15,7 +15,8 @@ module.exports = {
     "NProgress": true,
     "Gitalk": true,
     "md5": true,
-    "PerfectScrollbar": true
+    "PerfectScrollbar": true,
+    "Typed": true
   },
   extends: [
     "eslint:recommended",
@@ -24,6 +25,7 @@ module.exports = {
   ],
   plugins: ["prettier"],
   rules: {
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "no-unused-vars": "off"
   }
 }
