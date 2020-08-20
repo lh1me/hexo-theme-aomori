@@ -16,7 +16,9 @@ module.exports = {
     "Gitalk": true,
     "md5": true,
     "PerfectScrollbar": true,
-    "Typed": true
+    "Typed": true,
+    "algoliasearch": true,
+    "dayjs": true
   },
   extends: [
     "eslint:recommended",

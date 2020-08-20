@@ -35,6 +35,12 @@ a:hover {
     color: $color-light;
 }
 
+button {
+    outline: none;
+    border-width: 0;
+    background: $color-type;
+}
+
 .clearfix::after {
     clear: both;
     content: '';
@@ -251,13 +257,78 @@ a:hover {
     transition: all 0.2s;
     width: 280px;
 
+    .search {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        max-height: calc(100vh - 140px);
+        margin-bottom: 20px;
+        border: 2px solid #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        z-index: 10;
+        transition: all .3s;
+
+        .form-input {
+            height: 46px;
+            line-height: 46px;
+            padding: 0 20px;
+            border: 0;
+            border-radius: 0;
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+
+        &-focus {
+            border: 2px solid rgba($color-type, .2);
+            transition: all .3s;
+        }
+
+        .form-icon {
+            width: 24px;
+            height: 24px;
+            right: 6px;
+        }
+
+        &-result {
+            display: none;
+            width: 100%;
+            max-height: calc(100vh - 190px);
+            padding: 0 20px 15px;
+            background: #fff;
+            overflow-y: scroll;
+            
+            &-item {
+                display: block;
+                padding: 10px 0;
+                border-top: 1px solid #f1f1f1;
+
+                h1 {
+                    margin: 0 0 5px;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+
+                p {
+                    margin: 0;
+                    font-size: 12px;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+
     .widget {
         position: relative;
         background: #fff;
         border-radius: 8px;
         margin-bottom: 20px;
         width: 100%;
-        max-height: calc(100vh - 190px);
+        max-height: calc(100vh - 254px);
         overflow-y: scroll;
         padding: 20px;
 
@@ -362,6 +433,10 @@ a:hover {
         }
     }
 
+}
+
+.sidebar-search-fix {
+    padding-top: 70px;
 }
 
 #backtop {

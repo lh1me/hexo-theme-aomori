@@ -57,7 +57,7 @@ export function throttle(fn, scope) {
             timer = setTimeout(function () {
                 fn.apply(context, args)
                 timer = null
-            }, 20)
+            }, 80)
         }
     }
 }

@@ -129,10 +129,8 @@ import { addNewClass, removeClass, throttle } from './class-module'
     )
 
     // Perfect Scrollbar
-    const widget = document.querySelector('#widget')
-    // const inner = document.querySelector('.inner-main')
-    // const psBody = new PerfectScrollbar(inner)
-    const ps = new PerfectScrollbar(widget)
+    const _widget = document.querySelector('#widget')
+    const widget = new PerfectScrollbar(_widget)
 
     // Typed
     if (window.aomori_logo_typed_animated) {
@@ -141,6 +139,52 @@ import { addNewClass, removeClass, throttle } from './class-module'
             fadeOut: true,
             fadeOutDelay: 800,
             typeSpeed: 100,
+        })
+    }
+
+    // Algolia
+    if (window.aomori_search_algolia) {
+        const _searchPs = document.querySelector('#search-ps')
+        const searchPs = new PerfectScrollbar(_searchPs)
+
+        const algoliaConfig = document.querySelector(
+            'meta[property="algolia:search"]'
+        ).dataset
+
+        const algoliaClient = algoliasearch(
+            algoliaConfig.applicationId,
+            algoliaConfig.apiKey
+        )
+        const algoliaIndex = algoliaClient.initIndex(algoliaConfig.indexName)
+
+        $('#search').on(
+            'keyup',
+            throttle((event) => {
+                algoliaIndex.search($('#search').val()).then(({ hits }) => {
+                    $('.search-result').slideDown()
+
+                    if (hits.length) {
+                        let searchOutputHtml = ''
+                        hits.forEach((item) => {
+                            searchOutputHtml += `<a class="search-result-item" href="${
+                                item.permalink
+                            }"><h1>${item.title}</h1><p>${dayjs(
+                                item.date
+                            ).format('YYYY-MM-DD')}</p></a>`
+                        })
+                        $('.search-result').html(searchOutputHtml)
+                    } else {
+                        $('.search-result').html('Nothing at all.')
+                    }
+                })
+            })
+        )
+        $('#search').focusin(() => {
+            addNewClass($('.search'), 'search-focus')
+        })
+        $('#search').focusout((e) => {
+            removeClass($('.search'), 'search-focus')
+            $('.search-result').slideUp()
         })
     }
 })()

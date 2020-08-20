@@ -2,25 +2,28 @@
 
 <body>
 
-  <%- partial('_partial/header') %>
+    <%- partial('_partial/header') %>
 
-  <div class="container">
-    <div class="main">
-      <section class="inner">
-        <section class="inner-main">
-          <%- body %>
-        </section>
-      </section>
-      <aside class="sidebar">
-        <div class="widget" id="widget">
-          <%- partial('_partial/sidebar') %>
+    <div class="container">
+        <div class="main">
+            <section class="inner">
+                <section class="inner-main">
+                    <%- body %>
+                </section>
+            </section>
+
+            <% if (config.aomori_search_algolia){ %>
+            <aside class="sidebar sidebar-search-fix">
+            <% } else {%> 
+            <aside class="sidebar">
+            <% } %>
+                <%- partial('_partial/sidebar') %>
+            </aside>
         </div>
-        <div id="backtop"><i class="icon icon-arrow-up"></i></div>
-      </aside>
     </div>
-  </div>
 
-  <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+    <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
 
 </body>
+
 </html>
