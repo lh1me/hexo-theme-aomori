@@ -266,6 +266,50 @@ comment: true # 是否需要评论 true: 是 false: 否
 
 ---
 
+## 搜索
+
+#### Algolia
+
+1. 注册 [Algolia](https://www.algolia.com/) 账号，并创建 Index
+
+2. 安装 [hexo-algolia](https://github.com/oncletom/hexo-algolia)
+
+```
+npm install --save hexo-algolia
+```
+
+3. 在站点 `_config.yml` 填入 Algolia 配置
+
+```
+algolia:
+    applicationID: 'applicationID'
+    apiKey: 'apiKey'
+    indexName: '...'
+```
+
+配置在 Algolia > API Keys 可以找到
+
+4. 运行下面的命令更新数据
+
+```
+$ export HEXO_ALGOLIA_INDEXING_KEY=High-privilege API key # Use Git Bash
+# set HEXO_ALGOLIA_INDEXING_KEY=High-privilege API key # Use Windows command line
+$ hexo clean
+$ hexo algolia
+```
+
+注意，以后发新文章后都需要运行 `hexo algolia` 更新搜索数据
+
+4. 在站点 `_config.yml` 打开搜索功能
+
+```
+aomori_search_algolia: true
+```
+
+Enjoy.
+
+---
+
 # Copyright & License
 
 Copyright (c) 2020 LIN HONG - Released under the [MIT license](LICENSE).

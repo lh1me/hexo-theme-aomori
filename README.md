@@ -224,13 +224,13 @@ aomori_gitalk:
 
 #### Friends Links
 
-First create the page,
+1. First create the page,
 
 ```
 hexo new page friends
 ```
 
-Go to `source/friends/index.md`，Set up `Front-matter`
+2. Go to `source/friends/index.md`，Set up `Front-matter`
 
 ```
 title:
@@ -238,9 +238,9 @@ layout: friends
 comment: true # or false
 ```
 
-Create data, refer to [Data Files](https://hexo.io/zh-cn/docs/data-files)
+3. Create data, refer to [Data Files](https://hexo.io/zh-cn/docs/data-files)
 
-Create `source/_data/friends.json`，The format is as follows
+4. Create `source/_data/friends.json`，The format is as follows
 
 ```
 [
@@ -255,6 +255,46 @@ Create `source/_data/friends.json`，The format is as follows
   ...
 ]
 ```
+
+---
+
+## Search
+
+#### Algolia
+
+1. First create [Algolia](https://www.algolia.com/) Account. After registration is complete, create a new Index, which will be used later.
+
+2. Install [hexo-algolia](https://github.com/oncletom/hexo-algolia)
+
+```
+npm install --save hexo-algolia
+```
+
+3. Configure Algolia integration to site `_config.yml`:
+
+```
+algolia:
+    applicationID: 'applicationID'
+    apiKey: 'apiKey'
+    indexName: '...'
+```
+
+4. Run the following command to upload Index data.
+
+```
+$ export HEXO_ALGOLIA_INDEXING_KEY=High-privilege API key # Use Git Bash
+# set HEXO_ALGOLIA_INDEXING_KEY=High-privilege API key # Use Windows command line
+$ hexo clean
+$ hexo algolia
+```
+
+4. Turn on theme configuration at site `_config.yml`
+
+```
+aomori_search_algolia: true
+```
+
+Enjoy.
 
 ---
 
