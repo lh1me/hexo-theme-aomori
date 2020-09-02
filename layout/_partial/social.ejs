@@ -1,5 +1,5 @@
 <% for (var i in config.aomori_social){ %>
     <a class="social" target="_blank" href="<%- config.aomori_social[i].url %>">
-        <box-icon type='logo' name='<%- config.aomori_social[i].icon %>'></box-icon>
+        <box-icon type='<%- config.aomori_social[i].type %>' name='<%- config.aomori_social[i].icon %>'></box-icon>
     </a>
 <% } %>
