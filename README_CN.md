@@ -96,9 +96,11 @@ aomori_copyright: true # or false
 aomori_social:
   -
     icon:
+    type:
     url:
   -
     icon:
+    type:
     url:
 ```
 
