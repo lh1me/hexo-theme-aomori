@@ -2,23 +2,24 @@
     <header class="header">
         <div class="header-type">
             <% if (config.aomori_logo){ %>
-            <div class="avatar avatar-sm">
+            <div class="header-type-avatar avatar avatar-sm">
                 <img src="<%= config.aomori_logo %>" alt="<%= config.author %>">
             </div>
             <% } %>
-
-            <% if (config.aomori_logo_typed_animated){ %>
-                <div id="typed-strings" style="display:none">
-                    <p><%= config.title %></p>
-                </div>
-                <a class="header-type-title" id="typed" href="/"></a>
-            <% } else { %>
-                <a class="header-type-title" href="/"><%= config.title %></a>
-            <% } %>
-
-            <% if (is_page()){ %>
-                <span class="header-type-page-title"><%= page.title %></span>
-            <% } %>
+            <div class="header-type-inner">
+                <% if (config.aomori_logo_typed_animated){ %>
+                    <div id="typed-strings" style="display:none">
+                        <p><%= config.title %></p>
+                    </div>
+                    <a class="header-type-title" id="typed" href="/"></a>
+                <% } else { %>
+                    <a class="header-type-title" href="/"><%= config.title %></a>
+                <% } %>
+    
+                <% if (is_page()){ %>
+                    <span class="header-type-page-title"><%= page.title %></span>
+                <% } %>
+            </div>
         </div>
         <div class="header-menu">
             <div class="header-menu-inner">

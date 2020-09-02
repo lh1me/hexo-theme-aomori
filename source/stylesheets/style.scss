@@ -88,8 +88,14 @@ button {
         line-height: 80px;
         padding-left: 5px;
 
-        .avatar {
+        &-avatar {
             margin-right: 10px;
+        }
+
+        &-inner {
+            background: linear-gradient(to right, $color-main, $color-type);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         &-title {
