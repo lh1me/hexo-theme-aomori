@@ -93,7 +93,7 @@ button {
         }
 
         &-inner {
-            background: linear-gradient(to right, $color-main, $color-type);
+            background: linear-gradient(to right, rgba($color-type, 1), rgba($color-type, .9));
             background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -242,7 +242,8 @@ button {
 /* 主体框架 */
 .main {
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 190px;
+    z-index: 2;
     
     .inner {
         padding-right: 300px;
@@ -334,7 +335,7 @@ button {
         border-radius: 8px;
         margin-bottom: 20px;
         width: 100%;
-        max-height: calc(100vh - 254px);
+        max-height: calc(100vh - 194px);
         overflow-y: scroll;
         padding: 20px;
 
@@ -649,7 +650,6 @@ button {
     .article {
         background: #fff;
         border-radius: 8px;
-        box-shadow: 0 8px 12px #ebedf0;
         margin-bottom: 20px;
         padding: 20px;
         position: relative;
@@ -873,39 +873,41 @@ button {
 }
 
 .footer {
-    background: $color-type;
     font-family: 'Oswald', sans-serif;
     font-size: 13px;
     width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
 
-    .footer-inner {
-        display: flex;
-        justify-content: space-between;
-        margin: 0 auto;
+    &-wave {
+        width: 100%;
+        height: auto;
+    }
+
+    &-wrap {
+        margin-top: -3px;
+        width: 100%;
+        height: auto;
+        background: $color-type;
+    }
+
+    &-inner {
         max-width: 1200px;
-        padding: 0 20px;
-
-        .footer-info {
-            align-items: center;
-            color: $color-white;
-            display: flex;
-
-            span {
-                line-height: 20px;
-                margin-right: 5px;
-                user-select: none;
-            }
-        }
-
-        .footer-powered {
-            color: $color-white;
-            line-height: 4rem;
-            user-select: none;
-        }
+        margin: 0 auto;
+        padding: 0 20px 80px;
+        color: $color-white;
+        line-height: 22px;
+        user-select: none;
 
         a {
             color: $color-white;
             text-decoration: underline;
+
+            &:hover {
+                color: #fff;
+            }
         }
     }
 }
@@ -913,11 +915,14 @@ button {
 .pagination {
     font-size: 14px;
     justify-content: center;
-    padding: 20px 0 0;
+    padding: 30px 0 0;
 
     .page-number {
         color: $color-main;
         padding: 10px;
+        margin: 0 5px;
+        background: #fff;
+        border-radius: 8px;
 
         &:hover {
             color: $color-light;
@@ -931,11 +936,21 @@ button {
 
     .extend {
         padding: 10px;
+        margin: 0 5px;
+        background: #fff;
+        border-radius: 8px;
 
         &:hover {
             color: $color-light;
         }
     }
+}
+
+.comments {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    position: relative;
 }
 
 /* import */

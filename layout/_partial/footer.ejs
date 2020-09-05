@@ -1,12 +1,15 @@
 <footer class="footer">
-    <div class="footer-inner">
-        <div class="footer-info">
-            <span>&copy; 2013 - <%= date(new Date(), 'YYYY') %> <%= config.title %></span>
-        </div>
-        <div class="footer-powered">
-            <a href="https://github.com/lh1me/hexo-theme-aomori" target="_blank">Aomori</a> Theme · Powered By Hexo
+    <div class="footer-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3c4859" fill-opacity="1" d="M0,160L60,181.3C120,203,240,245,360,240C480,235,600,181,720,186.7C840,192,960,256,1080,261.3C1200,267,1320,213,1380,186.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    </div>
+
+    <div class="footer-wrap">
+        <div class="footer-inner"> 
+            <%= config.title %> &copy; 2013 - <%= date(new Date(), 'YYYY') %><br>
+            Powered By Hexo · Theme By <a href="https://github.com/lh1me/hexo-theme-aomori" target="_blank">Aomori</a>
         </div>
     </div>
+
 </footer>
 
 <% if (config.aomori_gitalk){ %>
