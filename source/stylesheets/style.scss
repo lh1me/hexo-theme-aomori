@@ -457,6 +457,7 @@ button {
 /* 首页 */
 .index {
     .article {
+        position: relative;
         background: #fff;
         border-radius: 8px;
         margin-bottom: 20px;
@@ -464,6 +465,22 @@ button {
 
         &:last-child {
             margin-bottom: 0;
+        }
+
+        .article-top {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            width: 40px;
+            height: 20px;
+            line-height: 20px;
+            color: #fff;
+            background-color: $color-light;
+            font-size: 12px;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 3px;
+            user-select: none;
         }
 
         .article-inner {
@@ -600,13 +617,13 @@ button {
                 height: 50px;
                 left: 0;
                 position: absolute;
-                top: 0;
+                top: -5px;
                 width: 50px;
                 transition: all .3s;
             }
 
             &-content {
-                padding: 10px 0 10px 80px;
+                padding: 0 0 10px 80px;
 
                 p {
                     font-weight: 300;

@@ -3,43 +3,49 @@
   class="article article-type-<%= post.layout %>"
 >
 
-<div class="article-tweet article-type-<%= post.layout %>-inner">
+    <div class="article-tweet article-type-<%= post.layout %>-inner">
 
-  <box-icon class="article-tweet-quote" type='solid' name='quote-left' color="#CCC"></box-icon>
+    <box-icon class="article-tweet-quote" type='solid' name='quote-left' color="#CCC"></box-icon>
 
-  <div class="article-tweet-content post-inner-html">
-    <% if (post.excerpt){ %>
-      <%- post.excerpt %>
-    <% } else { %>
-      <%- post.content %>
-    <% } %>
-  </div>
-
-  <footer class="article-footer">
-    <a class="article-footer-common" href="<%- url_for(post.path) %>">评论</a>
-    <div class="article-more-info">
-      <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
-      <% if (post.categories && post.categories.length){ %>
-        <div class="article-category">
-          <%- list_categories(post.categories, {
-            show_count: false,
-            class: 'article-category',
-            style: 'none',
-            separator: ',',
-            depth: 1
-          }) %>
-        </div>
-      <% } %>
-      <% if (post.tags && post.tags.length){ %>
-        <div class="article-tag">
-          <%- list_tags(post.tags, {
-            show_count: false,
-            class: 'article-tag',
-            amount: 3
-          }) %>
-        </div>
-      <% } %>
+    <div class="article-tweet-content post-inner-html">
+        <% if (post.excerpt){ %>
+        <%- post.excerpt %>
+        <% } else { %>
+        <%- post.content %>
+        <% } %>
     </div>
-  </footer>
+
+    <footer class="article-footer">
+        <a class="article-footer-common" href="<%- url_for(post.path) %>">评论</a>
+        <div class="article-more-info">
+        <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
+        <% if (post.categories && post.categories.length){ %>
+            <div class="article-category">
+            <%- list_categories(post.categories, {
+                show_count: false,
+                class: 'article-category',
+                style: 'none',
+                separator: ',',
+                depth: 1
+            }) %>
+            </div>
+        <% } %>
+        <% if (post.tags && post.tags.length){ %>
+            <div class="article-tag">
+            <%- list_tags(post.tags, {
+                show_count: false,
+                class: 'article-tag',
+                amount: 3
+            }) %>
+            </div>
+        <% } %>
+        </div>
+    </footer>
+
+    </div>
+
+    <% if(post.sticky) { %>
+    <div class="article-top">TOP</div>
+    <% } %>
 
 </article>
