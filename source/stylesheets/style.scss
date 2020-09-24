@@ -88,6 +88,10 @@ button {
         line-height: 80px;
         padding-left: 5px;
 
+        &-inner {
+            display: flex;
+        }
+
         &-avatar {
             margin-right: 10px;
         }
