@@ -61,7 +61,7 @@
 </script>
 <% } %>
 
-<% if (config.aomori_google_pageview && config.aomori_google_pageview.enable){ %>
+<% if (is_post() && config.aomori_google_pageview && config.aomori_google_pageview.enable){ %>
 <script>
     var pathname = window.location.pathname
     $.get('https://google-pageview.linhong.me/api/analytics?url=' + pathname + '&startdate=2010-01-01', function(res){
