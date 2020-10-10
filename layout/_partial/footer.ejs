@@ -60,3 +60,15 @@
     })();
 </script>
 <% } %>
+
+<% if (config.aomori_google_pageview && config.aomori_google_pageview.enable){ %>
+<script>
+    var pathname = window.location.pathname
+    $.get('https://google-pageview.linhong.me/api/analytics?url=' + pathname + '&startdate=2010-01-01', function(res){
+        if (res.code === 0 && res.data.totalResults > 0) {
+            var pageviews = res.data.totalsForAllResults['ga:pageviews']
+            $('#google_pageview_value').text(pageviews)
+        }
+    })
+</script>
+<% } %>

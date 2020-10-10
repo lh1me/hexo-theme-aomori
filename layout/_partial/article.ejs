@@ -42,6 +42,12 @@
                 有 <span id="busuanzi_value_page_pv">N</span> 人看过
             </div>
             <% } %>
+
+            <% if (config.aomori_google_pageview && config.aomori_google_pageview.enable){ %>
+            <div class="article-google-pageview">
+                有 <span id="google_pageview_value">N</span> 人看过
+            </div>
+            <% } %>
         </div>
 
         <div class="article-entry post-inner-html hairline" itemprop="articleBody">
