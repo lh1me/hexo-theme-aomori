@@ -186,8 +186,23 @@ link_refer:
     title: title
 ```
 
----
+#### 置顶
 
+在 Hexo 目录下安装依赖
+
+```
+npm i hexo-generator-index -S
+```
+
+在文章 Front-matter 增加选项
+
+```
+sticky: 100
+```
+
+更多使用方法 [点击查看](https://github.com/hexojs/hexo-generator-index)
+
+---
 
 ## 文章可选风格
 

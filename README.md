@@ -178,8 +178,23 @@ link_refer:
     title: title
 ```
 
----
+#### Top
 
+Install dependencies in the Hexo directory
+
+```
+npm i hexo-generator-index -S
+```
+
+Add options in the article Front-matter
+
+```
+sticky: 100
+```
+
+More ways to use [hexo-generator-index](https://github.com/hexojs/hexo-generator-index)
+
+---
 
 ## Article Style
 
