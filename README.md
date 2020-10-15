@@ -15,7 +15,7 @@
 
 A Simple Hexo Theme.
 
-[中文文档](/README_CN.md) [CHANGELOG](/README_CN.md)
+[中文文档](/README_CN.md) | [CHANGELOG](/CHANGELOG.md)
 
 ## Demo
 
