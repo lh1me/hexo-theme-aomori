@@ -17,6 +17,8 @@
 
 （想到什么功能就做什么，更新完全看心情。欢迎 PR
 
+[ENGLISH](/README.md) [CHANGELOG](/CHANGELOG.md)
+
 ## Demo
 
 [https://linhong.me](https://linhong.me)
