@@ -1,4 +1,3 @@
-import 'jquery'
 import 'boxicons'
 
 // 入口文件

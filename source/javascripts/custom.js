@@ -180,12 +180,49 @@ import { addNewClass, removeClass, throttle } from './class-module'
                 })
             })
         )
-        $('#search').focusin(() => {
+        $('#search').on('focusin', () => {
             addNewClass($('.search'), 'search-focus')
         })
-        $('#search').focusout((e) => {
+        $('#search').on('focusout', () => {
             removeClass($('.search'), 'search-focus')
             $('.search-result').slideUp()
         })
+    }
+
+    // Swiper
+    const mySwiper = new Swiper('.swiper-container', {
+        autoplay: {
+            delay: 10000,
+        },
+        autoHeight: true,
+        pagination: {
+            el: '.swiper-pagination',
+            bulletActiveClass: 'article-gallery-active',
+        },
+    })
+    if (mySwiper.slides && mySwiper.slides.length <= 1) {
+        mySwiper.destroy()
+    }
+
+    // Viewer
+    const viewerConfig = {
+        title: false,
+        toolbar: {
+            zoomIn: true,
+            zoomOut: true,
+            reset: true,
+            prev: true,
+            next: true,
+        },
+        keyboard: false,
+    }
+    const galleryViewer = $('.article-gallery')
+    if (galleryViewer && galleryViewer.length > 0) {
+        galleryViewer.viewer(viewerConfig)
+    }
+
+    const articleEntryViewer = $('.article-entry')
+    if (articleEntryViewer && articleEntryViewer.length > 0) {
+        articleEntryViewer.viewer(viewerConfig)
     }
 })()

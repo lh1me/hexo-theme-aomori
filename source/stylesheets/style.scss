@@ -670,20 +670,21 @@ button {
         position: relative;
 
         .article-gallery {
-            a {
-                display: block;
-                margin-bottom: 0.5rem;
+            img {
+                width: 100%;
+                cursor: pointer;
+            }
 
-                img {
-                    width: 100%;
-                }
+            &-active {
+                background: $color-type;
+                opacity: 1;
             }
         }
 
         .article-title {
             font-size: 1.4rem;
             font-weight: 300;
-            padding-top: 10px;
+            padding-top: 15px;
 
             a {
                 color: $color-type;

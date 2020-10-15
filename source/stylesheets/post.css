@@ -28,16 +28,23 @@
 	margin-bottom: 0
 }
 
-.post-inner-html>iframe {
+.post-inner-html iframe {
 	display: block;
 	margin-top: 16px;
 	margin-bottom: 16px
 }
 
-.post-inner-html>img,.post-inner-html>video {
+.post-inner-html img {
+  cursor: pointer;
+}
+
+.post-inner-html img,
+.post-inner-html video {
 	margin-top: 16px;
 	margin-bottom: 16px;
-	display: block
+  display: block;
+  max-width: 100%;
+	border: 0;
 }
 
 .post-inner-html h1,.post-inner-html h2,.post-inner-html h3,.post-inner-html h4,.post-inner-html h5,.post-inner-html h6 {
@@ -279,11 +286,6 @@
 	-moz-text-emphasis-position: under left;
 	-ms-text-emphasis-position: under left;
 	text-emphasis-position: under left
-}
-
-.post-inner-html img,.post-inner-html video {
-	max-width: 100%;
-	border: 0
 }
 
 .post-inner-html figure img {

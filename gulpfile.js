@@ -4,19 +4,17 @@
 const gulp = require('gulp');
 const concat = require('gulp-concat'); // 合并文件
 const plumber = require('gulp-plumber');
-const del = require('del'); // 文件删除
 const notify = require('gulp-notify'); // Gulp 提示工具
 
 // CSS
 const autoprefixer = require('gulp-autoprefixer'); // CSS自动添加前缀
 const sass = require('gulp-sass'); // 编译 SASS
-const postcss = require('gulp-postcss'); // CSS 编译器
 const minify = require('gulp-minify-css')
 
 // JS
 const rollup = require('rollup'); // JS打包工具
 const babel = require('rollup-plugin-babel'); // JS babel
-const commonjs = require('rollup-plugin-babel'); // Common JS
+const commonjs = require('rollup-plugin-commonjs'); // Common JS
 const resolve = require ('rollup-plugin-node-resolve'); // 使 Rollup 支持 NPM 模块
 const uglify = require('rollup-plugin-uglify');
 
@@ -46,6 +44,8 @@ gulp.task('css', function () {
         'source/stylesheets/tocbot.css',
         'source/stylesheets/nprogress.css',
         'source/stylesheets/perfect-scrollbar.css',
+        'source/stylesheets/viewer.min.css',
+        'source/stylesheets/swiper-bundle.min.css',
         'source/stylesheets/style.scss'
       ])
       .pipe(plumber({
@@ -85,9 +85,22 @@ gulp.task('js', async function () {
     file: './source/dist/custom.js',
     format: 'umd'
   })
-  gulp.src('source/modules/*.js')
-      .pipe(concat('build.js'))
-      .pipe(gulp.dest('source/dist'))
+  gulp.src([
+    'source/modules/jquery-3.5.1.min.js',
+    'source/modules/algoliasearch-lite.umd.js',
+    'source/modules/dayjs.min.js',
+    'source/modules/highlight.min.js',
+    'source/modules/md5.min.js',
+    'source/modules/nprogress.js',
+    'source/modules/perfect-scrollbar.min.js',
+    'source/modules/swiper-bundle.min.js',
+    'source/modules/tocbot.min.js',
+    'source/modules/typed.min.js',
+    'source/modules/viewer.min.js',
+    'source/modules/jquery-viewer.min.js',
+  ])
+  .pipe(concat('build.js'))
+  .pipe(gulp.dest('source/dist'))
       
 });
 
