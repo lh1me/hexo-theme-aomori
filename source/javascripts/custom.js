@@ -220,7 +220,6 @@ import { addNewClass, removeClass, throttle } from './class-module'
     if (galleryViewer && galleryViewer.length > 0) {
         galleryViewer.viewer(viewerConfig)
     }
-
     const articleEntryViewer = $('.article-entry')
     if (articleEntryViewer && articleEntryViewer.length > 0) {
         articleEntryViewer.viewer(viewerConfig)
