@@ -40,6 +40,7 @@
     <%- css(`/dist/build.css?v=${theme.version}`) %>
 
     <script>
+        window.isPost = <%- is_post() %>
         window.aomori = {
             <% if (config.aomori_gitalk){ %>
             gitalk: {

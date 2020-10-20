@@ -224,4 +224,14 @@ import { addNewClass, removeClass, throttle } from './class-module'
     if (articleEntryViewer && articleEntryViewer.length > 0) {
         articleEntryViewer.viewer(viewerConfig)
     }
+
+    // Plyr
+    if (window.isPost) {
+        const plyrsInPost = Array.from($('article video')).map(
+            (ele) => new Plyr(ele)
+        )
+    }
+    const plyrsInIndex = Array.from($('article .article-video-plyr')).map(
+        (ele) => new Plyr(ele)
+    )
 })()

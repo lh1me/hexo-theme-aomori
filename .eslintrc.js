@@ -19,7 +19,8 @@ module.exports = {
     "Typed": true,
     "algoliasearch": true,
     "dayjs": true,
-    "Swiper": true
+    "Swiper": true,
+    "Plyr": true,
   },
   extends: [
     "eslint:recommended",

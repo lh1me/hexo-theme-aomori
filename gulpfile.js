@@ -46,6 +46,7 @@ gulp.task('css', function () {
         'source/stylesheets/perfect-scrollbar.css',
         'source/stylesheets/viewer.min.css',
         'source/stylesheets/swiper-bundle.min.css',
+        'source/stylesheets/plyr.css',
         'source/stylesheets/style.scss'
       ])
       .pipe(plumber({
@@ -98,6 +99,7 @@ gulp.task('js', async function () {
     'source/modules/typed.min.js',
     'source/modules/viewer.min.js',
     'source/modules/jquery-viewer.min.js',
+    'source/modules/plyr.js',
   ])
   .pipe(concat('build.js'))
   .pipe(gulp.dest('source/dist'))

@@ -8,18 +8,18 @@
 	-ms-text-size-adjust: 100%
 }
 
-.post-inner-html div,.post-inner-html p,.post-inner-html blockquote,.post-inner-html pre,.post-inner-html ul,.post-inner-html ol,.post-inner-html table,.post-inner-html figure,.post-inner-html section,.post-inner-html article,.post-inner-html header,.post-inner-html footer {
+.post-inner-html p,.post-inner-html blockquote,.post-inner-html pre,.post-inner-html ul,.post-inner-html ol,.post-inner-html table,.post-inner-html figure {
 	margin: 0;
 	padding: 0;
 	margin-top: 16px;
 	margin-bottom: 16px
 }
 
-.post-inner-html div:first-child,.post-inner-html p:first-child,.post-inner-html blockquote:first-child,.post-inner-html pre:first-child,.post-inner-html ul:first-child,.post-inner-html ol:first-child,.post-inner-html table:first-child,.post-inner-html figure:first-child,.post-inner-html section:first-child,.post-inner-html article:first-child,.post-inner-html header:first-child,.post-inner-html footer:first-child {
+.post-inner-html p:first-child,.post-inner-html blockquote:first-child,.post-inner-html pre:first-child,.post-inner-html ul:first-child,.post-inner-html ol:first-child,.post-inner-html table:first-child,.post-inner-html figure:first-child {
 	margin-top: 0
 }
 
-.post-inner-html div:last-child,.post-inner-html p:last-child,.post-inner-html blockquote:last-child,.post-inner-html pre:last-child,.post-inner-html ul:last-child,.post-inner-html ol:last-child,.post-inner-html table:last-child,.post-inner-html figure:last-child,.post-inner-html section:last-child,.post-inner-html article:last-child,.post-inner-html header:last-child,.post-inner-html footer:last-child {
+.post-inner-html p:last-child,.post-inner-html blockquote:last-child,.post-inner-html pre:last-child,.post-inner-html ul:last-child,.post-inner-html ol:last-child,.post-inner-html table:last-child,.post-inner-html figure:last-child {
 	margin-bottom: 0
 }
 
@@ -35,16 +35,12 @@
 }
 
 .post-inner-html img {
-  cursor: pointer;
-}
-
-.post-inner-html img,
-.post-inner-html video {
 	margin-top: 16px;
 	margin-bottom: 16px;
   display: block;
   max-width: 100%;
-	border: 0;
+  border: 0;
+  cursor: pointer;
 }
 
 .post-inner-html h1,.post-inner-html h2,.post-inner-html h3,.post-inner-html h4,.post-inner-html h5,.post-inner-html h6 {
@@ -58,7 +54,7 @@
 }
 
 .post-inner-html>h1,.post-inner-html>h2, .post-inner-html>h3,.post-inner-html>h4,.post-inner-html>h5,.post-inner-html>h6 {
-	margin-top: 16px;
+	margin-top: 18px;
 	outline: none;
 }
 

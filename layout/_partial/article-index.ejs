@@ -3,8 +3,16 @@
   class="article article-type-<%= post.layout %>"
 >
 
+  <% if (post.video && post.layout !== 'tweet'){ %>
+  <div class="article-video">
+    <video class="article-video-plyr" data-poster="<%= post.video.poster %>">
+      <source src="<%= post.video.src %>">
+    </video>
+  </div>
+  <% } %>
+
   <div class="article-inner">
-    <% if (post.photos && post.photos.length){ %>
+    <% if (!post.video && post.photos && post.photos.length){ %>
       <div class="article-feature">
           <a href="<%- url_for(post.path) %>">
             <% if (post.cover){ %>
@@ -28,6 +36,10 @@
         <% } %>
       </div>
     </div>
+
+    <% if(post.sticky) { %>
+      <div class="article-top">TOP</div>
+    <% } %>
 
   </div>
 
@@ -56,9 +68,5 @@
       <% } %>
     </div>
   </footer>
-
-  <% if(post.sticky) { %>
-    <div class="article-top">TOP</div>
-  <% } %>
 
 </article>

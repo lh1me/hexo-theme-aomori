@@ -10,6 +10,10 @@ $color-white: #ccc;
 $color-black: #040404;
 $color-type: #3c4859;
 
+:root {
+    --plyr-color-main: #119da4;
+}
+
 /* 样式重置 */
 
 body {
@@ -333,7 +337,7 @@ button {
         border-radius: 8px;
         margin-bottom: 20px;
         width: 100%;
-        max-height: calc(100vh - 300px);
+        max-height: calc(100vh - 130px);
         overflow-y: scroll;
         padding: 20px;
 
@@ -445,6 +449,7 @@ button {
 }
 
 #backtop {
+    display: none;
     background: #fff;
     border-radius: 8px;
     cursor: pointer;
@@ -461,7 +466,6 @@ button {
 /* 首页 */
 .index {
     .article {
-        position: relative;
         background: #fff;
         border-radius: 8px;
         margin-bottom: 20px;
@@ -473,8 +477,8 @@ button {
 
         .article-top {
             position: absolute;
-            right: 20px;
-            top: 20px;
+            right: 0;
+            top: 0;
             width: 40px;
             height: 20px;
             line-height: 20px;
@@ -488,7 +492,13 @@ button {
         }
 
         .article-inner {
+            position: relative;
             display: flex;
+
+            // 首页文章流不显示视频
+            video {
+                display: none;
+            }
 
             .article-feature {
                 flex: 0 0 260px;
@@ -613,9 +623,21 @@ button {
             }
         }
 
+        // Video 
+        .article-video {
+            margin-bottom: 20px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
         // Tweet
         .article-tweet {
             position: relative;
+
+            // 首页文章流不显示视频
+            video {
+                display: none;
+            }
 
             &-quote {
                 height: 50px;
@@ -681,6 +703,12 @@ button {
             }
         }
 
+        // Video 
+        .article-video {
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
         .article-title {
             font-size: 1.4rem;
             font-weight: 300;
@@ -698,6 +726,11 @@ button {
         .article-entry {
             padding-bottom: 60px;
             position: relative;
+
+            .plyr {
+                border-radius: 5px;
+                overflow: hidden;
+            }
         }
 
         .article-more-info {
