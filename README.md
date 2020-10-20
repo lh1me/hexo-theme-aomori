@@ -144,6 +144,18 @@ Use `Relative Path`, refer to resource folder [Resource Folder](https://hexo.io/
 cover: xxx.jpg
 ```
 
+#### Cover Video
+
+Use `Full Link` recommend CDN
+
+Each article can only have one cover video, and only one of the cover image and the cover video can exist at the same time.
+
+``` yml
+video:
+  src: src # Full Video Link
+  poster: poster # Full Poster Link
+```
+
 #### Article Header Image
 
 Use `Relative Path`, refer to resource folder [Resource Folder](https://hexo.io/zh-cn/docs/asset-folders)

@@ -146,6 +146,18 @@ aomori_busuanzi: true
 cover: xxx.jpg
 ```
 
+#### 封面视频
+
+使用 `完整链接`，便于使用 CDN
+
+每篇文章只能有一个封面视频，并且封面图片和封面视频只能同时存在其中一个
+
+``` yml
+video:
+  src: src # 完整视频链接
+  poster: poster # 完整视频封面图链接
+```
+
 #### 文字头部图片
 
 可配多张，使用 `相对路径 `，参照 [资源文件夹](https://hexo.io/zh-cn/docs/asset-folders)
