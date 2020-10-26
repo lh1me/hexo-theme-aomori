@@ -1,12 +1,9 @@
-<a href="https://github.com/lh1me/hexo-theme-aomori/releases">
-  <img src="https://github.com/lh1me/hexo-theme-aomori/workflows/Action/badge.svg" alt="Action" />
-</a>
-<a href="https://github.com/lh1me/hexo-theme-aomori/releases">
-  <img src="https://img.shields.io/github/release/lh1me/hexo-theme-aomori.svg" alt="Release" />
-</a>
-<a href="https://github.com/lh1me/hexo-theme-aomori/blob/master/LICENSE">
-  <img src="https://img.shields.io/github/license/lh1me/hexo-theme-aomori.svg" alt="license" />
-</a>
+![Release](https://img.shields.io/github/release/lh1me/hexo-theme-aomori.svg)
+![NPM version](https://badge.fury.io/js/hexo.svg)
+![Required Node version](https://img.shields.io/node/v/hexo)
+![Action](https://github.com/lh1me/hexo-theme-aomori/workflows/Action/badge.svg)
+![License](https://img.shields.io/github/license/lh1me/hexo-theme-aomori.svg)
+
 <br/><br/>
 
 ![image](https://raw.githubusercontent.com/lh1me/hexo-theme-aomori/master/docs/cover.jpg)
