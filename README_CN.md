@@ -4,7 +4,7 @@
 ![Action](https://github.com/lh1me/hexo-theme-aomori/workflows/Action/badge.svg)
 ![License](https://img.shields.io/github/license/lh1me/hexo-theme-aomori.svg)
 
-<br/><br/>
+<br/>
 
 ![image](https://raw.githubusercontent.com/lh1me/hexo-theme-aomori/master/docs/cover.jpg)
 

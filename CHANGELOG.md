@@ -1,3 +1,9 @@
+# 1.10.1
+
+### Features
+
+- Update packages
+
 # 1.10.0
 
 ### Features
@@ -8,7 +14,6 @@
 ### Bug Fixes
 
 - Sidebar height repaired
-
 
 # 1.9.0
 
