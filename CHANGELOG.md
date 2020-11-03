@@ -1,3 +1,9 @@
+# 1.10.2
+
+### Bug Fixes
+
+- Sidebar layout fixed
+
 # 1.10.1
 
 ### Features
