@@ -5,6 +5,3 @@ import './custom'
 
 // Gitalk
 import './gitalk'
-
-// Counter
-import './counter'
