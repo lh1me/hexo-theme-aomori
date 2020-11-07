@@ -1,7 +1,7 @@
 
 .post-inner-html {
-	line-height: 1.6;
-	color: #424b50;
+	line-height: 1.8;
+	color: var(--color-post-main);
 	word-wrap: break-word;
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-size-adjust: 100%;
@@ -64,16 +64,16 @@
 
 .post-inner-html h1,.post-inner-html h2,.post-inner-html h3,.post-inner-html h4,.post-inner-html h5,.post-inner-html h6 {
 	font-weight: inherit;
-	color: #424b50;
+	color: var(--color-post-main);
 	background-color: transparent
 }
 
 .post-inner-html h1 a,.post-inner-html h2 a,.post-inner-html h3 a,.post-inner-html h4 a,.post-inner-html h5 a,.post-inner-html h6 a {
-	color: #424b50
+	color: var(--color-post-main)
 }
 
 .post-inner-html h1 a,.post-inner-html h2 a,.post-inner-html h3 a,.post-inner-html h4 a,.post-inner-html h5 a,.post-inner-html h6 a,.post-inner-html h1 em,.post-inner-html h2 em,.post-inner-html h3 em,.post-inner-html h4 em,.post-inner-html h5 em,.post-inner-html h6 em,.post-inner-html h1 u,.post-inner-html h2 u,.post-inner-html h3 u,.post-inner-html h4 u,.post-inner-html h5 u,.post-inner-html h6 u,.post-inner-html h1 abbr[title],.post-inner-html h2 abbr[title],.post-inner-html h3 abbr[title],.post-inner-html h4 abbr[title],.post-inner-html h5 abbr[title],.post-inner-html h6 abbr[title] {
-	border-bottom-color: #424b50
+	border-bottom-color: var(--color-post-main)
 }
 
 .post-inner-html h1 {
@@ -105,7 +105,7 @@
 	padding: 0 0 0 11px;
 	margin: 16px 0;
 	font-family: STKaiti,KaiTi,serif;
-	border-left: 5px solid #c3cace
+	border-left: 5px solid var(--color-white)
 }
 
 .post-inner-html li blockquote {
@@ -128,13 +128,13 @@
 
 .post-inner-html p code {
   padding: 3px 5px;
-  background: #f1f1f1;
+  background: var(--color-bg);
   font-size: 13px;
   border-radius: 3px;
 }
 
 .post-inner-html ul,.post-inner-html ol {
-	padding-left: 32px
+	padding-left: 16px
 }
 
 .post-inner-html ul li,.post-inner-html ol li {
@@ -179,7 +179,7 @@
 	height: 0;
 	background: none;
 	border: none;
-	border-bottom: 1px dashed #ebedf0
+	border-bottom: 1px dashed var(--color-white);
 }
 
 .post-inner-html table {
@@ -210,7 +210,7 @@
 }
 
 .post-inner-html table tbody tr:nth-child(odd) td,.post-inner-html table tbody tr:nth-child(odd) th {
-	background-color: #f9f9f9
+	background-color: var(--color-bg);
 }
 
 .post-inner-html table tbody tr:last-child td,.post-inner-html table tbody tr:last-child th {
@@ -219,7 +219,7 @@
 
 .post-inner-html table td,.post-inner-html table th {
 	padding: 8px 16px 7px;
-	border: 1px solid #ddd
+	border: 1px solid var(--color-white);
 }
 
 .post-inner-html iframe {
@@ -228,9 +228,9 @@
 
 .post-inner-html a {
 	padding-bottom: .025em;
-	color: #119DA4;
+	color: var(--color-light);
 	text-decoration: none;
-	border-bottom-color: #119DA4;
+	border-bottom-color: var(--color-light);
 	transition: all .2s;
 }
 
@@ -239,15 +239,15 @@
 }
 
 .post-inner-html a:visited {
-	color: #119DA4;
-	border-bottom-color: #119DA4
+	color: var(--color-light);
+	border-bottom-color: var(--color-light)
 }
 
 .post-inner-html a:hover {
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
-	color: #13505B;
-	border-bottom-color: #13505B
+	color: var(--color-main);
+	border-bottom-color: var(--color-main)
 }
 
 .post-inner-html a:hover,.post-inner-html a:active {
@@ -263,7 +263,7 @@
 	font-style: inherit;
 	font-weight: inherit;
 	text-decoration: inherit;
-	border-bottom: 1px solid #8b98a0
+	border-bottom: 1px solid var(--color-white);
 }
 
 .post-inner-html u+u {
@@ -311,7 +311,7 @@
 .post-inner-html abbr[title] {
 	padding-bottom: .05em;
 	cursor: help;
-	border-bottom: 1px dotted #424b50
+	border-bottom: 1px dotted var(--color-post-main)
 }
 
 .post-inner-html dfn {
@@ -319,8 +319,8 @@
 }
 
 .post-inner-html mark {
-	background: #ff0;
-	color: #424b50
+	background: var(--color-post-mark);
+	color: var(--color-post-main)
 }
 
 .post-inner-html q {

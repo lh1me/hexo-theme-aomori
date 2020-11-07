@@ -3,7 +3,7 @@
     margin-bottom: 60px;
 
     .article {
-        background: #fff;
+        background: var(--color-white-light);
         border-radius: 8px;
         margin-bottom: 20px;
         padding: 20px;
@@ -14,7 +14,7 @@
 
     &-links {
         a {
-            background: #fff;
+            background: var(--color-white-light);
             border-radius: 8px;
             display: block;
             float: left;
@@ -25,7 +25,7 @@
         }
 
         a:hover {
-            box-shadow: 0 8px 12px #ebedf0;
+            box-shadow: 0 8px 12px var(--color-white);
         }
     }
 }

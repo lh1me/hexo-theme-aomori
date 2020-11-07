@@ -1,3 +1,7 @@
+# 1.11.0
+
+- All Style adjustment 
+
 # 1.10.2
 
 ### Bug Fixes

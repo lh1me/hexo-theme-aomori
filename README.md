@@ -11,7 +11,15 @@
 
 # Aomori
 
-A Simple Hexo Theme.
+Hexo is a fast, simple, powerful blog framework, with ultra-fast generation speed, support for Markdown, one-click deployment and high scalability. This project is a theme developed based on a series of advantages of Hexo.
+
+- Rich Website Style
+- Rich Theme Configuration
+- Optimize multimedia playback
+- Excellent SEO optimization
+- Responsive layout
+- Open source and continuously updated
+- ...
 
 [中文文档](/README_CN.md) | [CHANGELOG](/CHANGELOG.md)
 

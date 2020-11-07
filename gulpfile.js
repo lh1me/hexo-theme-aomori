@@ -35,11 +35,11 @@ const stylelint = require('gulp-stylelint');
 
 gulp.task('css', function () {
   return gulp.src([
+        'source/stylesheets/color.scss',
         'source/stylesheets/normalize.css',
         'source/stylesheets/spectre.min.css',
         'source/stylesheets/spectre-exp.min.css',
         'source/stylesheets/spectre-icons.min.css',
-        'source/stylesheets/post.css',
         'source/stylesheets/github.css',
         'source/stylesheets/tocbot.css',
         'source/stylesheets/nprogress.css',
@@ -47,6 +47,7 @@ gulp.task('css', function () {
         'source/stylesheets/viewer.min.css',
         'source/stylesheets/swiper-bundle.min.css',
         'source/stylesheets/plyr.css',
+        'source/stylesheets/post.css',
         'source/stylesheets/style.scss'
       ])
       .pipe(plumber({
