@@ -1,3 +1,7 @@
+# 1.11.1
+
+- Fixed wrong cover image selection
+
 # 1.11.0
 
 - All Style adjustment 

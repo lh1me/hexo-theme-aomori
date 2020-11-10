@@ -12,7 +12,7 @@
   <% } %>
 
   <div class="article-inner">
-    <% if (!post.video && post.photos && post.photos.length){ %>
+    <% if (!post.video && (post.cover || post.photos && post.photos.length)){ %>
       <div class="article-feature">
           <a href="<%- url_for(post.path) %>">
             <% if (post.cover){ %>
