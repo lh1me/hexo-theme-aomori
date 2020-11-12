@@ -1,8 +1,18 @@
+# 1.11.2
+
+### Bug Fixes
+
+- Fixed footer copyright
+
 # 1.11.1
+
+### Bug Fixes
 
 - Fixed wrong cover image selection
 
 # 1.11.0
+
+### Features
 
 - All Style adjustment 
 
