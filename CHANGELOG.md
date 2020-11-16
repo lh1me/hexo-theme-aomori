@@ -3,6 +3,7 @@
 ### Features
 
 - Add LazyLoad for index page
+- Style adjustment
 
 # 1.11.2
 
