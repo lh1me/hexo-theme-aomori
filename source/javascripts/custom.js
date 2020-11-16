@@ -234,4 +234,7 @@ import { addNewClass, removeClass, throttle } from './class-module'
     const plyrsInIndex = Array.from($('article .article-video-plyr')).map(
         (ele) => new Plyr(ele)
     )
+
+    // LazyLoad
+    const lazyLoad = new LazyLoad()
 })()

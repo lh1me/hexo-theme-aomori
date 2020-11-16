@@ -1,9 +1,8 @@
 {
   "name": "hexo-theme-aomori",
-  "version": "1.11.2",
+  "version": "1.12.0",
   "description": "",
   "author": "lh1me",
-  "private": true,
   "scripts": {
     "dev": "gulp",
     "lint": "eslint ./source/javascripts/ --ext .js --fix",

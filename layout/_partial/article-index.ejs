@@ -15,11 +15,12 @@
     <% if (!post.video && (post.cover || post.photos && post.photos.length)){ %>
       <div class="article-feature">
           <a href="<%- url_for(post.path) %>">
-            <% if (post.cover){ %>
-              <img src="<%- url_for(post.cover) %>" alt="item.title" />
-            <% } else { %>
-              <img src="<%- url_for(post.photos[0]) %>" alt="item.title" />
-            <% } %>
+            <img
+              src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E"
+              data-src="<%- url_for(post.cover || post.photos[0]) %>"
+              alt="item.title"
+              class="lazy"
+            />
           </a>
       </div>
     <% } %>

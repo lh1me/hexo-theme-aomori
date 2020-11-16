@@ -32,6 +32,10 @@ button {
     background: var(--color-type);
 }
 
+img:not([src]):not([srcset]) {
+    visibility: hidden;
+}
+
 .clearfix::after {
     clear: both;
     content: '';

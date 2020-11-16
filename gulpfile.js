@@ -101,6 +101,7 @@ gulp.task('js', async function () {
     'source/modules/viewer.min.js',
     'source/modules/jquery-viewer.min.js',
     'source/modules/plyr.js',
+    'source/modules/lazyload.min.js',
   ])
   .pipe(concat('build.js'))
   .pipe(gulp.dest('source/dist'))

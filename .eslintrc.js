@@ -21,6 +21,7 @@ module.exports = {
     "dayjs": true,
     "Swiper": true,
     "Plyr": true,
+    "LazyLoad": true
   },
   extends: [
     "eslint:recommended",

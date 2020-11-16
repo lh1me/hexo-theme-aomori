@@ -1,3 +1,9 @@
+# 1.12.0
+
+### Features
+
+- Add LazyLoad for index page
+
 # 1.11.2
 
 ### Bug Fixes
