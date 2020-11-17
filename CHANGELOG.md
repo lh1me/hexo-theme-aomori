@@ -1,3 +1,10 @@
+# 1.13.0
+
+### Features
+
+- New menu style
+- Bump package
+
 # 1.12.0
 
 ### Features
