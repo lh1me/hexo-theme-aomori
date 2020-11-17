@@ -118,18 +118,47 @@ img:not([src]):not([srcset]) {
         &-inner {
             line-height: 40px;
             margin-right: 5px;
+            display: flex;
 
             a {
-                border-radius: 5px;
+                margin: 0 20px 0 0;
                 color: var(--color-type);
                 font-size: 14px;
-                padding: 10px;
+                letter-spacing: 0;
             }
-    
-            a:hover {
-                background: var(--color-type);
-                color: var(--color-white-light);
+
+            a:hover,
+            a:active {
+                letter-spacing: 1px;
             }
+            
+            a::after,
+            a::before {
+                backface-visibility: hidden;
+                border: 1px solid rgba(#fff, 0);
+                bottom: 0;
+                content: ' ';
+                display: block;
+                margin: 0 auto;
+                position: relative;
+                transition: all 280ms ease-in-out;
+                width: 0;
+            }
+            
+            a:hover::after,
+            a:hover::before {
+                backface-visibility: hidden;
+                border-color: var(--color-type);
+                transition: width 350ms ease-in-out;
+                width: 80%;
+            }
+            
+            a:hover::before {
+                bottom: auto;
+                top: 0;
+                width: 80%;
+            }
+
         }
 
         &-social {
