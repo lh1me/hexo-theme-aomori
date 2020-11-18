@@ -17,13 +17,13 @@
 </article>
 <% } %>
     
-<% if (post.comment && config.aomori_disqus_shortname){ %>
+<% if (post.comment && theme.disqus_shortname){ %>
 <section class="comments">
   <div id="disqus_thread"></div>
   <script>
       (function () { // DON'T EDIT BELOW THIS LINE
           var d = document, s = d.createElement('script');
-          s.src = 'https://<%- config.aomori_disqus_shortname %>.disqus.com/embed.js';
+          s.src = 'https://<%- theme.disqus_shortname %>.disqus.com/embed.js';
           s.setAttribute('data-timestamp', +new Date());
           (d.head || d.body).appendChild(s);
       })();
@@ -31,7 +31,7 @@
 </section>
 <% } %>
 
-<% if (post.comment && config.aomori_gitalk){ %>
+<% if (post.comment && theme.gitalk){ %>
 <section class="comments">
   <div id="gitalk-container"></div>
 </section>

@@ -21,7 +21,7 @@
     <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <% if (config.aomori_search_algolia){ %>
+    <% if (theme.search_algolia){ %>
         <%- algolia_search_config() %>
     <% } %>
 
@@ -33,7 +33,7 @@
     <link rel="icon" href="<%- config.favicon %>">
     <% } %>
 
-    <% if (config.aomori_gitalk){ %>
+    <% if (theme.gitalk){ %>
     <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
     <% } %>
 
@@ -42,20 +42,20 @@
     <script>
         window.isPost = <%- is_post() %>
         window.aomori = {
-            <% if (config.aomori_gitalk){ %>
+            <% if (theme.gitalk){ %>
             gitalk: {
-                enable: <%= config.aomori_gitalk.enable %>,
-                clientID: "<%= config.aomori_gitalk.clientID %>",
-                clientSecret: "<%= config.aomori_gitalk.clientSecret %>",
-                repo: "<%= config.aomori_gitalk.repo %>",
-                owner: "<%= config.aomori_gitalk.owner %>",
-                admin: [<% config.aomori_gitalk.admin.forEach(function(item){%>"<%=item %>",<% }) %>],
-                distractionFreeMode: <%= config.aomori_gitalk.distractionFreeMode %>  // Facebook-like distraction free mode
+                enable: <%= theme.gitalk.enable %>,
+                clientID: "<%= theme.gitalk.clientID %>",
+                clientSecret: "<%= theme.gitalk.clientSecret %>",
+                repo: "<%= theme.gitalk.repo %>",
+                owner: "<%= theme.gitalk.owner %>",
+                admin: [<% theme.gitalk.admin.forEach(function(item){%>"<%=item %>",<% }) %>],
+                distractionFreeMode: <%= theme.gitalk.distractionFreeMode %>  // Facebook-like distraction free mode
             },
             <% } %>
         }
-        window.aomori_logo_typed_animated = <%= config.aomori_logo_typed_animated || false %>
-        window.aomori_search_algolia = <%= config.aomori_search_algolia || false %>
+        window.aomori_logo_typed_animated = <%= theme.logo_typed_animated || false %>
+        window.aomori_search_algolia = <%= theme.search_algolia || false %>
     </script>
 
 </head>

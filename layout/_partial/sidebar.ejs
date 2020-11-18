@@ -1,10 +1,10 @@
 
-<% if (config.aomori_search_algolia){ %>
+<% if (theme.search_algolia){ %>
     <%- partial('_partial/search') %>
 <% } %>
 
 <div class="widget" id="widget">
-    <% config.aomori_widgets.forEach(function(widget){ %>
+    <% theme.widgets.forEach(function(widget){ %>
       <%- partial('_widget/' + widget) %>
     <% }) %>
 </div>
