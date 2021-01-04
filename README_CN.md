@@ -351,3 +351,7 @@ Enjoy.
 # Copyright & License
 
 Copyright (c) 2020 LIN HONG - Released under the [MIT license](LICENSE).
+
+# Thanks
+
+[OMNCLOUD.COM](https://omncloud.com/store) 为我们提供了优质的 VPS 服务
