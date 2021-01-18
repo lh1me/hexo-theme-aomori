@@ -264,6 +264,15 @@ aomori_gitalk:
   distractionFreeMode: true // Facebook-like distraction free mode
 ```
 
+#### Valine
+
+``` yml
+aomori_valine:
+  enable: true
+  appId: ''
+  appKey: ''
+```
+
 ---
 
 ## 页面
