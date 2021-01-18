@@ -1,3 +1,10 @@
+# 1.14.0
+
+### Features
+
+- Feat: Valine support
+- Feat: Friends page style
+
 # 1.13.0
 
 ### Features
