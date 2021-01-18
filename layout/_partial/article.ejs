@@ -91,7 +91,7 @@
 
 </article>
 
-<% if (config.aomori_disqus_shortname){ %>
+<% if (!config.aomori_disqus_shortname){ %>
 <section class="comments">
     <div id="disqus_thread"></div>
     <script>
@@ -113,4 +113,11 @@
 
 <% if (config.aomori_busuanzi){ %>
 <script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<% } %>
+
+<% if (config.aomori_valine && config.aomori_valine.enable){ %>
+<section class="comments">
+    <div id="valine-container"></div>
+</section>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 <% } %>

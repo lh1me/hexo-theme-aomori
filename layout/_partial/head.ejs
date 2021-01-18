@@ -53,9 +53,17 @@
                 distractionFreeMode: <%= config.aomori_gitalk.distractionFreeMode %>  // Facebook-like distraction free mode
             },
             <% } %>
+            <% if (config.aomori_valine){ %>
+            valine: {
+                enable: <%= config.aomori_valine.enable || false %>,
+                appId: "<%= config.aomori_valine.appId || '' %>",
+                appKey: "<%= config.aomori_valine.appKey || '' %>",
+            },
+            <% } %>
         }
         window.aomori_logo_typed_animated = <%= config.aomori_logo_typed_animated || false %>
         window.aomori_search_algolia = <%= config.aomori_search_algolia || false %>
+
     </script>
 
 </head>

@@ -5,3 +5,6 @@ import './custom'
 
 // Gitalk
 import './gitalk'
+
+// Valine
+import './valine'
