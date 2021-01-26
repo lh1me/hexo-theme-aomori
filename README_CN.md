@@ -187,6 +187,8 @@ link_reprint:
     title: title
 ```
 
+配置后文章列表将会显示徽章提示。
+
 #### 参考链接
 
 可配多条
@@ -217,7 +219,9 @@ npm i hexo-generator-index -S
 sticky: 100
 ```
 
-更多使用方法 [点击查看](https://github.com/hexojs/hexo-generator-index)
+更多使用方法 [点击查看](https://github.com/hexojs/hexo-generator-index)。
+
+配置后文章列表将会显示徽章提示。
 
 #### Video
 

@@ -1,3 +1,9 @@
+# 1.15.0
+
+### Features
+
+- Feat: New badge for Sticky and Repost
+
 # 1.14.0
 
 ### Features

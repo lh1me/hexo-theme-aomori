@@ -184,6 +184,8 @@ link_reprint:
     title: title
 ```
 
+This configuration will show the badge on the homepage.
+
 #### Reference Link
 
 ``` yml
@@ -211,6 +213,8 @@ sticky: 100
 ```
 
 More ways to use [hexo-generator-index](https://github.com/hexojs/hexo-generator-index)
+
+This configuration will show the badge on the homepage.
 
 #### Video
 
