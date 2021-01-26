@@ -1,73 +1,82 @@
 <article
-  id="<%= post.layout %>-<%= post.slug %>"
-  class="article article-type-<%= post.layout %>"
+id="<%= post.layout %>-<%= post.slug %>"
+class="article article-type-<%= post.layout %>"
 >
 
-  <% if (post.video && post.layout !== 'tweet'){ %>
-  <div class="article-video">
+<% if (post.video && post.layout !== 'tweet'){ %>
+<div class="article-video">
     <video class="article-video-plyr" data-poster="<%= post.video.poster %>">
-      <source src="<%= post.video.src %>">
+    <source src="<%= post.video.src %>">
     </video>
-  </div>
-  <% } %>
+</div>
+<% } %>
 
-  <div class="article-inner">
+<div class="article-inner">
     <% if (!post.video && (post.cover || post.photos && post.photos.length)){ %>
-      <div class="article-feature">
-          <a href="<%- url_for(post.path) %>">
+    <div class="article-feature">
+        <a href="<%- url_for(post.path) %>">
             <img
-              src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E"
-              data-src="<%- url_for(post.cover || post.photos[0]) %>"
-              alt="item.title"
-              class="lazy"
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E"
+            data-src="<%- url_for(post.cover || post.photos[0]) %>"
+            alt="item.title"
+            class="lazy"
             />
-          </a>
-      </div>
+        </a>
+    </div>
     <% } %>
 
     <div class="article-body">
-      <header class="article-title">
+    <header class="article-title">
         <a href="<%- url_for(post.path) %>"><%= post.title %></a>
-      </header>
-      <div class="article-entry post-inner-html">
+    </header>
+    <div class="article-entry post-inner-html">
         <% if (post.excerpt){ %>
-          <%- post.excerpt %>
+        <%- post.excerpt %>
         <% } else { %>
-          <%- post.content %>
+        <%- post.content %>
         <% } %>
-      </div>
+    </div>
     </div>
 
-    <% if(post.sticky) { %>
-      <div class="article-top">TOP</div>
-    <% } %>
+    <div class="article-badge">
+        <% if(post.sticky) { %>
+        <div class="article-top">
+            <box-icon type='solid' name='to-top' color='#ffffff' size='xs'></box-icon>
+        </div>
+        <% } %>
+        <% if(post.link_reprint) { %>
+            <div class="article-repost">
+                <box-icon name='repost' color='#ffffff' size='xs'></box-icon>
+            </div>
+        <% } %>
+    </div>
 
-  </div>
+</div>
 
-  <footer class="article-footer">
+<footer class="article-footer">
     <div class="article-more-info">
-      <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
-      <% if (post.categories && post.categories.length){ %>
+    <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
+    <% if (post.categories && post.categories.length){ %>
         <div class="article-category">
-          <%- list_categories(post.categories, {
+        <%- list_categories(post.categories, {
             show_count: false,
             class: 'article-category',
             style: 'none',
             separator: ',',
             depth: 1
-          }) %>
+        }) %>
         </div>
-      <% } %>
-      <% if (post.tags && post.tags.length){ %>
+    <% } %>
+    <% if (post.tags && post.tags.length){ %>
         <div class="article-tag">
-          <%- list_tags(post.tags, {
+        <%- list_tags(post.tags, {
             show_count: false,
             class: 'article-tag',
             amount: 3
-          }) %>
+        }) %>
         </div>
-      <% } %>
+    <% } %>
     </div>
-  </footer>
+</footer>
 
 </article>
