@@ -6,7 +6,7 @@
 
 <br/>
 
-![image](https://raw.githubusercontent.com/lh1me/hexo-theme-aomori/master/docs/cover.jpg)
+![image](https://raw.githubusercontent.com/lh1me/hexo-theme-aomori/master/docs/cover.png)
 
 # Aomori
 
