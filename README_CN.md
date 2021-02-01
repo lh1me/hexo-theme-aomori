@@ -253,6 +253,25 @@ layout: tweet
 aomori_disqus_shortname: ''
 ```
 
+#### DisqusJS
+
+使用 DisqusJS 搭配 Disqus API 在中国大陆访问会更加友好
+
+配置详情参照 [https://github.com/SukkaW/DisqusJS](https://github.com/SukkaW/DisqusJS)
+
+``` yml
+aomori_disqusjs:
+  enable: true
+  shortname: ""
+  siteName: ""
+  api: ""
+  apikey: ""
+  nesting: 4
+  nocomment: "这里冷冷清清的，一条评论都没有"
+  admin: ""
+  adminLabel: ""
+```
+
 #### Gitalk
 
 ``` yml

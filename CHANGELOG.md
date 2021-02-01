@@ -1,3 +1,9 @@
+# 1.16.0
+
+### Features
+
+- Feat: DisqusJS support
+
 # 1.15.0
 
 ### Features

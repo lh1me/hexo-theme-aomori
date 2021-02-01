@@ -246,6 +246,25 @@ Input Disqus ID
 aomori_disqus_shortname: ''
 ```
 
+#### DisqusJS
+
+Using DisqusJS with Disqus API to visit in China will be more friendly.
+
+Configuration details [https://github.com/SukkaW/DisqusJS](https://github.com/SukkaW/DisqusJS)
+
+``` yml
+aomori_disqusjs:
+  enable: true
+  shortname: ""
+  siteName: ""
+  api: ""
+  apikey: ""
+  nesting: 4
+  nocomment: "这里冷冷清清的，一条评论都没有"
+  admin: ""
+  adminLabel: ""
+```
+
 #### Gitalk
 
 ``` yml
