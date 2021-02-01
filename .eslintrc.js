@@ -22,7 +22,8 @@ module.exports = {
     "Swiper": true,
     "Plyr": true,
     "LazyLoad": true,
-    "Valine": true
+    "Valine": true,
+    "DisqusJS": true,
   },
   extends: [
     "eslint:recommended",

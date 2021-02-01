@@ -92,7 +92,7 @@
 </article>
 
 <% if (config.aomori_disqus_shortname){ %>
-<section class="comments">
+<section class="comments comments-disqus">
     <div id="disqus_thread"></div>
     <script>
         (function () { // DON'T EDIT BELOW THIS LINE
@@ -102,6 +102,12 @@
             (d.head || d.body).appendChild(s);
         })();
     </script>
+</section>
+<% } %>
+
+<% if (config.aomori_disqusjs){ %>
+<section class="comments comments-disqusjs">
+    <div id="disqus_thread"></div>
 </section>
 <% } %>
 

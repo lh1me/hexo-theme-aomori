@@ -37,6 +37,10 @@
     <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
     <% } %>
 
+    <% if (config.aomori_disqusjs){ %>
+    <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.3/dist/disqusjs.css">
+    <% } %>
+
     <%- css(`/dist/build.css?v=${theme.version}`) %>
 
     <script>
@@ -58,6 +62,19 @@
                 enable: <%= config.aomori_valine.enable || false %>,
                 appId: "<%= config.aomori_valine.appId || '' %>",
                 appKey: "<%= config.aomori_valine.appKey || '' %>",
+            },
+            <% } %>
+            <% if (config.aomori_disqusjs){ %>
+            disqusjs: {
+              enable: <%= config.aomori_disqusjs.enable || false %>,
+              shortname: "<%= config.aomori_disqusjs.shortname || '' %>",
+              siteName: "<%= config.aomori_disqusjs.siteName || '' %>",
+              api: "<%= config.aomori_disqusjs.api || 'https://disqus.skk.moe/disqus/' %>",
+              apikey: "<%= config.aomori_disqusjs.apikey || '' %>",
+              nesting: "<%= config.aomori_disqusjs.nesting || 4 %>",
+              nocomment: "<%= config.aomori_disqusjs.nocomment || '这里冷冷清清的，一条评论都没有' %>",
+              admin: "<%= config.aomori_disqusjs.admin || '' %>",
+              adminLabel: "<%= config.aomori_disqusjs.adminLabel || '' %>",
             },
             <% } %>
         }
