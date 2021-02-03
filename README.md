@@ -267,6 +267,8 @@ aomori_disqusjs:
 
 #### Gitalk
 
+Configuration details [https://github.com/gitalk/gitalk](https://github.com/gitalk/gitalk)
+
 ``` yml
 aomori_gitalk:
   enable: true
@@ -281,6 +283,8 @@ aomori_gitalk:
 ```
 
 #### Valine
+
+Configuration details [https://valine.js.org/](https://valine.js.org/)
 
 ``` yml
 aomori_valine:
