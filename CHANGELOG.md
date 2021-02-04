@@ -1,3 +1,9 @@
+# 1.16.1
+
+### Features
+
+- Feat: Style adjustment
+
 # 1.16.0
 
 ### Features
