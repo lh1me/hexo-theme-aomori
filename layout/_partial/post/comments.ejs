@@ -1,0 +1,35 @@
+<% if (config.aomori_disqus_shortname){ %>
+<section class="comments comments-disqus">
+    <div id="disqus_thread"></div>
+    <script>
+        ;(function () {
+            // DON'T EDIT BELOW THIS LINE
+            var d = document,
+                s = d.createElement('script')
+            s.src =
+                'https://<%- config.aomori_disqus_shortname %>.disqus.com/embed.js'
+            s.setAttribute('data-timestamp', +new Date())
+            ;(d.head || d.body).appendChild(s)
+        })()
+    </script>
+</section>
+<% } %>
+
+<% if (config.aomori_disqusjs){ %>
+<section class="comments comments-disqusjs">
+    <div id="disqus_thread"></div>
+</section>
+<% } %>
+
+<% if (config.aomori_gitalk){ %>
+<section class="comments">
+    <div id="gitalk-container"></div>
+</section>
+<% } %>
+
+<% if (config.aomori_valine && config.aomori_valine.enable){ %>
+<section class="comments">
+    <div id="valine-container"></div>
+</section>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<% } %>
