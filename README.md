@@ -297,7 +297,24 @@ aomori_valine:
 
 ## Page
 
-#### Friends Links
+#### Default Page
+
+1. First create the page,
+
+```
+hexo new page xxx
+```
+
+2. Go to `source/xxx/index.md`，Set up `Front-matter`
+
+```
+title:
+comment: true # or false
+```
+
+Setting the `comment` to `true` will open the comment plugin of the page
+
+#### Friends Links Page
 
 1. First create the page,
 

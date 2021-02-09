@@ -1,3 +1,10 @@
+# 1.16.2
+
+### Bug Fixes
+
+- Fixed: Default page layout
+- Fixed: Page comment init
+
 # 1.16.1
 
 ### Features

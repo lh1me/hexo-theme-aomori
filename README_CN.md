@@ -304,7 +304,24 @@ aomori_valine:
 
 ## 页面
 
-#### 友情链接
+#### 默认页面
+
+1. 首先创建页面
+
+```
+hexo new page xxx
+```
+
+2. 前往 `source/xxx/index.md`，文件，设置 `Front-matter`
+
+```
+title:
+comment: true # or false
+```
+
+设置 `comment` 为 `true` 会打开页面的评论功能
+
+#### 友情链接页面
 
 1. 首先创建页面
 
@@ -312,7 +329,7 @@ aomori_valine:
 hexo new page friends
 ```
 
-2. 前往 `source/friends/index.md` 文件，设置 Front-matter
+2. 前往 `source/friends/index.md` 文件，设置 `Front-matter`
 
 ```
 title: 友情链接 # 文章标题
