@@ -1,0 +1,16 @@
+<% if (post.content){ %>
+<article
+id="<%= post.layout %>-<%= post._id %>"
+class="article article-type-<%= post.layout %>"
+>
+  <div class="article-inner">
+      <div class="article-entry post-inner-html">
+          <%- post.content %>
+      </div>
+  </div>
+</article>
+<% } %>
+  
+<% if (post.comment ){ %>
+<%- partial('../post/comments') %>
+<% } %>
