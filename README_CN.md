@@ -300,6 +300,21 @@ aomori_valine:
   appKey: ''
 ```
 
+#### Remark42
+
+配置详情参照 [https://github.com/umputun/remark42](https://github.com/umputun/remark42)
+
+``` yml
+aomori_remark42:
+  enable: true
+  host: ''
+  site_id: ''
+  max_shown_comments: 10
+  theme: "light"
+  locale: "en"
+  show_email_subscription: false
+```
+
 ---
 
 ## 页面

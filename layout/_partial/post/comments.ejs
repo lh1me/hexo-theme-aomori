@@ -33,3 +33,24 @@
 </section>
 <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
 <% } %>
+
+<% if (config.aomori_remark42 && config.aomori_remark42.enable){ %>
+<div id="remark42"></div>
+<script>
+    (function() {
+        window.remark_config = {
+            host: "<%= config.aomori_remark42.host || '' %>",
+            site_id: "<%= config.aomori_remark42.site_id || '' %>",
+            max_shown_comments: "<%= config.aomori_remark42.max_shown_comments || 15 %>",
+            theme: "<%= config.aomori_remark42.theme || 'dark' %>",
+            locale: "<%= config.aomori_remark42.locale || 'en' %>",
+            show_email_subscription: "<%= config.aomori_remark42.show_email_subscription || false %>",
+            components: ['embed']
+        }
+        var d = document, s = d.createElement('script');
+        s.src = remark_config.host + '/web/embed.js';
+        s.defer = true;
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<% } %>

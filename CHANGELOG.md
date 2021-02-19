@@ -1,3 +1,9 @@
+# 1.17.0
+
+### Features
+
+- Feat: Remark42 Support
+
 # 1.16.2
 
 ### Bug Fixes
