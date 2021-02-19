@@ -47,6 +47,7 @@ gulp.task('css', function () {
         'source/stylesheets/viewer.min.css',
         'source/stylesheets/swiper-bundle.min.css',
         'source/stylesheets/plyr.css',
+        'source/stylesheets/remark42.css',
         'source/stylesheets/post.css',
         'source/stylesheets/style.scss'
       ])
