@@ -1,3 +1,9 @@
+# 1.18.0
+
+### Features
+
+- Feat: Google site verification support
+
 # 1.17.0
 
 ### Features

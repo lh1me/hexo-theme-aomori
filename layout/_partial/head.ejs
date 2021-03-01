@@ -21,6 +21,10 @@
     <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+    <% if (config.aomori_google_site && config.aomori_google_site.enable){ %>
+      <meta name="google-site-verification" content="<%= config.aomori_google_site.id %>" />
+    <% } %>
+
     <% if (config.aomori_search_algolia){ %>
         <%- algolia_search_config() %>
     <% } %>

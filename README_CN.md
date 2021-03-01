@@ -127,6 +127,14 @@ aomori_baidu_analytics: ''
 aomori_google_analytics: 'UA-XXXXX-X'
 ```
 
+#### Google Site Verification
+
+``` yml
+aomori_google_site:
+  enable: true
+  id: XXX
+```
+
 #### 不蒜子 统计
 
 由 [不蒜子](https://busuanzi.ibruce.info/) 提供的计数服务
