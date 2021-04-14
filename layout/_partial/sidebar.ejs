@@ -4,7 +4,7 @@
 <% } %>
 
 <div class="widget" id="widget">
-    <% config.aomori_widgets.forEach(function(widget){ %>
+    <% (config.aomori_widgets || theme.aomori_widgets).forEach(function(widget){ %>
       <%- partial('_widget/' + widget) %>
     <% }) %>
 </div>

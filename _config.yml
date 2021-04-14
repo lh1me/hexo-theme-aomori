@@ -1,2 +1,10 @@
 version: 1.18.0
 language: cn
+
+# default
+aomori_widgets:
+- toc
+- category
+- tag
+- recent_posts
+- archive
