@@ -5,6 +5,7 @@
   "author": "lh1me",
   "scripts": {
     "dev": "gulp",
+    "build": "gulp build",
     "lint": "eslint ./source/javascripts/ --ext .js --fix",
     "stylelint": "stylelint source/stylesheets/**/*.scss --fix",
     "release": "standard-version"
@@ -31,6 +32,7 @@
     "gulp-sass": "^4.1.0",
     "gulp-stylelint": "^13.0.0",
     "gulp-uglify": "^3.0.2",
+    "js-yaml": "^4.0.0",
     "partialify": "^3.1.6",
     "postcss": "^8.2.10",
     "prettier": "^2.2.1",
