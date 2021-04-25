@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.20.0](https://github.com/lh1me/hexo-theme-aomori/compare/v1.19.0...v1.20.0) (2021-04-25)
+
+
+### Features
+
+* new page style photography ([4a8ccb4](https://github.com/lh1me/hexo-theme-aomori/commit/4a8ccb4576275ead3e4fb3ce73872e36643f7871))
+* support sidebar hide ([268f05f](https://github.com/lh1me/hexo-theme-aomori/commit/268f05f6618419cf82a68044caff93549a5af9fe))
+
 ## [1.19.0](https://github.com/lh1me/hexo-theme-aomori/compare/v1.18.0...v1.19.0) (2021-04-14)
 
 
