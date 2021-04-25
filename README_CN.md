@@ -237,6 +237,18 @@ sticky: 100
 
 ---
 
+## 页面可选功能
+
+配置文件：页面头部
+
+#### 隐藏侧边栏
+
+```
+sidebar: false
+```
+
+---
+
 ## 文章可选风格
 
 配置文件：文章头部
@@ -374,6 +386,48 @@ comment: true # 是否需要评论 true: 是 false: 否
     "name": "test2",
     "url": "https://linhong.me"
   }
+  ...
+]
+```
+
+#### 摄影/图像作品展示
+
+1. 首先创建页面
+
+```
+hexo new page photography
+```
+
+2. 前往 `source/photography/index.md` 文件，设置 `Front-matter`
+
+```
+title: 我的摄影 # 文章标题
+layout: photography
+sidebar: false
+```
+
+3. 创建数据，参照 [数据文件夹](https://hexo.io/zh-cn/docs/data-files)
+
+4. 创建 `source/_data/photography.json`，格式如下
+
+```
+[
+  {
+    "photo": "https://xxx.jpg",
+    "title": "XXX",
+    "shared": {
+        "title": "Unsplash",
+        "url": "https://linhong.me"
+    }
+  },
+  {
+    "photo": "https://xxx.jpg",
+    "title": "XXX",
+    "shared": {
+        "title": "Unsplash",
+        "url": "https://linhong.me"
+    }
+  },
   ...
 ]
 ```

@@ -146,6 +146,18 @@ aomori_busuanzi: true
 
 ---
 
+## Page Features
+
+Configuration in the page's `Front-matter`
+
+#### Hidden Sidebar
+
+```
+sidebar: false
+```
+
+---
+
 ## Article Features
 
 Configuration in the `Front-matter`
@@ -367,6 +379,48 @@ comment: true # or false
     "name": "test2",
     "url": "https://linhong.me"
   }
+  ...
+]
+```
+
+#### Photography Page
+
+1. First create the page,
+
+```
+hexo new page photography
+```
+
+2. Go to `source/photography/index.md`，Set up `Front-matter`
+
+```
+title:
+layout: photography
+sidebar: false
+```
+
+3. Create data, refer to [Data Files](https://hexo.io/zh-cn/docs/data-files)
+
+4. Create `source/_data/photography.json`，The format is as follows
+
+```
+[
+  {
+    "photo": "https://xxx.jpg",
+    "title": "XXX",
+    "shared": {
+        "title": "Unsplash",
+        "url": "https://linhong.me"
+    }
+  },
+  {
+    "photo": "https://xxx.jpg",
+    "title": "XXX",
+    "shared": {
+        "title": "Unsplash",
+        "url": "https://linhong.me"
+    }
+  },
   ...
 ]
 ```
