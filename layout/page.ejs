@@ -1,10 +1,20 @@
 
 <% if (page.layout === 'friends'){ %>
+
 <div class="<%= page.layout %>">
   <%- partial(`_partial/page/${page.layout}`, {post: page, index: false}) %>
 </div>
+
+<% } else if (page.layout === 'photography') { %>
+
+<div class="<%= page.layout %>">
+  <%- partial(`_partial/page/${page.layout}`, {post: page, index: false}) %>
+</div>
+
 <% } else { %>
+
 <div class="<%= page.layout %>">
   <%- partial(`_partial/page/default`, {post: page, index: false}) %>
 </div>
+
 <% } %>
