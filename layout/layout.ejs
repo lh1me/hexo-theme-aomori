@@ -12,13 +12,11 @@
                 </section>
             </section>
 
-            <% if (config.aomori_search_algolia){ %>
-            <aside class="sidebar sidebar-search-fix">
-            <% } else {%> 
-            <aside class="sidebar">
-            <% } %>
+            <% if (page.sidebar !== false){ %>
+            <aside class="sidebar <% if (config.aomori_search_algolia){ %>sidebar-search-fix<% } %>">
                 <%- partial('_partial/sidebar') %>
             </aside>
+            <% } %>
         </div>
     </div>
 

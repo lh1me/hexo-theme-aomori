@@ -34,11 +34,14 @@ import { addNewClass, removeClass, throttle } from './class-module'
     })
 
     // TOC
-    tocbot.init({
-        tocSelector: '.post-toc-html',
-        contentSelector: '.post-inner-html',
-        headingSelector: 'h1, h2, h3',
-    })
+    document.querySelector('.post-toc-html') &&
+        document.querySelector('.post-inner-html') &&
+        tocbot.init({
+            tocSelector: '.post-toc-html',
+            contentSelector: '.post-inner-html',
+            headingSelector: 'h1, h2, h3',
+        })
+
     // NProgress
     var totalH =
         document.body.scrollHeight || document.documentElement.scrollHeight // 页面总高
@@ -130,7 +133,7 @@ import { addNewClass, removeClass, throttle } from './class-module'
 
     // Perfect Scrollbar
     const _widget = document.querySelector('#widget')
-    const widget = new PerfectScrollbar(_widget)
+    _widget && new PerfectScrollbar(_widget)
 
     // Typed
     if (window.aomori_logo_typed_animated) {
@@ -146,7 +149,7 @@ import { addNewClass, removeClass, throttle } from './class-module'
     // Algolia
     if (window.aomori_search_algolia) {
         const _searchPs = document.querySelector('#search-ps')
-        const searchPs = new PerfectScrollbar(_searchPs)
+        _searchPs && new PerfectScrollbar(_searchPs)
 
         const algoliaConfig = document.querySelector(
             'meta[property="algolia:search"]'
