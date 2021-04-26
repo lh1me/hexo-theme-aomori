@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.20.1](https://github.com/lh1me/hexo-theme-aomori/compare/v1.20.0...v1.20.1) (2021-04-26)
+
+
+### Features
+
+* page title ([bebbb95](https://github.com/lh1me/hexo-theme-aomori/commit/bebbb9503fd2c39e035d01f3f8f283593547c467))
+* photography ([0f1ff08](https://github.com/lh1me/hexo-theme-aomori/commit/0f1ff08c38cb5b4bb198e5b8c8d46949f38bca9a))
+
 ## [1.20.0](https://github.com/lh1me/hexo-theme-aomori/compare/v1.19.0...v1.20.0) (2021-04-25)
 
 
