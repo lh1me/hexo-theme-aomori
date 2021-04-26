@@ -101,9 +101,9 @@ aomori_copyright: true # or false
 ``` yml
 aomori_social:
   -
-    icon:
-    type:
-    url:
+    icon: # Boxicons name
+    type: # Boxicons type
+    url: # Your social link
   -
     icon:
     type:
@@ -405,25 +405,31 @@ sidebar: false
 
 ```
 [
-  {
-    "photo": "https://xxx.jpg",
-    "title": "XXX",
-    "shared": {
-        "title": "Unsplash",
-        "url": "https://linhong.me"
-    }
-  },
-  {
-    "photo": "https://xxx.jpg",
-    "title": "XXX",
-    "shared": {
-        "title": "Unsplash",
-        "url": "https://linhong.me"
-    }
-  },
-  ...
+    {
+        "photo": "https://xxx.jpg",
+        "title": "This is title.",
+        "icon": {
+            "name": "unsplash",
+            "type": "logo",
+            "url": "https://linhong.me"
+        },
+        "place": "China"
+    },
+    {
+        "photo": "https://xxx.jpg",
+        "title": "This is title.",
+        "icon": {
+            "name": "unsplash",
+            "type": "logo",
+            "url": "https://linhong.me"
+        },
+        "place": "China"
+    },
+    ...
 ]
 ```
+
+`icon` field is base on [Boxicons](https://boxicons.com/)
 
 ---
 

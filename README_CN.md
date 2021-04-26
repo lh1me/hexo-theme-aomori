@@ -100,9 +100,9 @@ aomori_copyright: true # or false
 ``` yml
 aomori_social:
   -
-    icon:
-    type:
-    url:
+    icon: # 图标 name 字段
+    type: # 图标 type 字段
+    url: # 你的社交媒体链接
   -
     icon:
     type:
@@ -412,25 +412,31 @@ sidebar: false
 
 ```
 [
-  {
-    "photo": "https://xxx.jpg",
-    "title": "XXX",
-    "shared": {
-        "title": "Unsplash",
-        "url": "https://linhong.me"
-    }
-  },
-  {
-    "photo": "https://xxx.jpg",
-    "title": "XXX",
-    "shared": {
-        "title": "Unsplash",
-        "url": "https://linhong.me"
-    }
-  },
-  ...
+    {
+        "photo": "https://xxx.jpg",
+        "title": "This is title.",
+        "icon": {
+            "name": "unsplash",
+            "type": "logo",
+            "url": "https://linhong.me"
+        },
+        "place": "China"
+    },
+    {
+        "photo": "https://xxx.jpg",
+        "title": "This is title.",
+        "icon": {
+            "name": "unsplash",
+            "type": "logo",
+            "url": "https://linhong.me"
+        },
+        "place": "China"
+    },
+    ...
 ]
 ```
+
+`icon` 字段参数基于 [Boxicons](https://boxicons.com/)
 
 ---
 
