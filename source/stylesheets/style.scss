@@ -97,9 +97,10 @@ img:not([src]):not([srcset]) {
         }
 
         &-page-title {
-            font-size: 18px;
+            font-size: 14px;
             font-weight: 300;
             margin-left: 10px;
+            user-select: none;
         }
 
         .typed-cursor {

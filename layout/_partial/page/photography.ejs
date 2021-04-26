@@ -1,43 +1,22 @@
-<div class="photography columns clearfix">
+<div class="columns clearfix">
         <div class="column col-md-12">
             <% site.data.photography.forEach(function(item, index){ %>
                 <% if (((index) % 3) === 0) { %>
-                    <div class="photography-item">
-                        <img
-                            class="lazy"
-                            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E"
-                            data-src="<%= item.photo %>"
-                            alt="item.title"
-                        />
-                    </div>
+                    <%- partial('photography-item', {item}) %>
                 <% } %> 
             <% }) %>
         </div>
         <div class="column col-md-12">
             <% site.data.photography.forEach(function(item, index){ %>
                 <% if (((index) % 3) === 1) { %>
-                    <div class="photography-item">
-                        <img
-                            class="lazy"
-                            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E"
-                            data-src="<%= item.photo %>"
-                            alt="item.title"
-                        />
-                    </div>
+                    <%- partial('photography-item', {item}) %>
                 <% } %> 
             <% }) %>
         </div>
         <div class="column col-md-12">
             <% site.data.photography.forEach(function(item, index){ %>
                 <% if (((index) % 3) === 2) { %>
-                    <div class="photography-item">
-                        <img
-                            class="lazy"
-                            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E"
-                            data-src="<%= item.photo %>"
-                            alt="item.title"
-                        />
-                    </div>
+                    <%- partial('photography-item', {item}) %>
                 <% } %> 
             <% }) %>
         </div>

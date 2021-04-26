@@ -1,0 +1,30 @@
+<div class="photography-item">
+    <img
+        class="lazy"
+        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E"
+        data-src="<%= item.photo %>"
+        alt="<%= item.title || config.title || '' %>"
+    />
+    <div class="photography-item-wrapper"></div>
+
+    <% if (item.title) { %>
+    <div class="photography-item-title">
+        <%= item.title %> 
+    </div>
+    <% } %>
+
+    <% if (item.place) { %>
+    <div class="photography-item-place">
+        <box-icon color="#fff" size='xs' name='map' type='solid' ></box-icon>
+        <span><%= item.place %></span>
+    </div>
+    <% } %>
+
+    <% if (item.icon.name) { %>
+    <div class="photography-item-icon">
+        <% if (item.icon.url) { %><a target="_blank" href="<%- item.icon.url %>"><% } %> 
+            <box-icon size="xs" type='<%- item.icon.type %>' name='<%- item.icon.name %>'></box-icon>
+        <% if (item.icon.url) { %></a><% } %> 
+    </div>
+    <% } %>
+</div>

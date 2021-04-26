@@ -27,17 +27,103 @@
 }
 
 .photography {
-    padding: .4rem .4rem 0;
+    padding: 20px 20px 0;
     border-radius: 8px;
     background: var(--color-white-light);
 
+    .columns {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+    .column {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
     &-item {
-        margin-bottom: .8rem;
+        position: relative;
+        margin-bottom: 20px;
         cursor: pointer;
+        overflow: hidden;
+
+        &-wrapper {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            transition: all 0.3s ease-in-out;
+            z-index: 10;
+
+            &:hover {
+                background: rgba(0, 0, 0, .5);
+            }
+        }
+
+        &-title {
+            position: absolute;
+            left: 15px;
+            top: 15px;
+            line-height: 20px;
+            color: var(--color-white-light);
+            transform: scale(0);
+            transition: all 0.3s ease-in-out;
+            z-index: 100;
+        }
+
+        &-place {
+            position: absolute;
+            left: 15px;
+            bottom: 15px;
+            height: 20px;
+            line-height: 20px;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            z-index: 100;
+            transform: scale(0);
+            transition: all 0.3s ease-in-out;
+            color: var(--color-white-light);
+            
+            span {
+                padding-left: 2px;
+            }
+        }
+
+        &-icon {
+            position: absolute;
+            right: 15px;
+            bottom: 15px;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+            border-radius: 50%;
+            background-color: var(--color-white-light);
+        }
 
         img {
             width: 100%;
             height: auto;
+            transition: all 0.3s ease-in-out;
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.05);
+            }
+
+            .photography-item-title {
+                transform: scale(1);
+            }
+
+            .photography-item-place {
+                transform: scale(1);
+            }
         }
     }
 }
