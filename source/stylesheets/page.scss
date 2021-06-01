@@ -12,6 +12,14 @@
         // .article-entry {}
     }
 
+    &-cover {
+        width: 100%;
+        height: 260px;
+        margin-bottom: 50px;
+        background: url('/images/friends.svg') no-repeat center center;
+        background-size: contain;
+    }
+
     &-links {
         a {
             background: var(--color-white-light);

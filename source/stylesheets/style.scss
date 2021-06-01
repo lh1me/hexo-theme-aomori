@@ -943,6 +943,15 @@ img:not([src]):not([srcset]) {
     }
 }
 
+.archives-cover {
+    width: 100%;
+    height: 260px;
+    margin-bottom: 50px;
+    background: url('/images/archives.svg') no-repeat center center;
+    background-size: contain;
+}
+
+
 .archives-wrap {
     background: var(--color-white-light);
     border-radius: 8px;
