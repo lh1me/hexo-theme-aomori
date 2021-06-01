@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.21.0](https://github.com/lh1me/hexo-theme-aomori/compare/v1.20.1...v1.21.0) (2021-06-01)
+
+
+### Features
+
+* new page cover ([23e143e](https://github.com/lh1me/hexo-theme-aomori/commit/23e143e3736f9d3abd2f3839fd618bcbf9f8658d))
+
 ### [1.20.1](https://github.com/lh1me/hexo-theme-aomori/compare/v1.20.0...v1.20.1) (2021-04-26)
 
 
