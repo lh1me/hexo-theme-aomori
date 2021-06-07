@@ -144,6 +144,12 @@ Counting service provided by [Busuanzi](https://busuanzi.ibruce.info/)
 aomori_busuanzi: true
 ```
 
+## Emoji Favicon
+
+``` yml
+aomori_favicon: 🎮
+```
+
 ---
 
 ## Page Features
@@ -475,8 +481,8 @@ Enjoy.
 
 # Copyright & License
 
-Copyright (c) 2020 LIN HONG - Released under the [MIT license](LICENSE).
+Copyright (c) 2020 - 2021 LIN HONG - Released under the [MIT license](LICENSE).
 
 # Thanks
 
-[OMNCLOUD.COM](https://omncloud.com/store) Provides an excellent VPS service.
+[HostSencillo](https://my.hostsencillo.com/cart) Provides an excellent VPS service.

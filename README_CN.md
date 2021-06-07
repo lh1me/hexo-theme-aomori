@@ -143,6 +143,14 @@ aomori_google_site:
 aomori_busuanzi: true
 ```
 
+#### Emoji Favicon
+
+在 Favicon 显示 Emoji
+
+``` yml
+aomori_favicon: 🎮
+```
+
 ---
 
 ## 文章可选功能
