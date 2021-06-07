@@ -144,7 +144,7 @@ Counting service provided by [Busuanzi](https://busuanzi.ibruce.info/)
 aomori_busuanzi: true
 ```
 
-## Emoji Favicon
+#### Emoji Favicon
 
 ``` yml
 aomori_favicon: 🎮
