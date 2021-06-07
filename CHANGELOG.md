@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.22.0](https://github.com/lh1me/hexo-theme-aomori/compare/v1.21.0...v1.22.0) (2021-06-07)
+
+
+### Features
+
+* add favicon emoji ([24806f6](https://github.com/lh1me/hexo-theme-aomori/commit/24806f63f9189a9415e10404cfc40f8fe3aba2fe))
+* update package ([9485eac](https://github.com/lh1me/hexo-theme-aomori/commit/9485eac2e029d5a0f1f8db86aa930639a3ec4bec))
+* widget achive yearly ([e876501](https://github.com/lh1me/hexo-theme-aomori/commit/e876501d64f76bff8ac4d71ffc1cd9c0a7f1b436))
+
 ## [1.21.0](https://github.com/lh1me/hexo-theme-aomori/compare/v1.20.1...v1.21.0) (2021-06-01)
 
 
