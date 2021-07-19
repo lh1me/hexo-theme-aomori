@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.23.0](https://github.com/lh1me/hexo-theme-aomori/compare/v1.22.0...v1.23.0) (2021-07-19)
+
+
+### Features
+
+* update package ([d06f6b4](https://github.com/lh1me/hexo-theme-aomori/commit/d06f6b4e9a3c461141cda15d85d7d65d9decf7d1))
+
 ## [1.22.0](https://github.com/lh1me/hexo-theme-aomori/compare/v1.21.0...v1.22.0) (2021-06-07)
 
 
