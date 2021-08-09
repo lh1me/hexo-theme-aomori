@@ -20,7 +20,7 @@
     </div>
     <% } %>
 
-    <% if (item.icon.name) { %>
+    <% if (item.icon && item.icon.name) { %>
     <div class="photography-item-icon">
         <% if (item.icon.url) { %><a target="_blank" href="<%- item.icon.url %>"><% } %> 
             <box-icon size="xs" type='<%- item.icon.type %>' name='<%- item.icon.name %>'></box-icon>
