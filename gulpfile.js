@@ -8,7 +8,7 @@ const notify = require('gulp-notify') // Gulp 提示工具
 
 // CSS
 const autoprefixer = require('gulp-autoprefixer') // CSS自动添加前缀
-const sass = require('gulp-sass') // 编译 SASS
+const sass = require('gulp-sass')(require('sass')); // 编译 SASS
 const minify = require('gulp-minify-css')
 
 // JS
