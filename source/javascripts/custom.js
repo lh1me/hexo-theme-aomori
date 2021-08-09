@@ -227,6 +227,10 @@ import { addNewClass, removeClass, throttle } from './class-module'
     if (articleEntryViewer && articleEntryViewer.length > 0) {
         articleEntryViewer.viewer(viewerConfig)
     }
+    const photographyViewer = $('.photography-item')
+    if (photographyViewer && photographyViewer.length > 0) {
+        photographyViewer.viewer(viewerConfig)
+    }
 
     // Plyr
     if (window.isPost) {

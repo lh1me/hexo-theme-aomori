@@ -63,11 +63,8 @@
             height: 100%;
             background: transparent;
             transition: all 0.3s ease-in-out;
+            pointer-events: none;
             z-index: 10;
-
-            &:hover {
-                background: rgba(0, 0, 0, .5);
-            }
         }
 
         &-title {
@@ -123,6 +120,10 @@
         &:hover {
             img {
                 transform: scale(1.05);
+            }
+
+            .photography-item-wrapper {
+                background: rgba(0, 0, 0, .5);
             }
 
             .photography-item-title {
