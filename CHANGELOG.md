@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.24.2](https://github.com/lh1me/hexo-theme-aomori/compare/v1.24.1...v1.24.2) (2021-08-26)
+
+
+### Features
+
+* update gulp ([a5a282f](https://github.com/lh1me/hexo-theme-aomori/commit/a5a282f16a068eea3dd912b55e255d1c5c92933c))
+
 ### [1.24.1](https://github.com/lh1me/hexo-theme-aomori/compare/v1.24.0...v1.24.1) (2021-08-09)
 
 
