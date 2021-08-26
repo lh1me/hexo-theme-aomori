@@ -9,12 +9,11 @@ const notify = require('gulp-notify') // Gulp 提示工具
 // CSS
 const autoprefixer = require('gulp-autoprefixer') // CSS自动添加前缀
 const sass = require('gulp-sass')(require('sass')); // 编译 SASS
-const minify = require('gulp-minify-css')
-
+const cleanCSS = require('gulp-clean-css');
 // JS
 const rollup = require('rollup') // JS打包工具
-const babel = require('rollup-plugin-babel') // JS babel
-const commonjs = require('rollup-plugin-commonjs') // Common JS
+const { babel } = require('@rollup/plugin-babel'); // JS babel
+const commonjs = require('@rollup/plugin-commonjs') // Common JS
 const resolve = require('rollup-plugin-node-resolve') // 使 Rollup 支持 NPM 模块
 const uglify = require('rollup-plugin-uglify')
 
@@ -68,7 +67,7 @@ gulp.task('css', function () {
         )
         .pipe(autoprefixer('last 2 version'))
         .pipe(concat('build.css'))
-        .pipe(minify())
+        .pipe(cleanCSS())
         .pipe(gulp.dest('source/dist'))
 })
 
@@ -88,6 +87,7 @@ gulp.task('js', async function () {
                 include: 'node_modules/**',
             }),
             babel({
+                babelHelpers: 'bundled',
                 exclude: 'node_modules/**', // 只编译我们的源代码
             }),
             uglify.uglify(),
