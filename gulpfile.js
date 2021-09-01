@@ -39,7 +39,7 @@ const fs   = require('fs');
 gulp.task('css', function () {
     return gulp
         .src([
-            'source/stylesheets/color.scss',
+            'source/stylesheets/base.scss',
             'source/stylesheets/normalize.css',
             'source/stylesheets/spectre.min.css',
             'source/stylesheets/spectre-exp.min.css',
