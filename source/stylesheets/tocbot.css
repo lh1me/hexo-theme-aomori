@@ -9,7 +9,8 @@
 }
 
 .toc>.toc-list li {
-  list-style: none
+  list-style: none;
+  margin: 0;
 }
 
 .toc>.toc-list li a {
@@ -23,7 +24,8 @@
 
 a.toc-link {
   color: currentColor;
-  height: 100%
+  height: 100%;
+  line-height: 1.6;
 }
 
 .is-collapsible {

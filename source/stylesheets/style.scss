@@ -291,7 +291,6 @@ img:not([src]):not([srcset]) {
         height: auto;
         max-height: calc(100vh - 140px);
         margin-bottom: 20px;
-        border: 2px solid var(--color-white-light);
         border-radius: 8px;
         overflow: hidden;
         z-index: 10;
@@ -315,7 +314,6 @@ img:not([src]):not([srcset]) {
         }
 
         &-focus {
-            border: 2px solid rgba(var(--color-type), .2);
             transition: all .3s;
         }
 
