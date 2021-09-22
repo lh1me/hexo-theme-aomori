@@ -447,8 +447,11 @@ sidebar: false
 ```
 
 `thumbnail` 缩略图
+
 `photo` 原图
+
 `icon` 字段参数基于 [Boxicons](https://boxicons.com/)
+
 `place` 地区
 
 ---

@@ -438,8 +438,11 @@ sidebar: false
 ```
 
 `thumbnail` Thumbnail photo
+
 `photo` Original Photo
+
 `icon` field is base on [Boxicons](https://boxicons.com/)
+
 `place` Place
 
 ---
