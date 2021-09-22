@@ -36,10 +36,9 @@ const fs   = require('fs');
 /* -------------------------------------------------------- */
 /* ------------------------  CSS  ------------------------- */
 
-gulp.task('css', function () {
-    return gulp
+gulp.task('css', async function () {
+    gulp
         .src([
-            'source/stylesheets/base.scss',
             'source/stylesheets/normalize.css',
             'source/stylesheets/spectre.min.css',
             'source/stylesheets/spectre-exp.min.css',
@@ -52,7 +51,15 @@ gulp.task('css', function () {
             'source/stylesheets/swiper-bundle.min.css',
             'source/stylesheets/plyr.css',
             'source/stylesheets/remark42.css',
-            'source/stylesheets/post.css',
+            'source/stylesheets/post.css'
+        ])
+        .pipe(concat('build.css'))
+        .pipe(cleanCSS())
+        .pipe(gulp.dest('source/dist'))
+
+    gulp
+        .src([
+            'source/stylesheets/base.scss',
             'source/stylesheets/style.scss',
         ])
         .pipe(
@@ -66,7 +73,7 @@ gulp.task('css', function () {
             })
         )
         .pipe(autoprefixer('last 2 version'))
-        .pipe(concat('build.css'))
+        .pipe(concat('custom.css'))
         .pipe(cleanCSS())
         .pipe(gulp.dest('source/dist'))
 })
