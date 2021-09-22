@@ -412,7 +412,8 @@ sidebar: false
 ```
 [
     {
-        "photo": "https://xxx.jpg",
+        "thumbnail": "https://thumbnail.jpg",
+        "photo": "https://photo.jpg",
         "title": "This is title.",
         "icon": {
             "name": "unsplash",
@@ -422,7 +423,8 @@ sidebar: false
         "place": "China"
     },
     {
-        "photo": "https://xxx.jpg",
+        "thumbnail": "https://thumbnail.jpg",
+        "photo": "https://photo.jpg",
         "title": "This is title.",
         "icon": {
             "name": "unsplash",
@@ -435,7 +437,10 @@ sidebar: false
 ]
 ```
 
+`thumbnail` Thumbnail photo
+`photo` Original Photo
 `icon` field is base on [Boxicons](https://boxicons.com/)
+`place` Place
 
 ---
 

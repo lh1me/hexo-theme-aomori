@@ -421,7 +421,8 @@ sidebar: false
 ```
 [
     {
-        "photo": "https://xxx.jpg",
+        "thumbnail": "https://thumbnail.jpg",
+        "photo": "https://photo.jpg",
         "title": "This is title.",
         "icon": {
             "name": "unsplash",
@@ -431,7 +432,8 @@ sidebar: false
         "place": "China"
     },
     {
-        "photo": "https://xxx.jpg",
+        "thumbnail": "https://thumbnail.jpg",
+        "photo": "https://photo.jpg",
         "title": "This is title.",
         "icon": {
             "name": "unsplash",
@@ -444,7 +446,10 @@ sidebar: false
 ]
 ```
 
+`thumbnail` 缩略图
+`photo` 原图
 `icon` 字段参数基于 [Boxicons](https://boxicons.com/)
+`place` 地区
 
 ---
 
