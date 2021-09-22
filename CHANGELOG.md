@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.24.4](https://github.com/lh1me/hexo-theme-aomori/compare/v1.24.3...v1.24.4) (2021-09-22)
+
+
+### Features
+
+* custom css ([fb03359](https://github.com/lh1me/hexo-theme-aomori/commit/fb0335954f2fe8d6dd03e9212a58c9dd0e182489))
+
+
+### Bug Fixes
+
+* [#55](https://github.com/lh1me/hexo-theme-aomori/issues/55) ([1ac2edd](https://github.com/lh1me/hexo-theme-aomori/commit/1ac2edd8218441df52c7dc75971dae3055a0dc14))
+
 ### [1.24.3](https://github.com/lh1me/hexo-theme-aomori/compare/v1.24.2...v1.24.3) (2021-09-01)
 
 
