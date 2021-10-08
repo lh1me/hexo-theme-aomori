@@ -218,9 +218,6 @@ import { addNewClass, removeClass, throttle } from './class-module'
             next: true,
         },
         keyboard: false,
-        url(image) {
-            return image.dataset.original
-        },
     }
     const galleryViewer = $('.article-gallery')
     if (galleryViewer && galleryViewer.length > 0) {
@@ -232,7 +229,15 @@ import { addNewClass, removeClass, throttle } from './class-module'
     }
     const photographyViewer = $('.photography-item')
     if (photographyViewer && photographyViewer.length > 0) {
-        photographyViewer.viewer(viewerConfig)
+        const temp = Object.assign(
+            {
+                url(image) {
+                    return image.dataset.original
+                },
+            },
+            viewerConfig
+        )
+        photographyViewer.viewer(temp)
     }
 
     // Plyr
