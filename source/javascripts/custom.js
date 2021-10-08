@@ -229,14 +229,19 @@ import { addNewClass, removeClass, throttle } from './class-module'
     }
     const photographyViewer = $('.photography-item')
     if (photographyViewer && photographyViewer.length > 0) {
-        const temp = Object.assign(
-            {
-                url(image) {
-                    return image.dataset.original
-                },
+        const temp = Object.assign(viewerConfig, {
+            url(image) {
+                return image.dataset.original
             },
-            viewerConfig
-        )
+            toolbar: {
+                zoomIn: true,
+                zoomOut: true,
+                reset: true,
+                prev: false,
+                next: false,
+            },
+            navbar: false,
+        })
         photographyViewer.viewer(temp)
     }
 
