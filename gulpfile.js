@@ -47,10 +47,10 @@ gulp.task('css', async function () {
             'source/stylesheets/tocbot.css',
             'source/stylesheets/nprogress.css',
             'source/stylesheets/perfect-scrollbar.css',
-            'source/stylesheets/viewer.min.css',
             'source/stylesheets/swiper-bundle.min.css',
             'source/stylesheets/plyr.css',
             'source/stylesheets/remark42.css',
+            'node_modules/viewerjs/dist/viewer.min.css',
             'source/stylesheets/post.css'
         ])
         .pipe(concat('build.css'))
@@ -105,7 +105,6 @@ gulp.task('js', async function () {
         format: 'umd',
     })
     gulp.src([
-        'source/modules/jquery-3.5.1.min.js',
         'source/modules/algoliasearch-lite.umd.js',
         'source/modules/dayjs.min.js',
         'source/modules/highlight.min.js',
@@ -115,8 +114,6 @@ gulp.task('js', async function () {
         'source/modules/swiper-bundle.min.js',
         'source/modules/tocbot.min.js',
         'source/modules/typed.min.js',
-        'source/modules/viewer.min.js',
-        'source/modules/jquery-viewer.min.js',
         'source/modules/plyr.js',
         'source/modules/lazyload.min.js',
     ])

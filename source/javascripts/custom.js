@@ -1,3 +1,4 @@
+import $ from 'jquery'
 import { addNewClass, removeClass, throttle } from './class-module'
 ;(function () {
     let toggles = document.querySelectorAll('.cases .item')
