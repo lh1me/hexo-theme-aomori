@@ -48,7 +48,7 @@
     "standard-version": "^9.3.2",
     "stream-series": "^0.1.1",
     "stylelint": "^13.13.1",
-    "stylelint-config-sass-guidelines": "^8.0.0",
+    "stylelint-config-sass-guidelines": "^9.0.1",
     "stylelint-config-standard": "^23.0.0",
     "stylelint-scss": "^3.20.1"
   }
