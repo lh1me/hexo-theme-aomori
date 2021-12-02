@@ -10,7 +10,11 @@
 
 # Aomori
 
-Hexo 是一款快速、简洁且高效的博客框架，拥有超快生成速度，支持 Markdown，一键部署和高度可扩展性。本项目是基于 Hexo 一系列优势所开发出来的一款主题，主题特性如下
+Hexo 是一款快速、简洁且高效的博客框架，拥有超快生成速度，支持 Markdown，一键部署和高度可扩展性。
+
+Aomori 是基于 Hexo 一系列优势所开发出来的一款主题，主题的的理念是希望博主能更专注于生产内容，读者能更专注于接收信息。
+
+Aomori 提供了很多支撑其理念的特性，如：
 
 - 丰富的网站样式
 - 丰富的主题配置
@@ -506,4 +510,4 @@ Copyright (c) 2020 LIN HONG - Released under the [MIT license](LICENSE).
 
 # Thanks
 
-[OMNCLOUD.COM](https://omncloud.com/store) 为我们提供了优质的 VPS 服务
+[HostSencillo](https://my.hostsencillo.com/cart) Provides an excellent VPS service.
