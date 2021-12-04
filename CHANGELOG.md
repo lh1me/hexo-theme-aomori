@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.27.0](https://github.com/lh1me/hexo-theme-aomori/compare/v1.26.0...v1.27.0) (2021-12-04)
+
+
+### Features
+
+* support giscus ([9f75a07](https://github.com/lh1me/hexo-theme-aomori/commit/9f75a074c9e6ebe6d498ea9f5be6deb52f6e4484))
+
 ## [1.26.0](https://github.com/lh1me/hexo-theme-aomori/compare/v1.25.1...v1.26.0) (2021-11-18)
 
 
