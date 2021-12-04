@@ -35,7 +35,7 @@
 <% } %>
 
 <% if (config.aomori_remark42 && config.aomori_remark42.enable){ %>
-<div id="remark42"></div>
+<section id="remark42"></section>
 <script>
     (function() {
         window.remark_config = {
@@ -52,5 +52,24 @@
         s.defer = true;
         (d.head || d.body).appendChild(s);
     })();
+</script>
+<% } %>
+
+<% if (config.aomori_giscus && config.aomori_giscus.enable){ %>
+<section class="comments">
+    <div class="giscus"></div>
+</section>
+<script src="https://giscus.app/client.js"
+    data-repo="<%= config.aomori_giscus.repo || '' %>"
+    data-repo-id="<%= config.aomori_giscus.repoId || '' %>"
+    data-category="<%= config.aomori_giscus.category || '' %>"
+    data-category-id="<%= config.aomori_giscus.categoryId || '' %>"
+    data-mapping="<%= config.aomori_giscus.mapping || 'pathname' %>"
+    data-reactions-enabled="<%= config.aomori_giscus.reactionsEnabled || '1' %>"
+    data-emit-metadata="<%= config.aomori_giscus.emitMetadata || '0' %>"
+    data-theme="<%= config.aomori_giscus.theme || 'light' %>"
+    data-lang="<%= config.aomori_giscus.lang || 'zh-CN' %>"
+    crossorigin="anonymous"
+    async>
 </script>
 <% } %>

@@ -289,7 +289,7 @@ aomori_disqus_shortname: ''
 
 使用 DisqusJS 搭配 Disqus API 在中国大陆访问会更加友好
 
-配置详情参照 [https://github.com/SukkaW/DisqusJS](https://github.com/SukkaW/DisqusJS)
+配置字段详情参照 [https://github.com/SukkaW/DisqusJS](https://github.com/SukkaW/DisqusJS)
 
 ``` yml
 aomori_disqusjs:
@@ -306,7 +306,7 @@ aomori_disqusjs:
 
 #### Gitalk
 
-配置详情参照 [https://github.com/gitalk/gitalk](https://github.com/gitalk/gitalk)
+配置字段详情参照 [https://github.com/gitalk/gitalk](https://github.com/gitalk/gitalk)
 
 ``` yml
 aomori_gitalk:
@@ -323,7 +323,7 @@ aomori_gitalk:
 
 #### Valine
 
-配置详情参照 [https://valine.js.org/](https://valine.js.org/)
+配置字段详情参照 [https://valine.js.org/](https://valine.js.org/)
 
 ``` yml
 aomori_valine:
@@ -334,7 +334,7 @@ aomori_valine:
 
 #### Remark42
 
-配置详情参照 [https://github.com/umputun/remark42](https://github.com/umputun/remark42)
+配置字段详情参照 [https://github.com/umputun/remark42](https://github.com/umputun/remark42)
 
 ``` yml
 aomori_remark42:
@@ -345,6 +345,23 @@ aomori_remark42:
   theme: "light"
   locale: "en"
   show_email_subscription: false
+```
+
+#### Giscus
+
+配置字段详情参照 [https://giscus.app](https://giscus.app)
+
+``` yml
+aomori_giscus:
+  repo: ''
+  repoId: ''
+  category: ''
+  categoryId: 10
+  mapping: "pathname"
+  reactionsEnabled: 1
+  emitMetadata: 0
+  theme: 'light'
+  lang: 'zh-CN'
 ```
 
 ---

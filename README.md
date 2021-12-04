@@ -338,6 +338,23 @@ aomori_remark42:
   show_email_subscription: false
 ```
 
+#### Giscus
+
+Configuration details [https://giscus.app](https://giscus.app)
+
+``` yml
+aomori_giscus:
+  repo: ''
+  repoId: ''
+  category: ''
+  categoryId: 10
+  mapping: "pathname"
+  reactionsEnabled: 1
+  emitMetadata: 0
+  theme: 'light'
+  lang: 'zh-CN'
+```
+
 ---
 
 ## Page
