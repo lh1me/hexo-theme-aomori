@@ -106,7 +106,6 @@ gulp.task('js', async function () {
     })
     gulp.src([
         'source/modules/algoliasearch-lite.umd.js',
-        'source/modules/dayjs.min.js',
         'source/modules/highlight.min.js',
         'source/modules/md5.min.js',
         'source/modules/nprogress.js',

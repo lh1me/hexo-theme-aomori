@@ -31,7 +31,7 @@ import { addNewClass, removeClass, throttle } from './class-module'
 
     // 代码高亮
     document.querySelectorAll('pre code').forEach((block) => {
-        hljs.highlightBlock(block)
+        hljs.highlightElement(block)
     })
 
     // TOC
