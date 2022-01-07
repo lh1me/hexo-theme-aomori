@@ -72,6 +72,16 @@
                 enable: <%= config.aomori_valine.enable || false %>,
                 appId: "<%= config.aomori_valine.appId || '' %>",
                 appKey: "<%= config.aomori_valine.appKey || '' %>",
+                placeholder: "<%= config.aomori_valine.placeholder || 'Hello World!' %>",
+                avatar: "<%= config.aomori_valine.avatar || '' %>",
+                pageSize: "<%= config.aomori_valine.pageSize || '10' %>",
+                lang: "<%= config.aomori_valine.lang || 'zh-CN' %>",
+                visitor: <%= config.aomori_valine.visitor || false %>,
+                highlight: <%= config.aomori_valine.highlight || false %>,
+                recordIP: <%= config.aomori_valine.recordIP || false %>,
+                emojiCDN: "<%= config.aomori_valine.emojiCDN || '' %>",
+                enableQQ: <%= config.aomori_valine.enableQQ || false %>,
+                requiredFields: <%= config.aomori_valine.requiredFields || [] %>
             },
             <% } %>
             <% if (config.aomori_disqusjs){ %>

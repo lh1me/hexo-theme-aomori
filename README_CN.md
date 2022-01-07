@@ -324,13 +324,25 @@ aomori_gitalk:
 
 #### Valine
 
-配置字段详情参照 [https://valine.js.org/](https://valine.js.org/)
+配置字段详情参照 [https://valine.js.org/](https://valine.js.org/configuration.html)
 
 ``` yml
 aomori_valine:
+  // 必填配置
   enable: true
   appId: ''
   appKey: ''
+  // 以下为选填配置
+  placeholder: 'Hello World!'
+  avatar: ''
+  pageSize: 10
+  lang: 'zh-CN'
+  visitor: false
+  highlight: false
+  recordIP: false
+  emojiCDN: ''
+  enableQQ: false
+  requiredFields:
 ```
 
 #### Remark42

@@ -315,13 +315,25 @@ aomori_gitalk:
 
 #### Valine
 
-Configuration details [https://valine.js.org/](https://valine.js.org/)
+Configuration details [https://valine.js.org/](https://valine.js.org/configuration.html)
 
 ``` yml
 aomori_valine:
+  // Required
   enable: true
   appId: ''
   appKey: ''
+  // Optional
+  placeholder: 'Hello World!'
+  avatar: ''
+  pageSize: 10
+  lang: 'zh-CN'
+  visitor: false
+  highlight: false
+  recordIP: false
+  emojiCDN: ''
+  enableQQ: false
+  requiredFields:
 ```
 
 #### Remark42
