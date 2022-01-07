@@ -8,7 +8,7 @@
     "build": "gulp build",
     "lint": "eslint ./source/javascripts/ --ext .js --fix",
     "stylelint": "stylelint source/stylesheets/**/*.scss --fix",
-    "release": "standard-version"
+    "release": "standard-version -s"
   },
   "dependencies": {
     "boxicons": "^2.1.1",
