@@ -81,7 +81,7 @@
                 recordIP: <%= config.aomori_valine.recordIP || false %>,
                 emojiCDN: "<%= config.aomori_valine.emojiCDN || '' %>",
                 enableQQ: <%= config.aomori_valine.enableQQ || false %>,
-                requiredFields: <%= config.aomori_valine.requiredFields || [] %>
+                requiredFields: <%= config.aomori_valine.requiredFields || '[]' %>
             },
             <% } %>
             <% if (config.aomori_disqusjs){ %>
