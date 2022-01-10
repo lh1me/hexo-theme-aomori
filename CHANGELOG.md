@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.29.1](https://github.com/lh1me/hexo-theme-aomori/compare/v1.29.0...v1.29.1) (2022-01-10)
+
+
+### Bug Fixes
+
+* **#78:** valine config ([f844224](https://github.com/lh1me/hexo-theme-aomori/commit/f84422410e8be8babe4a84b3587a04d38a132e85)), closes [#78](https://github.com/lh1me/hexo-theme-aomori/issues/78)
+
 ## [1.29.0](https://github.com/lh1me/hexo-theme-aomori/compare/v1.28.0...v1.29.0) (2022-01-07)
 
 
