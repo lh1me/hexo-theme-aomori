@@ -175,7 +175,7 @@ Configuration in the `Front-matter`
 
 #### Cover Image
 
-Use `Relative Path`, refer to resource folder [Resource Folder](https://hexo.io/zh-cn/docs/asset-folders)
+Support `Relative Path` and `Full Path`, refer to resource folder [Resource Folder](https://hexo.io/zh-cn/docs/asset-folders)
 
 ``` yml
 cover: xxx.jpg
@@ -183,7 +183,7 @@ cover: xxx.jpg
 
 #### Cover Video
 
-Use `Full Link` recommend CDN
+Use `Full Path`, recommend CDN
 
 Each article can only have one cover video, and only one of the cover image and the cover video can exist at the same time.
 
@@ -195,7 +195,7 @@ video:
 
 #### Article Header Image
 
-Use `Relative Path`, refer to resource folder [Resource Folder](https://hexo.io/zh-cn/docs/asset-folders)
+Support `Relative Path` and `Full Path`, refer to resource folder [Resource Folder](https://hexo.io/zh-cn/docs/asset-folders)
 
 ``` yml
 photos:
