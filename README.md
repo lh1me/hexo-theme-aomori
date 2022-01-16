@@ -411,15 +411,26 @@ comment: true # or false
 
 ```
 [
-  {
-    "name": "test1",
-    "url": "https://linhong.me"
-  },
-  {
-    "name": "test2",
-    "url": "https://linhong.me"
-  }
-  ...
+    {
+        "category": "Category 1",
+        "data": [
+            {
+                "name": "xxx",
+                "url": "https://xxx.com/"
+            },
+            {
+                "name": "xxx",
+                "url": "https://xxx.com/"
+            }
+        ]
+    },
+    {
+        "category": "Category 2",
+        "data": [
+            ...
+        ]
+    },
+    ...
 ]
 ```
 
