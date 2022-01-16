@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.30.0](https://github.com/lh1me/hexo-theme-aomori/compare/v1.29.1...v1.30.0) (2022-01-16)
+
+
+### Features
+
+* new friends page ([f76711d](https://github.com/lh1me/hexo-theme-aomori/commit/f76711ddb92e947a9d245acd34e1bcbf53c190bc))
+* remove page cover ([6a0f8d4](https://github.com/lh1me/hexo-theme-aomori/commit/6a0f8d471937fb3a2182675e68f53c2bf0dd2f28))
+
 ### [1.29.1](https://github.com/lh1me/hexo-theme-aomori/compare/v1.29.0...v1.29.1) (2022-01-10)
 
 
