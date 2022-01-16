@@ -1,10 +1,15 @@
-<div class="friends-cover"></div>
-
-<div class="friends-links clearfix">
-    <% for (var link in site.data.friends) { %>
-    <a href="<%= site.data.friends[link].url %>" rel="nofollow" target="_blank"> <%= site.data.friends[link].name %> </a>
-    <% } %>
-</div>
+<% site.data.friends.forEach((items) => { %>
+    <div class="friends-category">
+        <div class="friends-category-title">
+            <%= items.category %>
+        </div>
+        <div class="friends-category-inner clearfix">
+            <% items.data.forEach((item) => { %>
+                <a href="<%= item.url %>" rel="nofollow" target="_blank"> <%= item.name %> </a>
+            <% }) %>
+        </div>
+    </div>
+<% }) %>
 
 <% if (post.content){ %>
 <article
