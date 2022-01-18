@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.31.0](https://github.com/lh1me/hexo-theme-aomori/compare/v1.30.1...v1.31.0) (2022-01-18)
+
+
+### Features
+
+* support Google AdSense ([434d0a1](https://github.com/lh1me/hexo-theme-aomori/commit/434d0a137aaae5a7c468718b7ce3c1b9e0c07f47))
+
 ### [1.30.1](https://github.com/lh1me/hexo-theme-aomori/compare/v1.30.0...v1.30.1) (2022-01-17)
 
 
