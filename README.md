@@ -141,6 +141,12 @@ aomori_google_site:
   id: XXX
 ```
 
+#### Google AdSense
+
+``` yml
+aomori_google_analytics: 'ca-pub-xxx'
+```
+
 #### Busuanzi Count
 
 Counting service provided by [Busuanzi](https://busuanzi.ibruce.info/)

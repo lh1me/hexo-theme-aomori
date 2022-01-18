@@ -140,6 +140,12 @@ aomori_google_site:
   id: XXX
 ```
 
+#### Google AdSense
+
+``` yml
+aomori_google_analytics: 'ca-pub-xxx'
+```
+
 #### 不蒜子 统计
 
 由 [不蒜子](https://busuanzi.ibruce.info/) 提供的计数服务
