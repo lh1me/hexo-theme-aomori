@@ -3,6 +3,8 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3c4859" fill-opacity="1" d="M0,160L60,181.3C120,203,240,245,360,240C480,235,600,181,720,186.7C840,192,960,256,1080,261.3C1200,267,1320,213,1380,186.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
     </div>
 
+    <!-- Please do not remove this -->
+    <!-- 开源不易，请勿删除 -->
     <div class="footer-wrap">
         <div class="footer-inner"> 
             <%= config.title %> &copy; <%= date(new Date(), 'YYYY') %><br>
@@ -50,6 +52,11 @@
     gtag('js', new Date());
     gtag('config', '<%= config.aomori_google_analytics %>');
 </script>
+<% } %>
+
+<% if (config.aomori_google_ads) { %>
+<!-- Google AdSense-->
+<script data-ad-client="<%= config.aomori_google_ads %>" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <% } %>
 
 <% if (config.aomori_baidu_analytics) { %>
