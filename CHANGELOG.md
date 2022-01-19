@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.31.3](https://github.com/lh1me/hexo-theme-aomori/compare/v1.31.2...v1.31.3) (2022-01-19)
+
+
+### Features
+
+* add intersection observer for adblock ([c86ddb1](https://github.com/lh1me/hexo-theme-aomori/commit/c86ddb14b20bce7cb2a97d41c619d349c99359e3))
+
 ### [1.31.2](https://github.com/lh1me/hexo-theme-aomori/compare/v1.31.1...v1.31.2) (2022-01-19)
 
 
