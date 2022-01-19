@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.31.2](https://github.com/lh1me/hexo-theme-aomori/compare/v1.31.1...v1.31.2) (2022-01-19)
+
+
+### Bug Fixes
+
+* amp-ad not working ([37c37f2](https://github.com/lh1me/hexo-theme-aomori/commit/37c37f2869b69539132086fb24efb412b0476bff))
+
 ### [1.31.1](https://github.com/lh1me/hexo-theme-aomori/compare/v1.31.0...v1.31.1) (2022-01-19)
 
 
