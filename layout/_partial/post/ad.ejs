@@ -1,12 +1,15 @@
 <% if (config.aomori_google_ads && config.aomori_google_ads.enable && config.aomori_google_ads.post){ %>
 <section class="ad-post">
-    <amp-ad
-        layout="fixed"
-        width="820"
-        height="120"
-        type="adsense"
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=<%- config.aomori_google_ads.id %>"
+     crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+        style="display:block"
         data-ad-client="<%- config.aomori_google_ads.id %>"
-        data-ad-slot="<%- config.aomori_google_ads.post_slot %>">
-    </amp-ad>
+        data-ad-slot="<%- config.aomori_google_ads.post_slot %>"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
 </section>
 <% } %>
