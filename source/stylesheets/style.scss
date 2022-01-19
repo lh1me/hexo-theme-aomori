@@ -1049,6 +1049,15 @@ img:not([src]):not([srcset]) {
     position: relative;
 }
 
+.ad {
+    &-post {
+        background: var(--color-white-light);
+        border-radius: 8px;
+        padding: 20px;
+        position: relative;
+    }
+}
+
 /* import */
 @import './page';
 @import './media-fixed';

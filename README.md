@@ -144,7 +144,11 @@ aomori_google_site:
 #### Google AdSense
 
 ``` yml
-aomori_google_analytics: 'ca-pub-xxx'
+aomori_google_ads:
+  enable: true
+  id: ca-pub-xxx
+  post: true    # Enable in all articles
+  post_slot: 0000000000 # Slot in Ad unit code
 ```
 
 #### Busuanzi Count

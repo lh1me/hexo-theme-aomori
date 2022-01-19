@@ -143,7 +143,11 @@ aomori_google_site:
 #### Google AdSense
 
 ``` yml
-aomori_google_analytics: 'ca-pub-xxx'
+aomori_google_ads:
+  enable: true
+  id: ca-pub-xxx
+  post: true    # 开启文章内容页广告
+  post_slot: 0000000000 # 为文章内容页创建广告单元获得的 slot
 ```
 
 #### 不蒜子 统计

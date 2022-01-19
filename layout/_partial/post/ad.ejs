@@ -1,0 +1,12 @@
+<% if (config.aomori_google_ads && config.aomori_google_ads.enable && config.aomori_google_ads.post){ %>
+<section class="ad-post">
+    <amp-ad
+        layout="fixed"
+        width="820"
+        height="120"
+        type="adsense"
+        data-ad-client="<%- config.aomori_google_ads.id %>"
+        data-ad-slot="<%- config.aomori_google_ads.post_slot %>">
+    </amp-ad>
+</section>
+<% } %>

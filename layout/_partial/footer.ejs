@@ -54,9 +54,9 @@
 </script>
 <% } %>
 
-<% if (config.aomori_google_ads) { %>
+<% if (config.aomori_google_ads && config.aomori_google_ads.enable) { %>
 <!-- Google AdSense-->
-<script data-ad-client="<%= config.aomori_google_ads %>" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
 <% } %>
 
 <% if (config.aomori_baidu_analytics) { %>
