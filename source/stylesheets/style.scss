@@ -1059,6 +1059,29 @@ img:not([src]):not([srcset]) {
     }
 }
 
+.intersection-observer-ad {
+    background: var(--color-white-light);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    color: var(--color-post-main);
+
+    span {
+        padding-top: 10px;
+    }
+
+    svg {
+        width: 30px;
+        height: 30px;
+        fill: var(--color-post-main);
+    }
+}
+
 /* import */
 @import './page';
 @import './media-fixed';

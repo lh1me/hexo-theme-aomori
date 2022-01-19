@@ -12,4 +12,20 @@
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </section>
+
+<section class="intersection-observer-ad" style="display: none;">
+    <svg t="1642578157083" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2130" width="200" height="200"><path d="M858.453333 315.306667l-149.76-149.76A128 128 0 0 0 618.24 128h-213.333333a128 128 0 0 0-90.453334 37.546667L165.546667 315.306667A128 128 0 0 0 128 405.76v213.333333a128 128 0 0 0 37.546667 90.453334l149.76 149.76a128 128 0 0 0 90.453333 36.693333h213.333333a128 128 0 0 0 90.453334-37.546667l149.76-149.76a128 128 0 0 0 36.693333-90.453333v-213.333333a128 128 0 0 0-37.546667-89.6zM213.333333 618.24v-213.333333a42.666667 42.666667 0 0 1 12.373334-29.866667l150.186666-149.333333a42.666667 42.666667 0 0 1 29.866667-12.373334h213.333333a42.666667 42.666667 0 0 1 29.866667 12.373334l48.64 48.64-422.4 422.4-49.493333-48.64a42.666667 42.666667 0 0 1-12.373334-29.866667z m597.333334 0a42.666667 42.666667 0 0 1-12.373334 29.866667l-150.186666 150.186666a42.666667 42.666667 0 0 1-29.866667 12.373334h-213.333333a42.666667 42.666667 0 0 1-29.866667-12.373334l-47.786667-48.64 422.4-422.4 48.64 48.64a42.666667 42.666667 0 0 1 12.373334 29.866667z" p-id="2131"></path></svg>
+    <span>拦截广告不会影响网站使用</span>
+    <span>但仍希望能关闭广告拦截插件支持我们</span>
+</section>
+
+<script>
+    const intersectionObserver = new IntersectionObserver(function(entries) {
+        console.log(entries);
+        if (entries[0].intersectionRatio <= 0) {
+            document.querySelectorAll('.intersection-observer-ad')[0].style.display = 'flex';
+        }
+    });
+    intersectionObserver.observe(document.querySelectorAll('.ad-post')[0]);
+</script>
 <% } %>

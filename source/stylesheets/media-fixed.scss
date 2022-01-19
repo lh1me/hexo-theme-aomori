@@ -1,5 +1,5 @@
-// 处理移动端响应
-@media screen and(max-width: 600px) {
+// 处理移动端响应
+@media screen and (max-width: 600px) {
     .header {
         .header-menu {
             display: none;
@@ -55,6 +55,15 @@
             }
         }
     }
+
+    .tweet {
+        margin-bottom: 20px;
+    }
+
+    .ad-post,
+    .intersection-observer-ad {
+        display: none;
+    }
 }
 
 @media screen and(max-width: 800px) {
@@ -87,7 +96,7 @@
     }
 }
 
-// 处理宽屏响应
+// 处理宽屏响应
 @media screen and (max-width: 1140px) {
     .sidebar {
         right: 20px;
