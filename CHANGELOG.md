@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.32.0](https://github.com/lh1me/hexo-theme-aomori/compare/v1.31.3...v1.32.0) (2022-01-24)
+
+
+### Bug Fixes
+
+* description & keywords ([ba1f63f](https://github.com/lh1me/hexo-theme-aomori/commit/ba1f63f6e55137ee0faabf0085222c1fd4e7e4ee))
+* fuck adblock method ([b42615a](https://github.com/lh1me/hexo-theme-aomori/commit/b42615a22af648aef48cbc69a106e384b59816b4))
+
 ### [1.31.3](https://github.com/lh1me/hexo-theme-aomori/compare/v1.31.2...v1.31.3) (2022-01-19)
 
 
