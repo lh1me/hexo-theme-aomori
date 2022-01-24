@@ -18,14 +18,4 @@
     <span>拦截广告不会影响网站使用</span>
     <span>但仍希望能关闭广告拦截插件支持我们</span>
 </section>
-
-<script>
-    const intersectionObserver = new IntersectionObserver(function(entries) {
-        console.log(entries);
-        if (entries[0].intersectionRatio <= 0) {
-            document.querySelectorAll('.intersection-observer-ad')[0].style.display = 'flex';
-        }
-    });
-    intersectionObserver.observe(document.querySelectorAll('.ad-post')[0]);
-</script>
 <% } %>

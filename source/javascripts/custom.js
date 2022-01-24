@@ -258,4 +258,13 @@ import { addNewClass, removeClass, throttle } from './class-module'
 
     // LazyLoad
     const lazyLoad = new LazyLoad()
+
+    const ads = $('.adsbygoogle')
+    if (
+        window.isPost &&
+        ads.length > 0 &&
+        window.getComputedStyle(ads[0]).display === 'none'
+    ) {
+        $('.intersection-observer-ad').css('display', 'flex')
+    }
 })()
