@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.32.1](https://github.com/lh1me/hexo-theme-aomori/compare/v1.32.0...v1.32.1) (2022-01-25)
+
+
+### Bug Fixes
+
+* **#81:** dayjs import ([5fb1028](https://github.com/lh1me/hexo-theme-aomori/commit/5fb102872df6804bef894f34f70a68f092cb1fde)), closes [#81](https://github.com/lh1me/hexo-theme-aomori/issues/81)
+
 ## [1.32.0](https://github.com/lh1me/hexo-theme-aomori/compare/v1.31.3...v1.32.0) (2022-01-24)
 
 
