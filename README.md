@@ -28,7 +28,7 @@ Aomori provides many features that support its concept.
 
 ## Guide
 
-[中文](https://lh1me.gitbook.io/aomori/v/chinese/getting-started/intro) | [English](https://lh1me.gitbook.io/aomori/getting-started/intro)
+[中文](https://aomori.linhong.me/v/chinese/getting-started/intro) | [English](https://aomori.linhong.me/getting-started/intro)
 
 ---
 # Copyright & License
