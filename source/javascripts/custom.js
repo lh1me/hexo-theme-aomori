@@ -1,4 +1,5 @@
 import $ from 'jquery'
+import dayjs from 'dayjs'
 import { addNewClass, removeClass, throttle } from './class-module'
 ;(function () {
     let toggles = document.querySelectorAll('.cases .item')
@@ -259,6 +260,7 @@ import { addNewClass, removeClass, throttle } from './class-module'
     // LazyLoad
     const lazyLoad = new LazyLoad()
 
+    // Fxxk adblock
     const ads = $('.adsbygoogle')
     if (
         window.isPost &&
