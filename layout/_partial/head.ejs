@@ -24,7 +24,86 @@
 
     <meta name="description" content="<%= page.description || page.excerpt || config.description || config.title %>">
     <meta name="keywords" content="<%= page.keywords || config.keywords %>">
-
+    <% if(is_post() && config.publisher && page.date && config.siteName && page.description && page.title && page.image && config.author){ %>
+        <meta property="og:locale" content="it_IT" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content= "<%= page.title %>"  />
+        <meta property="og:description" content= "<%= page.description %>" />
+        <meta property="og:url" content="<%= url %>" />
+        <meta property="og:site_name" content="<%= config.siteName%>" />
+        <meta property="article:author" content="<%= config.author%>" />
+        <meta property="article:publisher" content="<%= config.publisher%>" />
+        <meta property="article:published_time" content="<%= page.date.toISOString() %>" />
+        <meta property="article:modified_time" content="<%= page.updated?.toISOString() %>" />
+        <meta property="og:image" content="<%= page.image %>" />
+        <meta property="og:description" content="<%= page.description %>" />
+        <meta property="og:image:width" content="800" />
+        <meta property="og:image:height" content="350" />
+        <meta property="og:image:type" content="image/png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:data1" content="<%= config.author%>" />
+        <meta name="twitter:title" content="<%= page.title %>"/>
+        <meta name="twitter:description" content="<%= page.description %>"/>
+        <script type="application/ld+json">
+    {
+    "description": "<%= page.description %>",
+    "author": { "@type": "Person", "name": "<%= config.author%>" },
+    "@type": "BlogPosting",
+    "url": "<%= url %>",
+    "publisher": {
+    "@type": "Organization",
+    "logo": {
+    "@type": "ImageObject",
+    "url": "<%= config.url + config.aomori_logo %>"
+    },
+    "name": "<%= config.author%>"
+    },
+    "headline": "<%= page.title %>",
+    "datePublished": "<%= page.date.toISOString() %>",
+    "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "<%= url %>"
+    },
+    "@context": "http://schema.org"
+    }
+    </script>
+    <% }
+    else if (is_page() && config.publisher && page.description && page.date && page.title && page.image && config.author){ %>
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="<%= page.title %>"/>
+        <meta property="og:description" content="<%= page.description %>"/>
+        <meta property="og:locale" content="it_IT" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="<%= url %>>" />
+        <meta property="og:site_name" content="<%= config.author%>" />
+        <meta property="article:publisher" content="<%= config.publisher%>" />
+        <meta property="article:published_time" content="<%= page.date.toISOString() %>" />
+        <meta property="article:modified_time" content="<%= page.update?.toISOString()%>" />
+        <meta property="og:image" content="<%= config.url  + page.image%>" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "WebPage",
+                "name": "<%= page.title %>",
+                "description": "<%= page.description %>",
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "<%= config.author%>"
+                },
+            }
+        </script>
+    <% }
+    else {}%>
+    <% if (config.googletagmanager){ %>
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','<%= config.googletagmanager %>');</script>
+        <!-- End Google Tag Manager -->
+    <% } %>
     <% if (config.aomori_google_site && config.aomori_google_site.enable){ %>
     <meta name="google-site-verification" content="<%= config.aomori_google_site.id %>" />
     <% } %>
