@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.33.0](https://github.com/lh1me/hexo-theme-aomori/compare/v1.32.1...v1.33.0) (2022-01-27)
+
+
+### Features
+
+* support ja language ([a2252cf](https://github.com/lh1me/hexo-theme-aomori/commit/a2252cfdbc50743d12c2b224be2befc759269834))
+
+
+### Bug Fixes
+
+* default page style ([433321e](https://github.com/lh1me/hexo-theme-aomori/commit/433321e40afd7716dbadc1b3eb3d4ad164bcedab))
+
 ### [1.32.1](https://github.com/lh1me/hexo-theme-aomori/compare/v1.32.0...v1.32.1) (2022-01-25)
 
 
