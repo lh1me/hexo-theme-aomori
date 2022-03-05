@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.34.1](https://github.com/lh1me/hexo-theme-aomori/compare/v1.34.0...v1.34.1) (2022-03-05)
+
+
+### Features
+
+* update package ([dc4f6bb](https://github.com/lh1me/hexo-theme-aomori/commit/dc4f6bb3e9be18a0d7f89ab13089939726010eda))
+
+
+### Bug Fixes
+
+* sidebar ([be5a40b](https://github.com/lh1me/hexo-theme-aomori/commit/be5a40b1b501a91dd70013ab017d7aa86688a6a9))
+
+## [1.34.0](https://github.com/lh1me/hexo-theme-aomori/compare/v1.33.0...v1.34.0) (2022-03-03)
+
+
+### Features
+
+* ja copyright lang ([463aada](https://github.com/lh1me/hexo-theme-aomori/commit/463aada312ecb1111c4e7555844dec907c334d3e))
+* ja lang for post read count ([#90](https://github.com/lh1me/hexo-theme-aomori/issues/90)) ([5c49a02](https://github.com/lh1me/hexo-theme-aomori/commit/5c49a02947d617a1a3588a63bca0863c5c3b8cfb))
+* meta tag ([#83](https://github.com/lh1me/hexo-theme-aomori/issues/83)) ([ff0f2ca](https://github.com/lh1me/hexo-theme-aomori/commit/ff0f2ca22b7bbc7d609c929d67ec9169f8a03634))
+* meta tag recode ([9d7f674](https://github.com/lh1me/hexo-theme-aomori/commit/9d7f674c95d695654070c1ad152ab46c2ba4c093))
+
 ## [1.33.0](https://github.com/lh1me/hexo-theme-aomori/compare/v1.32.1...v1.33.0) (2022-01-27)
 
 

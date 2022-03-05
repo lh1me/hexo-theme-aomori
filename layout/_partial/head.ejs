@@ -25,6 +25,8 @@
     <meta name="description" content="<%= page.description || page.excerpt || config.description || config.title %>">
     <meta name="keywords" content="<%= page.keywords || config.keywords %>">
 
+    <%- partial('_partial/meta') %>
+
     <% if (config.aomori_google_site && config.aomori_google_site.enable){ %>
     <meta name="google-site-verification" content="<%= config.aomori_google_site.id %>" />
     <% } %>

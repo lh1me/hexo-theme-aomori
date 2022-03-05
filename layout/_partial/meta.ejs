@@ -1,0 +1,74 @@
+<%
+    var title = page.title;
+    if (is_archive()){
+        title = __('Archive');
+        if (is_month()){
+            title += ' | ' + page.year + '/' + page.month;
+        } else if (is_year()){
+            title += ' | ' + page.year;
+        }
+    } else if (is_category()){
+        title = __('Category') + ' | ' + page.category;
+    } else if (is_tag()){
+        title = __('Tag') + ' | ' + page.tag;
+    }
+%>
+<% if(is_post()){ %>
+    <meta property="og:locale" content="<%= config.language %>" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content= "<% if (title){ %><%= title %> | <% } %><%= config.title %>"  />
+    <meta property="og:description" content= "<%= page.description || page.excerpt || config.description || config.title %>" />
+    <meta property="og:url" content="<%= url %>" />
+    <meta property="og:site_name" content="<%= config.siteName %>" />
+    <meta property="article:author" content="<%= config.author %>" />
+    <meta property="article:publisher" content="<%= config.publisher %>" />
+    <meta property="og:description" content="<%= page.description || page.excerpt || config.description || config.title %>" />
+    <meta name="twitter:title" content="<% if (title){ %><%= title %> | <% } %><%= config.title %>"/>
+    <meta name="twitter:description" content="<%= page.description || page.excerpt || config.description || config.title %>"/>
+    <script type="application/ld+json">
+        {
+            "description": "<%= page.description || page.excerpt || config.description || config.title %>",
+            "author": { "@type": "Person", "name": "<%= config.author %>" },
+            "@type": "BlogPosting",
+            "url": "<%= url %>",
+            "publisher": {
+            "@type": "Organization",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "<%= config.url + config.aomori_logo %>"
+            },
+            "name": "<%= config.author%>"
+            },
+            "headline": "<% if (title){ %><%= title %> | <% } %><%= config.title %>",
+            "datePublished": "<%= page.date.toISOString() %>",
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "<%= url %>"
+            },
+            "@context": "http://schema.org"
+        }
+    </script>
+<% } %>
+
+<% if(is_home() || is_page()){ %>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="<%= page.title %>"/>
+    <meta property="og:description" content="<%= page.description %>"/>
+    <meta property="og:locale" content="<%= config.language %>" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="<%= url %>" />
+    <meta property="og:site_name" content="<%= config.author%>" />
+    <meta property="article:publisher" content="<%= config.publisher%>" />
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "<%= page.title %>",
+            "description": "<%= page.description %>",
+            "publisher": {
+                "@type": "Organization",
+                "name": "<%= config.author%>"
+            },
+        }
+    </script>
+<% } %>

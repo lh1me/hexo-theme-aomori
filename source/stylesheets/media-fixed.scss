@@ -10,6 +10,12 @@
         }
     }
 
+    .sidebar {
+        .widget {
+            max-height: unset;
+        }
+    }
+
     .index {
         .article {
             .article-inner {
