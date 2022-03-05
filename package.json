@@ -12,10 +12,10 @@
   },
   "dependencies": {
     "boxicons": "^2.1.1",
-    "dayjs": "^1.10.7",
+    "dayjs": "^1.10.8",
     "jquery": "^3.6.0",
     "jquery-viewer": "^1.0.1",
-    "viewerjs": "^1.10.2"
+    "viewerjs": "^1.10.4"
   },
   "devDependencies": {
     "@babel/core": "^7.16.7",
