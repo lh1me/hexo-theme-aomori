@@ -24,7 +24,7 @@
     "@rollup/plugin-commonjs": "^21.0.1",
     "babel-eslint": "^10.1.0",
     "browser-sync": "^2.27.7",
-    "eslint": "7.32.0",
+    "eslint": "8.13.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "3.4.0",
     "gulp": "^4.0.2",
