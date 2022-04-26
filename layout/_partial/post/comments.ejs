@@ -73,3 +73,16 @@
     async>
 </script>
 <% } %>
+
+<% if (config.aomori_waline && config.aomori_waline.enable){ %>
+<section class="comments">
+  <div id="waline"></div>
+</section>
+<script src="//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js"></script>
+<script>
+  Waline({
+    el: '#waline',
+    serverURL: "<%= config.aomori_waline.serverURL %>",
+  });
+</script>
+<% } %>
