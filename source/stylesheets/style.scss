@@ -620,13 +620,15 @@ img:not([src]):not([srcset]) {
             
             .article-more-info {
                 display: flex;
+                flex-flow: row wrap;
+                align-content: flex-start;
+                white-space: nowrap;
 
                 .article-date {
                     align-items: center;
                     border-left: 3px solid var(--color-light);
                     color: var(--color-white);
-                    display: flex;
-                    margin-left: 10px;
+                    margin: 0 0 5px 10px;
                     padding-left: 8px;
                 }
 
@@ -634,7 +636,7 @@ img:not([src]):not([srcset]) {
                     align-items: center;
                     border-left: 3px solid var(--color-light);
                     display: flex;
-                    margin-left: 10px;
+                    margin: 0 0 5px 10px;
                     padding-left: 8px;
                 }
 
@@ -642,7 +644,7 @@ img:not([src]):not([srcset]) {
                     align-items: center;
                     border-left: 3px solid var(--color-light);
                     display: flex;
-                    margin-left: 10px;
+                    margin: 0 0 5px 10px;
                     padding-left: 8px;
 
                 }
@@ -701,17 +703,16 @@ img:not([src]):not([srcset]) {
                 }
             }
 
+            &-common {
+                align-items: center;
+                border-left: 3px solid var(--color-light);
+                margin: 0 0 5px 10px;
+                padding-left: 5px;
+            }
+
             .article-footer {
                 justify-content: start;
                 padding-left: 70px;
-
-                &-common {
-                    align-items: center;
-                    border-left: 3px solid var(--color-light);
-                    display: flex;
-                    margin-left: 10px;
-                    padding-left: 5px;
-                }
             }
         }
 
