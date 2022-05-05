@@ -14,7 +14,7 @@ const cleanCSS = require('gulp-clean-css');
 const rollup = require('rollup') // JS打包工具
 const { babel } = require('@rollup/plugin-babel'); // JS babel
 const commonjs = require('@rollup/plugin-commonjs') // Common JS
-const resolve = require('rollup-plugin-node-resolve') // 使 Rollup 支持 NPM 模块
+const { nodeResolve } = require('@rollup/plugin-node-resolve'); // 使 Rollup 支持 NPM 模块
 const { terser } = require('rollup-plugin-terser'); // Rollup plugin to minify generated es bundle
 
 const eslint = require('gulp-eslint')
@@ -87,7 +87,7 @@ gulp.task('js', async function () {
     const bundle = await rollup.rollup({
         input: './source/javascripts/app.js',
         plugins: [
-            resolve({
+            nodeResolve({
                 mainFields: ['module', 'main', 'jsnext', 'browser'],
             }),
             commonjs({
