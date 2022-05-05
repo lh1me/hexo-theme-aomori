@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.35.0](https://github.com/lh1me/hexo-theme-aomori/compare/v1.34.1...v1.35.0) (2022-05-05)
+
+
+### Features
+
+* Support ja lang for reference links ([#91](https://github.com/lh1me/hexo-theme-aomori/issues/91)) ([8703587](https://github.com/lh1me/hexo-theme-aomori/commit/8703587e90c09354346fe0d4759ed8cbb10d1da7))
+* update package ([4b7bf45](https://github.com/lh1me/hexo-theme-aomori/commit/4b7bf457a9d0455f6fdb72868ec859bc50149d1c))
+* update rollup plugin ([f8c717c](https://github.com/lh1me/hexo-theme-aomori/commit/f8c717c616e09305984fba08c31b72df8ddeec50))
+
+
+### Bug Fixes
+
+* article tweet footer ([a5f07c0](https://github.com/lh1me/hexo-theme-aomori/commit/a5f07c0a37008d60f5891b6a06e5c8fc1671001e))
+* encode share url ([#92](https://github.com/lh1me/hexo-theme-aomori/issues/92)) ([b8209b4](https://github.com/lh1me/hexo-theme-aomori/commit/b8209b4425c37cc5fde0dd13ecd4b7f48acb320e))
+
 ### [1.34.1](https://github.com/lh1me/hexo-theme-aomori/compare/v1.34.0...v1.34.1) (2022-03-05)
 
 
