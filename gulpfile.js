@@ -15,10 +15,10 @@ const rollup = require('rollup') // JS打包工具
 const { babel } = require('@rollup/plugin-babel'); // JS babel
 const commonjs = require('@rollup/plugin-commonjs') // Common JS
 const resolve = require('rollup-plugin-node-resolve') // 使 Rollup 支持 NPM 模块
-const uglify = require('rollup-plugin-uglify')
+const { terser } = require('rollup-plugin-terser'); // Rollup plugin to minify generated es bundle
 
 const eslint = require('gulp-eslint')
-const stylelint = require('gulp-stylelint')
+const stylelint = require('@ronilaukkarinen/gulp-stylelint')
 
 // Other
 const yaml = require('js-yaml');
@@ -97,7 +97,7 @@ gulp.task('js', async function () {
                 babelHelpers: 'bundled',
                 exclude: 'node_modules/**', // 只编译我们的源代码
             }),
-            uglify.uglify(),
+            terser(),
         ],
     })
     await bundle.write({
