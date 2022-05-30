@@ -1,8 +1,10 @@
 {
   "name": "hexo-theme-aomori",
   "version": "1.35.0",
-  "description": "",
+  "description": "🔥 Minimalist & Powerful Hexo Theme",
   "author": "lh1me",
+  "license": "MIT",
+  "repository": "https://github.com/lh1me/hexo-theme-aomori.git",
   "scripts": {
     "dev": "gulp",
     "build": "gulp build",
