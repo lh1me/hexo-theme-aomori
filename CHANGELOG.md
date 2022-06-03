@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.36.0](https://github.com/lh1me/hexo-theme-aomori/compare/v1.35.0...v1.36.0) (2022-06-03)
+
+
+### Features
+
+* ionicons ([2f75129](https://github.com/lh1me/hexo-theme-aomori/commit/2f75129896b11cdc40954af925661355ae5ad2de))
+* update package ([9e0cbb4](https://github.com/lh1me/hexo-theme-aomori/commit/9e0cbb4dfaa316868e17f8b9592f017db7b93c09))
+
 ## [1.35.0](https://github.com/lh1me/hexo-theme-aomori/compare/v1.34.1...v1.35.0) (2022-05-05)
 
 
