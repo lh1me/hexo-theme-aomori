@@ -41,13 +41,13 @@ class="article article-type-<%= post.layout %>"
     <div class="article-badge">
         <% if(post.sticky) { %>
         <div class="article-top">
-            <box-icon type='solid' name='to-top' color='#ffffff' size='xs'></box-icon>
+            <ion-icon name="arrow-up"></ion-icon>
         </div>
         <% } %>
         <% if(post.link_reprint) { %>
-            <div class="article-repost">
-                <box-icon name='repost' color='#ffffff' size='xs'></box-icon>
-            </div>
+        <div class="article-repost">
+            <ion-icon name="return-down-forward"></ion-icon>
+        </div>
         <% } %>
     </div>
 

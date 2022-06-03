@@ -163,6 +163,7 @@ img:not([src]):not([srcset]) {
             display: flex;
 
             a {
+                font-size: 20px;
                 align-items: center;
                 display: flex;
                 fill: var(--color-type);
@@ -321,6 +322,11 @@ img:not([src]):not([srcset]) {
             width: 24px;
             height: 24px;
             right: 6px;
+            font-size: 20px;
+            color: var(--color-main);
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         &-result {
@@ -511,10 +517,9 @@ img:not([src]):not([srcset]) {
                 text-align: center;
                 border-radius: 3px;
                 user-select: none;
-
-                box-icon {
-                    margin-top: 2px;
-                }
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
 
             .article-repost {
@@ -527,10 +532,9 @@ img:not([src]):not([srcset]) {
                 text-align: center;
                 border-radius: 3px;
                 user-select: none;
-
-                box-icon {
-                    margin-top: 2px;
-                }
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
         }
 
@@ -686,16 +690,16 @@ img:not([src]):not([srcset]) {
             }
 
             &-quote {
-                height: 50px;
+                color: #ccc;
                 left: 0;
                 position: absolute;
-                top: -5px;
-                width: 50px;
+                top: 0;
+                font-size: 50px;
                 transition: all .3s;
             }
 
             &-content {
-                padding: 0 0 10px 80px;
+                padding: 0 0 10px 70px;
 
                 p {
                     font-weight: 300;
@@ -712,7 +716,7 @@ img:not([src]):not([srcset]) {
 
             .article-footer {
                 justify-content: start;
-                padding-left: 70px;
+                padding-left: 60px;
             }
         }
 
@@ -930,6 +934,7 @@ img:not([src]):not([srcset]) {
                 margin-bottom: 10px;
                 transition: all 0.3s;
                 width: 2rem;
+                font-size: 20px;
 
                 &:hover {
                     fill: var(--color-light);

@@ -15,15 +15,15 @@
 
     <% if (item.place) { %>
     <div class="photography-item-place">
-        <box-icon color="#fff" size='xs' name='map' type='solid' ></box-icon>
+        <ion-icon name="location"></ion-icon>
         <span><%= item.place %></span>
     </div>
     <% } %>
 
     <% if (item.icon && item.icon.name) { %>
     <div class="photography-item-icon">
-        <% if (item.icon.url) { %><a target="_blank" href="<%- item.icon.url %>"><% } %> 
-            <box-icon size="xs" type='<%- item.icon.type %>' name='<%- item.icon.name %>'></box-icon>
+        <% if (item.icon.url) { %><a target="_blank" href="<%- item.icon.url %>"><% } %>
+            <ion-icon name="<%- item.icon.name %>"></ion-icon>
         <% if (item.icon.url) { %></a><% } %> 
     </div>
     <% } %>

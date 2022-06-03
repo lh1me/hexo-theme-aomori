@@ -13,7 +13,6 @@
     "release": "standard-version -s"
   },
   "dependencies": {
-    "boxicons": "^2.1.2",
     "dayjs": "^1.11.2",
     "jquery": "^3.6.0",
     "jquery-viewer": "^1.0.1",

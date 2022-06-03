@@ -1,4 +1,3 @@
-import 'boxicons'
 import 'viewerjs'
 import 'jquery-viewer'
 
