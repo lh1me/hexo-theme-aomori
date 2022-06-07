@@ -1,11 +1,10 @@
 ![image](https://raw.githubusercontent.com/lh1me/hexo-theme-aomori/master/docs/cover.png)
 
 ![Release](https://img.shields.io/github/release/lh1me/hexo-theme-aomori.svg)
-![NPM version](https://badge.fury.io/js/hexo.svg)
+[![NPM version](https://img.shields.io/npm/v/hexo-theme-aomori.svg)](https://www.npmjs.com/package/hexo-theme-aomori)
 ![Required Node version](https://img.shields.io/node/v/hexo)
 ![Action](https://github.com/lh1me/hexo-theme-aomori/workflows/Action/badge.svg)
 ![License](https://img.shields.io/github/license/lh1me/hexo-theme-aomori.svg)
-[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
 # Aomori
 
@@ -25,6 +24,20 @@ Aomori provides many features that support its concept.
 ## Demo
 
 [https://linhong.me](https://linhong.me)
+
+## Installation and Usage
+
+To install aomori
+
+```
+npm i hexo-theme-aomori --save
+```
+
+Setup and usage at `config.yml`
+
+```
+theme: aomori
+```
 
 ## Guide
 
