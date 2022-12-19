@@ -27,7 +27,7 @@
     "@ronilaukkarinen/gulp-stylelint": "^14.0.6",
     "babel-eslint": "^10.1.0",
     "browser-sync": "^2.27.10",
-    "eslint": "7.32.0",
+    "eslint": "8.30.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "3.4.0",
     "gulp": "^4.0.2",
