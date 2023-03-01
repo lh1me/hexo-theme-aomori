@@ -23,7 +23,7 @@ Aomori provides many features that support its concept.
 
 ## Demo
 
-[https://linhong.me](https://linhong.me)
+[hexo-theme-aomori-demo](https://hexo-theme-aomori-demo.pages.dev)
 
 ## Installation and Usage
 
