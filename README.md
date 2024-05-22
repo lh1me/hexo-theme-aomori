@@ -41,7 +41,7 @@ theme: aomori
 
 ## Guide
 
-[中文](https://aomori.linhong.me/v/chinese/getting-started/intro) | [English](https://aomori.linhong.me/getting-started/intro)
+[中文](https://lh1me.gitbook.io/aomori/v/cn) | [English](https://lh1me.gitbook.io/aomori)
 
 ---
 # Copyright & License
